@@ -11,7 +11,8 @@ Masterprompt „Employee AI Readiness" ausgeführt und geprüft wurde.
 | `Design-Science-Framework.md` | Chat zur Herleitung des DSR-Rahmens für die Fragebogengenerierung. |
 | `Design-Audits.md` | Chatverlauf zu den Design-Audit-Prüfungen (u. a. `…_001` PARTIAL PASS → `…_004_FINAL` freigegeben; Grundlage von `DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL`). |
 | `Runmode_01-05.md` | Erste fünf Fragebogen-Generierungsläufe (`RUN_MODE = QUESTIONNAIRE_GENERATION`). |
-| `Runmode_06.md` – `Runmode_18.md` | Weitere 13 Generierungsläufe zur Reproduzierbarkeitsprüfung desselben Masterprompts. |
+| `Runmode_06.md` – `Runmode_18.md` | Weitere 13 Generierungsläufe zur Reproduzierbarkeitsprüfung desselben Masterprompts (entspricht dem Masterprompt V3.5-R6). |
+| `Runmode_18_NOTEBOOKLM.md` | Eigener, separater Chat mit identischem Dateinamensmuster wie `Runmode_18.md` (im Download-Ordner ohne Leerzeichen im Namen) — entspricht tatsächlich dem Lauf gegen V3.5-R6.1, nicht R6. Nicht mit `Runmode_18.md` verwechseln. |
 | `Stresstest_01_Aufgabenkontext.md` | Stresstest: TTF-Items ohne vorgegebenen Aufgabenkontext angefordert. |
 | `Stresstest_02_Firmenkontext.md` | Stresstest: TTF-Items ohne vorgegebenen Firmenkontext angefordert. |
 | `Stresstest_03_Mehrfachkriterien.md` | Stresstest: Items mit mehreren Kriterien / Konstrukt-Grenzfällen angefordert. |
