@@ -1,0 +1,400 @@
+<!doctype html>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Artefakt-Zeitstrahl</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Layout concept: a vertical research spine (Peffers DSRM activities)
+   with two nested iteration lanes — Build (Masterprompt-Versionen)
+   and Evaluate→Learn (Testläufe) — drawn as a looping sequence of
+   PASS/FAIL nodes connected by a feedback arrow back into Build.
+   ------------------------------------------------------------------
+   Color: --paper (warm neutral ground), --ink, --accent (deep teal,
+   the artefact's own thread), --pass / --fail / --final (status).
+   Type: Newsreader (display, academic serif) + IBM Plex Sans (body)
+   + IBM Plex Mono (version tags, field names, IDs).
+------------------------------------------------------------------- */
+:root{
+  --paper:#faf8f4; --surface:#ffffff; --ink:#20242a; --muted:#656d76; --line:#dcd6ca;
+  --accent:#0f6b66; --accent-soft:#e4efed;
+  --pass:#2f7d4f; --pass-soft:#e6f3ea;
+  --fail:#a8422f; --fail-soft:#f8e9e5;
+  --final:#6a4fa8; --final-soft:#ece7f6;
+  --display:'Newsreader',Georgia,serif; --body:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15181c; --surface:#1d2126; --ink:#e7e9eb; --muted:#9aa2aa; --line:#33383f;
+    --accent:#3fb6ac; --accent-soft:#163331;
+    --pass:#4fae75; --pass-soft:#143324;
+    --fail:#e08a74; --fail-soft:#3a211c;
+    --final:#b6a0e8; --final-soft:#2a2240;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15181c; --surface:#1d2126; --ink:#e7e9eb; --muted:#9aa2aa; --line:#33383f;
+  --accent:#3fb6ac; --accent-soft:#163331;
+  --pass:#4fae75; --pass-soft:#143324;
+  --fail:#e08a74; --fail-soft:#3a211c;
+  --final:#b6a0e8; --final-soft:#2a2240;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink); font-family:var(--body);
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+  padding-block:28px 60px;
+  line-height:1.45;
+}
+main{max-width:860px; margin:0 auto; display:flex; flex-direction:column; gap:42px}
+
+h1,h2,h3{font-family:var(--display); font-weight:600; text-wrap:balance; margin:0}
+.mono{font-family:var(--mono)}
+.muted{color:var(--muted)}
+
+/* ---------- Header ---------- */
+header{display:flex; flex-direction:column; gap:14px}
+.eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent)}
+h1{font-size:clamp(28px,5vw,38px); letter-spacing:-.01em}
+header p{max-width:62ch; color:var(--muted); font-size:15.5px; margin:0}
+
+/* DSRM spine strip */
+.spine{display:flex; flex-wrap:wrap; gap:0; border:1px solid var(--line); border-radius:10px; overflow:hidden}
+.spine div{flex:1 1 140px; padding:10px 12px; font-size:12.5px; border-right:1px solid var(--line); background:var(--surface)}
+.spine div:last-child{border-right:none}
+.spine .n{font-family:var(--mono); color:var(--accent); font-weight:600; display:block; font-size:11px; margin-bottom:2px}
+.spine .cur{background:var(--accent-soft)}
+
+/* ---------- generic section heading ---------- */
+section > .shead{display:flex; align-items:baseline; gap:10px; margin-bottom:16px; flex-wrap:wrap}
+section > .shead h2{font-size:21px}
+section > .shead .tag{font-family:var(--mono); font-size:11.5px; color:var(--muted); border:1px solid var(--line); padding:2px 8px; border-radius:999px}
+
+/* ---------- Strategy + DR/DP cards ---------- */
+.cardrow{display:grid; grid-template-columns:repeat(2,1fr); gap:14px}
+@media(max-width:620px){.cardrow{grid-template-columns:1fr}}
+.card{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 18px}
+.card h3{font-size:15.5px; margin-bottom:6px}
+.card p{margin:0; font-size:13.8px; color:var(--muted)}
+.dplist{list-style:none; margin:10px 0 0; padding:0; display:flex; flex-direction:column; gap:6px}
+.dplist li{font-size:13px; display:flex; gap:8px}
+.dplist b{font-family:var(--mono); color:var(--accent); flex:0 0 auto}
+
+/* ---------- 9-step pipeline ---------- */
+.pipeline{display:flex; flex-wrap:wrap; align-items:center; gap:0; overflow-x:auto; padding-bottom:6px}
+.pstep{flex:0 0 auto; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:9px 12px; font-size:12.3px; min-width:118px; text-align:center}
+.pstep .idx{font-family:var(--mono); color:var(--accent); font-size:11px; display:block; margin-bottom:2px}
+.arrow{flex:0 0 auto; width:22px; height:14px; color:var(--muted)}
+.io{font-family:var(--mono); font-size:11px; color:var(--muted); text-align:center; padding:0 4px}
+
+/* ---------- Build lane (horizontal milestone strip) ---------- */
+.lane{position:relative; padding-left:0}
+.strip{display:flex; gap:0; overflow-x:auto; padding:6px 2px 14px}
+.mstone{flex:0 0 220px; display:flex; flex-direction:column; gap:6px; position:relative; padding-right:26px}
+.mstone:last-child{padding-right:0}
+.mstone .connector{position:absolute; right:0; top:34px; width:26px; height:14px; color:var(--line)}
+.mstone .vtag{font-family:var(--mono); font-size:11px; color:var(--accent); font-weight:600}
+.mstone .vname{font-size:14px; font-weight:600}
+.mstone .vfix{font-size:12.6px; color:var(--muted)}
+.mbox{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:11px 13px}
+
+/* ---------- Evaluate/Learn loop (vertical) ---------- */
+.loop{position:relative; display:flex; flex-direction:column; gap:0; margin-top:4px}
+.loop::before{content:"";position:absolute; left:19px; top:14px; bottom:14px; width:2px; background:var(--line)}
+.enode{position:relative; display:flex; gap:14px; padding:13px 0}
+.dot{flex:0 0 40px; height:40px; border-radius:50%; border:2px solid var(--line); background:var(--surface);
+     display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:11px; font-weight:600; z-index:1}
+.dot.fail{border-color:var(--fail); color:var(--fail); background:var(--fail-soft)}
+.dot.pass{border-color:var(--pass); color:var(--pass); background:var(--pass-soft)}
+.dot.final{border-color:var(--final); color:var(--final); background:var(--final-soft); border-width:3px}
+.dot.step{border-color:var(--accent); color:var(--accent); background:var(--accent-soft)}
+.ebody{flex:1; min-width:0; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:11px 15px}
+.ebody .etop{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:4px}
+.ebody .ever{font-family:var(--mono); font-weight:600; font-size:13.5px}
+.badge{font-family:var(--mono); font-size:10.5px; letter-spacing:.03em; padding:1px 7px; border-radius:999px; font-weight:600}
+.badge.fail{background:var(--fail-soft); color:var(--fail)}
+.badge.pass{background:var(--pass-soft); color:var(--pass)}
+.badge.final{background:var(--final-soft); color:var(--final)}
+.badge.step{background:var(--accent-soft); color:var(--accent)}
+.ebody p{margin:0; font-size:13px; color:var(--muted)}
+.ebody .mapsto{font-size:11.5px; color:var(--muted); margin-top:5px; font-family:var(--mono)}
+
+/* feedback arrow annotation */
+.feedback{display:flex; align-items:center; gap:8px; margin:2px 0 2px 54px; font-size:12px; color:var(--accent)}
+.feedback svg{flex:0 0 auto}
+
+/* ---------- Kommunikation cards ---------- */
+.commrow{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+@media(max-width:700px){.commrow{grid-template-columns:1fr}}
+.comm{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:15px 16px; display:flex; flex-direction:column; gap:6px}
+.comm h3{font-size:14px}
+.comm p{margin:0; font-size:12.8px; color:var(--muted)}
+
+footer{border-top:1px solid var(--line); padding-top:16px; font-size:12px; color:var(--muted); display:flex; flex-direction:column; gap:4px}
+footer .legend{display:flex; gap:16px; flex-wrap:wrap; font-family:var(--mono); font-size:11px}
+footer .legend span{display:inline-flex; align-items:center; gap:5px}
+footer .sw{width:9px; height:9px; border-radius:50%; display:inline-block}
+</style>
+
+<main>
+
+<header>
+  <span class="eyebrow">Praxisseminar · Design Science Research</span>
+  <h1>Vom ersten Prompt zum eingefrorenen Artefakt</h1>
+  <p>Der gesamte Entwicklungsverlauf des Leitlinienartefakts „Employee AI Readiness“, rekonstruiert aus dem ChatGPT-Entwicklungsprotokoll — von der 1,0-Strategie über 22 Design Requirements und sechs Masterprompt-Generationen bis zum eingefrorenen, extern geprüften Fragebogen.</p>
+
+  <div class="spine" role="img" aria-label="Peffers DSRM-Aktivitäten als Gliederung dieser Seite">
+    <div><span class="n">1</span>Problem&shy;identifikation</div>
+    <div><span class="n">2</span>Zielsetzung</div>
+    <div class="cur"><span class="n">3</span>Entwicklung</div>
+    <div><span class="n">4</span>Demonstration</div>
+    <div class="cur"><span class="n">5</span>Evaluation &amp; Rückkopplung</div>
+    <div><span class="n">6</span>Kommunikation</div>
+  </div>
+</header>
+
+<!-- ================= 1–2 Strategie & theoretische Fundierung ================= -->
+<section>
+  <div class="shead"><h2>1 – 2 · Strategie und theoretische Fundierung</h2><span class="tag">Problem &amp; Zielsetzung</span></div>
+  <div class="cardrow">
+    <div class="card">
+      <h3>1,0-Strategie aus dem Bewertungsbogen</h3>
+      <p>Lösungsfindungskompetenz zählt 55 von 100 Punkten. Entscheidung: kein klassisches Theoriekapitel, sondern Entwicklung eines Design-Science-Artefakts — Leitlinien, die ein LLM zu einem auditierbaren, quellengebundenen Fragebogen zwingen.</p>
+    </div>
+    <div class="card">
+      <h3>5 Fragebogen-Papers → 22 Design Requirements → 6 Design Principles</h3>
+      <ul class="dplist">
+        <li><b>DP1</b> Theory Grounding</li>
+        <li><b>DP2</b> Evidence &amp; Traceability</li>
+        <li><b>DP3</b> Context-Sensitive Operationalization</li>
+        <li><b>DP4</b> Methodological Quality Control</li>
+        <li><b>DP5</b> Empirical Validatability</li>
+        <li><b>DP6</b> Transparency &amp; Usability</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Artefakt-Pipeline ================= -->
+<section>
+  <div class="shead"><h2>Architektur des Artefakts</h2><span class="tag">interner Ablauf, 9 Funktionen</span></div>
+  <div class="pipeline" role="img" aria-label="Neun-stufige interne Verarbeitungskette des Leitlinienartefakts von Input bis Output">
+    <div class="io">INPUT<br>Problem · Zielgruppe<br>Kontext · Quellen</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">1</span>Research Problem Analyzer</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">2</span>Theory Selector</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">3</span>Construct Architect</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">4</span>Item Retriever</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">5</span>Item Adapter</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">6</span>Methodological Critic</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">7</span>Traceability Checker</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">8</span>Questionnaire Generator</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="pstep"><span class="idx">9</span>Validation Planner</div>
+    <svg class="arrow" viewBox="0 0 22 14"><line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="16,3 22,7 16,11" fill="currentColor"/></svg>
+    <div class="io">OUTPUT<br>Audit · Fragebogen<br>Validierungsplan</div>
+  </div>
+</section>
+
+<!-- ================= 3 Build: Masterprompt-Iterationen ================= -->
+<section class="lane">
+  <div class="shead"><h2>3 · Build — Operativer Masterprompt</h2><span class="tag">die in NotebookLM ausgeführte Promptdatei</span></div>
+  <div class="strip">
+    <div class="mstone">
+      <div class="mbox"><span class="vtag">V2 → V2.1 → V2.1_OPT</span><div class="vname">Stress-Test-Härtung</div><div class="vfix">Frühe Fassungen; schrittweise gegen Stresstest-Fälle gehärtet.</div></div>
+      <svg class="connector" viewBox="0 0 26 14"><line x1="0" y1="7" x2="22" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="20,3 26,7 20,11" fill="currentColor"/></svg>
+    </div>
+    <div class="mstone">
+      <div class="mbox"><span class="vtag">V3_FINAL → V3.1_HARDENED</span><div class="vname">Fail-Closed-Vorstufe</div><div class="vfix">Erste Hard-Gate-Logik; Grundlage für die spätere Fail-Closed-Konformitäts-Firewall.</div></div>
+      <svg class="connector" viewBox="0 0 26 14"><line x1="0" y1="7" x2="22" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="20,3 26,7 20,11" fill="currentColor"/></svg>
+    </div>
+    <div class="mstone">
+      <div class="mbox"><span class="vtag">V3.2_FAIL_CLOSED → V3.4</span><div class="vname">Item- &amp; Konstrukt-Integrität</div><div class="vfix">V3.3 Item Integrity, V3.4 Construct Integrity — atomare Items, saubere Konstrukt-Zuordnung erzwungen.</div></div>
+      <svg class="connector" viewBox="0 0 26 14"><line x1="0" y1="7" x2="22" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="20,3 26,7 20,11" fill="currentColor"/></svg>
+    </div>
+    <div class="mstone">
+      <div class="mbox"><span class="vtag">V3.5_SOURCE_CLOSURE(_FINAL)</span><div class="vname">Quellen-Geschlossenheit</div><div class="vfix">E2-Quellen-Subskalen-Gate, Übersetzungsstatus-Mapping; danach als Basis in NotebookLM getestet (→ „Run 01“, siehe Evaluate-Spalte).</div></div>
+      <svg class="connector" viewBox="0 0 26 14"><line x1="0" y1="7" x2="22" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="20,3 26,7 20,11" fill="currentColor"/></svg>
+    </div>
+    <div class="mstone" style="flex-basis:260px">
+      <div class="mbox"><span class="vtag">V3.5-R1 … R6.1</span><div class="vname">Revisionsserie (sieben Runden)</div><div class="vfix">R1 Source-Bound Production → R2 Autorun Single Command → R3 Quellentreu → R4 Audit-Aligned → R5 Integrated-Audit → R6 Output-Locked → R6.1 Evidence-Locked. Details in der Evaluate→Learn-Spalte.</div></div>
+    </div>
+  </div>
+
+  <div class="shead" style="margin-top:22px"><h2>Build — Master-Artefakt (Bundle)</h2><span class="tag">konsolidierte Einzeldatei für NotebookLM/GitHub</span></div>
+  <div class="strip">
+    <div class="mstone">
+      <div class="mbox"><span class="vtag">V8.1</span><div class="vname">Final Freeze</div><div class="vfix">Prompt + Source Registry + Changelog erstmals in einer Datei konsolidiert.</div></div>
+      <svg class="connector" viewBox="0 0 26 14"><line x1="0" y1="7" x2="22" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="20,3 26,7 20,11" fill="currentColor"/></svg>
+    </div>
+    <div class="mstone">
+      <div class="mbox"><span class="vtag">V8.2 → V8.2.1</span><div class="vname">Registry vervollständigt &amp; verifiziert</div><div class="vfix">Data-Complete Registry; P5-Metadaten gegen Original-PDF geprüft (Canonical Final).</div></div>
+      <svg class="connector" viewBox="0 0 26 14"><line x1="0" y1="7" x2="22" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="20,3 26,7 20,11" fill="currentColor"/></svg>
+    </div>
+    <div class="mstone">
+      <div class="mbox"><span class="vtag">V8.3</span><div class="vname">Error-Correction Freeze</div><div class="vfix">Drei Laufzeitfehler aus einem realen NotebookLM-Test behoben.</div></div>
+      <svg class="connector" viewBox="0 0 26 14"><line x1="0" y1="7" x2="22" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="20,3 26,7 20,11" fill="currentColor"/></svg>
+    </div>
+    <div class="mstone">
+      <div class="mbox"><span class="vtag">V8.4.1 … V8.4.10</span><div class="vname">Hardened-Evidence-Serie</div><div class="vfix">Zehn Feinschliff-Freezes: Evidenz-, Mess-, Rollen-, Run-Mode- und Normativitätslogik schrittweise konsistenzgeprüft.</div></div>
+      <svg class="connector" viewBox="0 0 26 14"><line x1="0" y1="7" x2="22" y2="7" stroke="currentColor" stroke-width="1.5"/><polygon points="20,3 26,7 20,11" fill="currentColor"/></svg>
+    </div>
+    <div class="mstone" style="padding-right:0">
+      <div class="mbox"><span class="vtag">V8.4.11 (Test) → V8.4_FINAL_HARDENED</span><div class="vname">Governance-Test → Final Freeze</div><div class="vfix">V8.4.11 als Testkandidat (zwei Verhaltensänderungen warten auf GT1/GT2); nach bestandenem Test als V8.4_FINAL_HARDENED eingefroren.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5 Evaluate & Learn ================= -->
+<section>
+  <div class="shead"><h2>5 · Evaluate → Learn — Testläufe am Masterprompt</h2><span class="tag">Build–Evaluate–Learn-Schleife, R1–R6.1 sind reale Versionsnamen</span></div>
+
+  <div class="loop" role="img" aria-label="Design-Audit-Prüfung gefolgt von sieben benannten Revisionsrunden V3.5-R1 bis R6.1, von PARTIAL PASS über mehrere FAIL-Befunde bis zur finalen CONFORMANT_GENERATION">
+
+    <div class="enode">
+      <div class="dot fail">A1</div>
+      <div class="ebody">
+        <div class="etop"><span class="ever">Design Audit · …_001</span><span class="badge fail">PARTIAL PASS</span></div>
+        <p>TASK_CONTEXT ohne Vorgabe erfunden; AIRS/MAILS/AISES fälschlich als eine Ebene geführt; Intention-to-Use nicht ausgeschlossen.</p>
+      </div>
+    </div>
+
+    <div class="feedback">
+      <svg width="20" height="16" viewBox="0 0 20 16"><path d="M2 2 Q2 14 16 14" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="12,11 16,14 12,17" fill="currentColor" transform="translate(0,-3)"/></svg>
+      Korrekturauftrag an denselben Audit
+    </div>
+
+    <div class="enode">
+      <div class="dot pass">A2</div>
+      <div class="ebody">
+        <div class="etop"><span class="ever">Design Audit · …_004_FINAL</span><span class="badge pass">FREIGEGEBEN</span></div>
+        <p>TASK_CONTEXT = NOT_PROVIDED gesetzt, Theoriehierarchie korrigiert, Konstrukt-Rollen getrennt. Als <span class="mono">DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL</span> Grundlage für alle folgenden Fragebogenläufe.</p>
+      </div>
+    </div>
+
+    <div class="enode">
+      <div class="dot fail">R0</div>
+      <div class="ebody">
+        <div class="etop"><span class="ever">Fragebogenlauf auf Basis V3.5_SOURCE_CLOSURE(_FINAL)</span><span class="badge fail">FAIL</span></div>
+        <p>Items ohne verifizierte Original-Item-ID durchgewunken (falsche PASS-Meldung trotz unvollständigem B7); verbotene numerische Pretest-Empfehlungen; ungenaue E2-Quellen-Item-Zuordnung; nicht erkannte Mehrfachkriterien innerhalb einzelner Items; Firmenkontext nicht verfügbar.</p>
+      </div>
+    </div>
+
+    <div class="feedback">
+      <svg width="20" height="16" viewBox="0 0 20 16"><path d="M2 2 Q2 14 16 14" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="12,11 16,14 12,17" fill="currentColor" transform="translate(0,-3)"/></svg>
+      → V3.5-R1 SOURCE-BOUND PRODUCTION
+    </div>
+
+    <div class=”enode”>
+      <div class=”dot step”>R1</div>
+      <div class=”ebody”>
+        <div class=”etop”><span class=”ever”>V3.5-R1 · Source-Bound Production</span><span class=”badge step”>Härtung</span></div>
+        <p>Behebt genau die fünf oben genannten Befunde; zunächst als Zwei-Phasen-Ablauf (<span class=”mono”>TWO_PHASE_VERIFIABLE</span>) ausgelegt — in der Praxis noch umständlich für einen einzelnen NotebookLM-Lauf.</p>
+      </div>
+    </div>
+
+    <div class=”enode”>
+      <div class=”dot step”>R2</div>
+      <div class=”ebody”>
+        <div class=”etop”><span class=”ever”>V3.5-R2 · Autorun Single Command</span><span class=”badge step”>Härtung</span></div>
+        <p>Ersetzt den Zwei-Phasen-Ablauf durch einen einzigen Befehl (<span class=”mono”>Führe RUN_MODE = QUESTIONNAIRE_GENERATION aus.</span>), der B1–B7 und das finale B0 in einer Antwort liefert.</p>
+      </div>
+    </div>
+
+    <div class=”enode”>
+      <div class=”dot step”>R3</div>
+      <div class=”ebody”>
+        <div class=”etop”><span class=”ever”>V3.5-R3 · Quellentreu Autorun</span><span class=”badge step”>Härtung</span></div>
+        <p>Führt einen formalen Nachtrags-Prozess ein (<span class=”mono”>DESIGN_AUDIT_ADDENDUM</span>, Status <span class=”mono”>PENDING_HUMAN_APPROVAL</span>): ein vorgeschlagener Nachtrag darf die Audit-Aussagen nie automatisch überschreiben.</p>
+      </div>
+    </div>
+
+    <div class=”enode”>
+      <div class=”dot step”>R4</div>
+      <div class=”ebody”>
+        <div class=”etop”><span class=”ever”>V3.5-R4 · Audit-Aligned Autorun</span><span class=”badge step”>Härtung</span></div>
+        <p>Bindet den freigegebenen Design Audit (<span class=”mono”>FINAL_APPROVED</span>) als maßgebliche Basis ein; macht die Wahl von drei AISES-Comfort-Items (statt AIRS) als dokumentationspflichtige, aber bereits im Audit gedeckte Operationalisierungsentscheidung explizit.</p>
+      </div>
+    </div>
+
+    <div class=”enode”>
+      <div class=”dot step”>R5</div>
+      <div class=”ebody”>
+        <div class=”etop”><span class=”ever”>V3.5-R5 · Integrated-Audit Autorun</span><span class=”badge fail”>FAIL · erwartet</span></div>
+        <p>Bettet den kompletten Design Audit wortgetreu als Anhang A direkt in die Promptdatei ein — keine separate Audit-Quelle in NotebookLM mehr nötig. Regressionstest unter gezielt unvollständigen Angaben (Stresstests 1–2: kein <span class=”mono”>TASK_CONTEXT</span>, kein Firmenkontext): Artefakt hat korrekt mit <span class=”mono”>HARD TTF GATE ACTIVE</span> / <span class=”mono”>HARD COMPANY CONTEXT GATE ACTIVE</span> blockiert, statt Items zu erfinden — die FAIL-Meldung war das <em>erwünschte</em>, korrekte Verhalten.</p>
+      </div>
+    </div>
+
+    <div class=”feedback”>
+      <svg width=”20” height=”16” viewBox=”0 0 20 16”><path d=”M2 2 Q2 14 16 14” fill=”none” stroke=”currentColor” stroke-width=”1.5”/><polygon points=”12,11 16,14 12,17” fill=”currentColor” transform=”translate(0,-3)”/></svg>
+      Gate-Verhalten bestätigt korrekt → letztes Quellen-Hardening
+    </div>
+
+    <div class=”enode”>
+      <div class=”dot pass”>R6</div>
+      <div class=”ebody”>
+        <div class=”etop”><span class=”ever”>V3.5-R6 · Output-Locked</span><span class=”badge pass”>PASS</span></div>
+        <p>Sperrt die Ausgabeform gegen in R5 beobachtete Abweichungen. In 18 unabhängigen Generierungsläufen (Runmode 01–18) durchgehend <span class=”mono”>CONFORMANT_GENERATION</span>, <span class=”mono”>critic_status = PASS</span> für alle 18 reflektiven Items — reproduzierbares Verhalten über wiederholte NotebookLM-Sitzungen bestätigt.</p>
+      </div>
+    </div>
+
+    <div class=”feedback”>
+      <svg width=”20” height=”16” viewBox=”0 0 20 16”><path d=”M2 2 Q2 14 16 14” fill=”none” stroke=”currentColor” stroke-width=”1.5”/><polygon points=”12,11 16,14 12,17” fill=”currentColor” transform=”translate(0,-3)”/></svg>
+      R6-Lauf technisch konsistent → letztes Quellen-Hardening
+    </div>
+
+    <div class=”enode”>
+      <div class=”dot final”>R6.1</div>
+      <div class=”ebody”>
+        <div class=”etop”><span class=”ever”>V3.5-R6.1 · Evidence-Locked</span><span class=”badge final”>PASS · wortlautidentisch zu R6</span></div>
+        <p>Gezieltes Quellen- und Aussagen-Hardening auf Basis des technisch konsistenten R6-Laufs (B2/B5/B7 bleiben wortlautidentisch); stellt u. a. klar, dass <span class=”mono”>MAX_COMPLETION_TIME_MIN = 8</span> ein Design-Ziel aus dem Audit ist, kein erhobener Zeitwert. Als Golden Output eingefroren — dies ist die in der Hausarbeit als „Masterprompt V3.5-R6.1” zitierte, extern strukturgeprüfte Version.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class=”cardrow” style=”margin-top:18px”>
+    <div class=”card”>
+      <h3>Reproduzierbarkeit (18 Läufe)</h3>
+      <p>18 unabhängige NotebookLM-Sitzungen mit demselben Masterprompt (Runmode 01–18): alle 18 mit Gesamtstatus <span class=”mono”>CONFORMANT_GENERATION</span>, <span class=”mono”>critic_status = PASS</span> für sämtliche 18 reflektiven Kernitems sowie die Zusatzmodule.</p>
+    </div>
+    <div class=”card”>
+      <h3>Stresstests (3 Szenarien)</h3>
+      <p>Gezielt unvollständige Eingaben angefordert (fehlender Aufgabenkontext, fehlender Firmenkontext, Mehrfachkriterien-Item). In allen drei Fällen korrekt durch Hard Gates blockiert statt Platzhalter-Items zu generieren — Fail-Closed-Architektur unter adversarialen Bedingungen bestätigt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6 Kommunikation ================= -->
+<section>
+  <div class="shead"><h2>6 · Kommunikation</h2><span class="tag">aus dem Golden Output</span></div>
+  <div class="commrow">
+    <div class="comm"><h3>GitHub-Repository</h3><p>MASTER_ARTEFAKT (V8.1–V8.4_FINAL_HARDENED), Source Registry, alle Masterprompt-Testkandidaten R1–R6.1 als Nachweis.</p></div>
+    <div class="comm"><h3>Pretest-Paket</h3><p>Teilnehmerfragebogen (4 S.), Datenschutz-Ausfüllvorlage (2 S.), Think-Aloud-Leitfaden (4 S.) — vorbereitet, Human-Pretest steht aus.</p></div>
+    <div class="comm"><h3>Hausarbeit</h3><p>Kap. 3 Architektur · Kap. 4 Demonstration · Kap. 5 Evaluation &amp; Rückkopplung · Kap. 6 Grenzen &amp; Ausblick.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--fail)"></i>FAIL / Korrektur nötig</span>
+    <span><i class="sw" style="background:var(--pass)"></i>PASS / freigegeben</span>
+    <span><i class="sw" style="background:var(--final)"></i>final eingefroren</span>
+  </div>
+  <div>Rekonstruiert aus dem ChatGPT-Entwicklungsprotokoll (Chatverlauf.rtf), den tatsächlichen Masterprompt- und Master-Artefakt-Dateien (Ordner „Masterprompts”) sowie dem vollständigen NotebookLM-Chatexport (18 Generierungsläufe + 3 Stresstests, Ordner „Notebook LM Chats” / Repo-Ordner <span class=”mono”>notebooklm-chatverlauf/</span>). R1–R6.1 sind wörtliche Versionssuffixe, PASS/FAIL-Angaben sind den NotebookLM-Rohausgaben entnommen — keine Näherung.</div>
+</footer>
+
+</main>
