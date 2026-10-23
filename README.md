@@ -40,11 +40,9 @@ Das Repository enthält neben dem zuletzt getesteten **R6.1** jetzt die tatsäch
 
 6. Für eine tatsächliche Unternehmensbefragung sind die rechtlich/organisatorisch nötigen Studien- und Datenschutzinformationen einzusetzen, ein echter kognitiver Pretest durchzuführen und erst danach ein empirisches Validierungskonzept zu beschließen.
 
-## NotebookLM-Freigabelink
+## Zugang für die Prüfung
 
-**Noch durch die projektverantwortliche Person einzutragen:** `NOTEBOOKLM_FREIGABELINK_HIER_EINFUEGEN`.
-
-Ein Link wird nicht erfunden. Die Freigabe muss so eingestellt sein, dass die vorgesehenen Prüfenden das Notebook öffnen können und keine nicht zur Veröffentlichung vorgesehenen Daten offenliegen. Im Zweifel ist ein separater, bereinigter Publikations-Stand anzulegen.
+Als Nachweis- und Zugriffspunkt für die Prüfung dient ausschließlich dieses GitHub-Repository (`https://github.com/lynnzeischke/praxisseminar`). Ein NotebookLM-Freigabelink wird nicht bereitgestellt: Das NotebookLM-Notebook selbst enthält möglicherweise nicht zur Veröffentlichung vorgesehene Zwischenstände, daher wurde bewusst kein Freigabelink erzeugt. Alle für die Prüfung erforderlichen Artefakte – Masterprompts, NotebookLM-Rohexporte, Testausgaben und Prüfskripte – liegen vollständig und reproduzierbar in diesem Repository vor; Abschnitt „Replikation mit NotebookLM" oben beschreibt, wie sich die Ergebnisse in einem eigenen, neu angelegten Notebook nachvollziehen lassen.
 
 ## Wissenschaftliche Einordnung
 
