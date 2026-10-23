@@ -64,10 +64,13 @@ Kap. 5 / Anhang B.
     aus, prüft aber eine Konstruktverschiebung statt einer sprachlichen
     Übersetzungsmehrdeutigkeit — testet damit nicht wortgetreu GT1-B.
   - **N23 (`GT2_Test_E1E2E3_Klassifikation.md`):** Alle vier Fälle (E1/E2/E2/E3)
-    entsprechen exakt der Erwartung. Zwei der zitierten Originalitems (MAILS
-    Pos. 7 und Pos. 24) konnten im verfügbaren Volltext nicht wortgleich
-    verifiziert werden und sind vor Übernahme in Anhang B gegen die
-    Originalpublikation zu prüfen.
+    entsprechen exakt der Erwartung. MAILS Pos. 7 und Pos. 24 sind inzwischen
+    gegen den vollständigen Appendix A von Carolus et al. (2023) verifiziert
+    (Itemnummer, Facette und Bedeutungsgehalt korrekt) — mit der Einschränkung,
+    dass die Publikation nur die englischen Itemformulierungen enthält, der
+    deutsche Original-Erhebungswortlaut also eine Rückübersetzung und nicht
+    nachweislich identisch ist. Fall A ggf. eher als `E2` denn als reines `E1`
+    einstufen (siehe Prüfbefund in der Datei).
   - **N24 (`GT1B_Test_Uebersetzungsmehrdeutigkeit.md`):** Wortgetreuer
     Nachtest zu N22 Fall B — Originalitem mit doppelter Verneinung
     (Wang & Chuang, 2024, AISES TS3/Q6), für das keine eindeutige deutsche
