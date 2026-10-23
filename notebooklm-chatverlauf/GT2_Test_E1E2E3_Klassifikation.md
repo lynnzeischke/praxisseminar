@@ -1,24 +1,29 @@
 # GT2-Test: E1/E2/E3-Klassifikationsgrenze
 
-Quelle: NotebookLM-Chat (von der Nutzerin manuell in den Konversationsverlauf
-mit Claude kopiert; der Export-Link des Notebooks selbst wurde nicht
-gesondert dokumentiert).
+Quelle: https://notebook.google.com/notebook/1b5b496e-bbb9-4f50-a3ec-65328261ec3d
+(dasselbe Notebook wie `Runmode_18_NOTEBOOKLM.md` und
+`GT1_Test_Uebersetzungsstoppregel.md`, Fortsetzung desselben Chats)
 Exportiert/übernommen: 23.10.2026
 
-**Hinweis zur Vollständigkeit:** Der exakte Wortlaut des an NotebookLM
-gestellten Prompts (Abschnitt „Frage") lag Claude zum Zeitpunkt der
-Archivierung nicht mehr im Kontext vor (Sitzungs-Kompaktierung). Die
-Nutzerin wird gebeten, den tatsächlichen Prompt-Text aus ihrem eigenen
-NotebookLM-Chatverlauf zu ergänzen, bevor diese Datei als vollständiger
-Beleg in der Hausarbeit zitiert wird. Der folgende Antwortteil ist dagegen
-1:1 wie von der Nutzerin aus NotebookLM kopiert.
+**Nachtrag (23.10.2026):** Die Nutzerin hat den vollständigen Chatverlauf
+zur Verfügung gestellt. Der exakte Prompt-Wortlaut ist unten ergänzt.
+Dieser Testlauf folgt im selben NotebookLM-Chat unmittelbar auf
+`GT1_Test_Uebersetzungsstoppregel.md`.
 
 ---
 
 ## Frage
 
-*[von der Nutzerin zu ergänzen – exakter Prompt-Wortlaut aus dem
-NotebookLM-Chat]*
+```
+Ich teste gezielt deine Klassifikationslogik zwischen E1, E2 und E3, nicht die vollständige Fragebogengenerierung. Erzeuge vier Beispiele aus deinen geladenen Quellen und klassifiziere jedes:
+
+(A) ein deutschsprachiges Originalitem, unverändert übernommen,
+(B) ein englischsprachiges Originalitem, ins Deutsche übersetzt,
+(C) ein Originalitem, angepasst auf ein konkretes Unternehmen/Tool (z. B. „ChatGPT Enterprise" statt generisch „KI"),
+(D) ein neues Item, das du aus mindestens zwei verschiedenen Originalitems zusammensetzt.
+
+Gib für jedes Beispiel evidence_class und eine Begründung an.
+```
 
 ---
 

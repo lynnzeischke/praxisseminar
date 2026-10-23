@@ -1,8 +1,8 @@
 # GT1-B-Test: Sprachliche Übersetzungsmehrdeutigkeit (wortgetreuer Testfall)
 
-Quelle: NotebookLM-Chat (von der Nutzerin manuell in den Konversationsverlauf
-mit Claude kopiert; der Export-Link des Notebooks selbst wurde nicht
-gesondert dokumentiert).
+Quelle: https://notebook.google.com/notebook/1b5b496e-bbb9-4f50-a3ec-65328261ec3d
+(dasselbe Notebook wie `Runmode_18_NOTEBOOKLM.md`, `GT1_Test_...` und
+`GT2_Test_...`, Fortsetzung desselben Chats)
 Exportiert/übernommen: 23.10.2026
 
 **Hinweis zur Vollständigkeit:** Dieser Testlauf wurde als gezielte Ergänzung

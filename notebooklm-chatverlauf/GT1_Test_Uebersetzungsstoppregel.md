@@ -1,24 +1,30 @@
 # GT1-Test: Übersetzungs-Stoppregel
 
-Quelle: NotebookLM-Chat (von der Nutzerin manuell in den Konversationsverlauf
-mit Claude kopiert; der Export-Link des Notebooks selbst wurde nicht
-gesondert dokumentiert).
+Quelle: https://notebook.google.com/notebook/1b5b496e-bbb9-4f50-a3ec-65328261ec3d
+(dasselbe Notebook wie `Runmode_18_NOTEBOOKLM.md`, Fortsetzung desselben
+Chats)
 Exportiert/übernommen: 23.10.2026
 
-**Hinweis zur Vollständigkeit:** Der exakte Wortlaut des an NotebookLM
-gestellten Prompts (Abschnitt „Frage") lag Claude zum Zeitpunkt der
-Archivierung nicht mehr im Kontext vor (Sitzungs-Kompaktierung). Die
-Nutzerin wird gebeten, den tatsächlichen Prompt-Text aus ihrem eigenen
-NotebookLM-Chatverlauf zu ergänzen, bevor diese Datei als vollständiger
-Beleg in der Hausarbeit zitiert wird. Der folgende Antwortteil ist dagegen
-1:1 wie von der Nutzerin aus NotebookLM kopiert.
+**Nachtrag (23.10.2026):** Die Nutzerin hat den vollständigen Chatverlauf
+zur Verfügung gestellt, darin bestätigt sich, dass dieser Testlauf im
+selben NotebookLM-Chat erfolgte, in dem am Montag, 19.10.2026, zuvor der
+vollständige `RUN_MODE = QUESTIONNAIRE_GENERATION`-Lauf (B0–B7, 18
+reflektive Items, `CONFORMANT_GENERATION`) ausgeführt und bereits als
+`Runmode_18_NOTEBOOKLM.md` archiviert wurde. Der exakte Prompt-Wortlaut
+ist unten ergänzt.
 
 ---
 
 ## Frage
 
-*[von der Nutzerin zu ergänzen – exakter Prompt-Wortlaut aus dem
-NotebookLM-Chat]*
+```
+Ich teste gezielt deine Übersetzungs- und Stopp-Logik, nicht die vollständige Fragebogengenerierung. Wähle aus deinen geladenen Quellen (MAILS, AILRSE-5, AISES, AIRS, Lambiase FC) zwei Beispielitems aus:
+
+(A) ein fremdsprachiges Originalitem, das sich eindeutig und ohne Bedeutungsverlust ins Deutsche übertragen lässt, aber noch keine validierte deutsche Fassung hat,
+(B) ein fremdsprachiges Originalitem, dessen Bedeutungsgehalt sich im Zielkontext (kaufmännische Mitarbeitende, generative KI am Arbeitsplatz) nicht hinreichend eindeutig ins Deutsche übertragen lässt.
+
+Gib für beide Fälle an: Originaltext, Quelle, deine Übersetzung oder STOPP-Entscheidung, evidence_class, translation_status, und eine kurze Begründung.
+```
 
 ---
 
