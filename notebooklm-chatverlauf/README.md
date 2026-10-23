@@ -39,6 +39,19 @@ Kap. 5 / Anhang B.
     während die Metadaten 18 Items behaupten.
   - **N15 (`Runmode_13.md`):** Enthält nur Titel, Notebook-URL und
     Exportzeitpunkt; daraus lässt sich kein Testergebnis ableiten.
+  - **Uneinheitliche Selbstangabe der Hard-Check-Anzahl:** Der Masterprompt
+    (Abschnitt „B0 – unabhängige Hard-Check-Matrix") definiert exakt 16
+    benannte Pflicht-Gates (15 inhaltliche Checks + `all_hard_checks_pass`
+    als zusammenfassendes 16. Gate). In der zusammenfassenden Formulierung
+    der `all_hard_checks_pass`-Zeile weichen die Läufe jedoch voneinander ab:
+    `Runmode_16.md` meldet „Alle 23 Einzelprüfungen", `Runmode_17.md` meldet
+    „Alle 12 Kriterien", `Runmode_18_NOTEBOOKLM.md` (19.10., identisches
+    Notebook wie N22–N24) meldet korrekt „Alle 15 Einzelprüfungen". Die
+    Tabellenstruktur mit 16 Zeilen ist in allen Fällen vorhanden, nur der im
+    Fließtext selbst behauptete Zahlwert schwankt. Dies ist ein weiteres
+    Beispiel dafür, dass eine gemeldete `PASS`/Zahlangabe allein kein
+    Vollständigkeitsnachweis ist, sondern gegen die Tabellenzeilen selbst
+    gegengezählt werden muss.
   - Für die strukturgeprüften Kernläufe R5/R6/R6.1 (N19–N21) siehe
     `../evaluation/TECHNISCHE_PRUEFERGEBNISSE.md` und
     `../Nachweise/Chatbelege_Pruefergebnisse.json` (R5 FAIL erwartet, R6/R6.1
