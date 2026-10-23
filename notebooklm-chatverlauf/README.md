@@ -18,6 +18,7 @@ Masterprompt „Employee AI Readiness" ausgeführt und geprüft wurde.
 | `Stresstest_03_Mehrfachkriterien.md` | Stresstest: Items mit mehreren Kriterien / Konstrukt-Grenzfällen angefordert. |
 | `GT1_Test_Uebersetzungsstoppregel.md` | Testlauf zur Übersetzungs-Stoppregel (Fall A: übersetzbares Item → E2; Fall B: Stopp bei Konstruktverschiebung, nicht bei Übersetzungsmehrdeutigkeit). |
 | `GT2_Test_E1E2E3_Klassifikation.md` | Testlauf zur E1/E2/E3-Klassifikationsgrenze (vier Fälle: Direktübernahme, Übersetzung, Tool-Adaption, Synthese). |
+| `GT1B_Test_Uebersetzungsmehrdeutigkeit.md` | Wortgetreuer GT1-B-Testfall: sprachliche Übersetzungsmehrdeutigkeit (doppelte Verneinung, AISES TS3/Q6) statt Konstruktverschiebung. Prompt vollständig dokumentiert. |
 
 ## Befund (für Kap. 5 Evaluation der Hausarbeit relevant)
 
@@ -67,6 +68,12 @@ Kap. 5 / Anhang B.
     Pos. 7 und Pos. 24) konnten im verfügbaren Volltext nicht wortgleich
     verifiziert werden und sind vor Übernahme in Anhang B gegen die
     Originalpublikation zu prüfen.
+  - **N24 (`GT1B_Test_Uebersetzungsmehrdeutigkeit.md`):** Wortgetreuer
+    Nachtest zu N22 Fall B — Originalitem mit doppelter Verneinung
+    (Wang & Chuang, 2024, AISES TS3/Q6), für das keine eindeutige deutsche
+    Übersetzung existiert. STOPP korrekt ausgelöst, drei konkurrierende
+    Lesarten benannt und begründet. Quelle und Original-Item-Wortlaut
+    verifiziert.
 
 ## Hinweis zur Vollständigkeit
 
