@@ -1,0 +1,608 @@
+B0 Conformance StatusHard-Check-Matrix (V3.5 Regression Test)CheckStatusNote / Verificationdesign_lock_okPASSExakt 18 reflektive Items (6 Konstrukte × 3 Items), AILRSE-5 Subset, Lambiase FC Subset, kein TTF, keine Behavioral Intention.subset_source_lock_okPASSAILRSE-5 3-Item-Subset, Lambiase FC_1–FC_3 3-Item-Subset, AIRS Comfort COM1/2/3 gesperrt.e2_proof_okPASSAlle E2-Items besitzen verifizierte Einzel-Original-Item-IDs, Locators und semantische Fingerabdruck-Übereinstimmung.object_equivalence_okPASSMessobjekt-Gleichheit gewahrt (Human Capability für LIT/LEARN/APPLY/DETECT, Org/System Context für FC, Emotional State für COMFORT).subscale_membership_okPASSKeine unzulässigen Subskalen-Transfers; AIRS-SEC nicht in COMFORT vermischt.construct_coverage_okPASSREADINESS_CORE_DETECT deckt KI-Erkennung (DETECT_01, DETECT_02) und kritische Ergebnisprüfung (DETECT_03) vollständig ab.apply_human_capability_okPASSAPPLY misst ausschließlich eigene Anwendungsfähigkeit; Zeiteinsparung/Nutzen (AISES AS6/Q16) strikt ausgeschlossen.e3_registry_closure_okPASSSubstantielle E3-Quellen für DETECT_03 beschränken sich auf ACTIVE_VERIFIED Quellen (Carolus et al., 2023); unverifizierte Quellen (Ng et al. / Bloom) ausgeschlossen.within_construct_scale_coherence_okPASSExakt eine Antwortskala pro reflektivem Konstrukt (LIT = 0–10, LEARN = 1–7, APPLY = 0–10, DETECT = 0–10, COMFORT = 1–5, FC = 1–7).scale_instruction_semantics_okPASSFähigkeitsskalen nutzen Ausprägungs-/Fähigkeitsinstruktionen; Zustimmungsskalen nutzen Zustimmungsinstruktionen.design_audit_reference_okPASSExakte Zeichenkette DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL in B1 und JSON.diagnostic_module_completeness_okPASSDIAGNOSTIC_NEEDS (DIAG_01 mit 7 Bereichen, DIAG_02) und DEMOGRAPHICS_MINIMAL (DEM_01) vollständig enthalten.item_count_checksum_okPASSTraceability = 18, Teilnehmerfragebogen = 18, JSON = 18. Diagnostische und demografische Module sind vom Checksum ausgeschlossen.atomic_items_okPASSDETECT_03 lautet einkriteriell strictly auf „inhaltliche Richtigkeit“ (kein Doppelattribut wie „Richtigkeit und Plausibilität“).retrieval_support_okPASSretrieval_support = [] für alle wissenschaftlichen Readiness-Quellen.routing_okPASSNO_EXPERIENCE umfasst LIT, LEARN, FC, DIAGNOSTIC_NEEDS, DEMOGRAPHICS_MINIMAL und überspringt erfahrungsabhängige Module (APPLY, DETECT, COMFORT).routing_cross_output_consistency_okPASSRouting-Matrix in B5 (Fragebogen), B2 (Traceability) und B7 (JSON) 100% identisch.participant_claims_okPASSBei CONTEXT_TEXT = NOT_PROVIDED steht exakt [DATENSCHUTZ_UND_STUDIENHINWEIS_PLATZHALTER]. Neutrale Einleitung ohne unbelegte Unternehmensversprechen.scale_decision_okPASSSCALE_PREFERENCE = original_scales konform umgesetzt; keine unbegründete Skalen-Harmonisierung.validation_plan_okPASSBei PLANNED_ANALYSIS = NOT_PROVIDED: Null numerische Stichprobenangaben ($N$), keine Auswertungsverfahren-Festlegung, keine psychometrischen Schwellenwerte.json_consistency_okPASSJSON-Objekt ist vollständig valide, konform und deckt sich exakt mit den Fließtext-Sektionen.GESAMTERGEBNIS: CONFORMANT_GENERATIONB1 Design-Audit ReferenceDESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINALB2 Item Traceabilityitem_idconstructanalysis_levelmeasurement_modelevidence_classquestion_textsource_evidencesource_item_idsource_item_text_verifiedoriginal_scalefinal_scalescale_adaptationadaptation_typetranslation_statuscontext_verifiedcritic_statuse3_substantive_sourcese3_contrast_sourcesLIT_01READINESS_CORE_LITREADINESS_COREREFLECTIVEE2Ich kann erklären, was generative KI ist.Carolus et al. (2023) [MAILS], p. 15Know_Understand_1true0–100–10NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]LIT_02READINESS_CORE_LITREADINESS_COREREFLECTIVEE2Ich weiß, wo die Grenzen von generativer KI liegen.Carolus et al. (2023) [MAILS], p. 15Know_Understand_2true0–100–10NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]LIT_03READINESS_CORE_LITREADINESS_COREREFLECTIVEE2Ich kenne Anwendungsbereiche, in denen generative KI eingesetzt werden kann.Carolus et al. (2023) [MAILS], p. 15Know_Understand_3true0–100–10NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]LEARN_01READINESS_CORE_LEARNREADINESS_COREREFLECTIVEE2Ich bin zuversichtlich, dass ich lernen kann, wie man generative KI nutzt.Oksanen et al. (2026) [AILRSE-5], Table 2Item 1true1–71–7NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]LEARN_02READINESS_CORE_LEARNREADINESS_COREREFLECTIVEE2Ich traue mir zu, mir neues Wissen über generative KI selbstständig anzueignen.Oksanen et al. (2026) [AILRSE-5], Table 2Item 2true1–71–7NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]LEARN_03READINESS_CORE_LEARNREADINESS_COREREFLECTIVEE2Ich bin gewiss, dass ich den Umgang mit neuen Funktionen generativer KI erlernen kann.Oksanen et al. (2026) [AILRSE-5], Table 2Item 4true1–71–7NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]APPLY_01READINESS_CORE_APPLYREADINESS_COREREFLECTIVEE2Ich kann generative KI nutzen, um Aufgaben in meinem Arbeitsalltag zu lösen.Carolus et al. (2023) [MAILS], p. 15Use_Apply_1true0–100–10NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]APPLY_02READINESS_CORE_APPLYREADINESS_COREREFLECTIVEE2Ich kann geeignete Prompts (Eingabeaufforderungen) formulieren, um von generativer KI gewünschte Ergebnisse zu erhalten.Carolus et al. (2023) [MAILS], p. 15Problem_Solving_1true0–100–10NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]APPLY_03READINESS_CORE_APPLYREADINESS_COREREFLECTIVEE2Ich bin in der Lage, generative KI gezielt zur Unterstützung bei kaufmännischen Problemstellungen einzusetzen.Carolus et al. (2023) [MAILS], p. 15Problem_Solving_2true0–100–10NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][Wang & Chuang (2024)]DETECT_01READINESS_CORE_DETECTREADINESS_COREREFLECTIVEE2Ich kann erkennen, ob ein Text von einer generativen KI oder von einem Menschen verfasst wurde.Carolus et al. (2023) [MAILS], p. 15Detect_AI_1true0–100–10NONEcontextual / linguisticNEEDS_EQUIVALENCE_CHECKtruePASS[][]DETECT_02READINESS_CORE_DETECTREADINESS_COREREFLECTIVEE2Ich kann feststellen, ob Inhalte durch generative KI erstellt wurden.Carolus et al. (2023) [MAILS], p. 15### B0 Conformance StatusHard-Check-Matrix (V3.5 Regression Test)CheckStatusNote / Verificationdesign_lock_okPASSExakt 18 reflektive Items (6 Konstrukte × 3 Items), AILRSE-5 Subset, Lambiase FC Subset, kein TTF, keine Behavioral Intention.subset_source_lock_okPASSAILRSE-5 3-Item-Subset, Lambiase FC_1–FC_3 3-Item-Subset, AIRS Comfort COM1/2/3 gesperrt.e2_proof_okPASSAlle E2-Items besitzen verifizierte Einzel-Original-Item-IDs, Locators und semantische Fingerabdruck-Übereinstimmung.object_equivalence_okPASSMessobjekt-Gleichheit gewahrt (Human Capability für LIT/LEARN/APPLY/DETECT, Org/System Context für FC, Emotional State für COMFORT).subscale_membership_okPASSKeine unzulässigen Subskalen-Transfers; AIRS-SEC nicht in COMFORT vermischt.construct_coverage_okPASSREADINESS_CORE_DETECT deckt KI-Erkennung (DETECT_01, DETECT_02) und kritische Ergebnisprüfung (DETECT_03) vollständig ab.apply_human_capability_okPASSAPPLY misst ausschließlich eigene Anwendungsfähigkeit; Zeiteinsparung/Nutzen (AISES AS6/Q16) strikt ausgeschlossen.e3_registry_closure_okPASSSubstantielle E3-Quellen für DETECT_03 beschränken sich auf ACTIVE_VERIFIED Quellen (Carolus et al., 2023); unverifizierte Quellen (Ng et al. / Bloom) ausgeschlossen.within_construct_scale_coherence_okPASSExakt eine Antwortskala pro reflektivem Konstrukt (LIT = 0–10, LEARN = 1–7, APPLY = 0–10, DETECT = 0–10, COMFORT = 1–5, FC = 1–7).scale_instruction_semantics_okPASSFähigkeitsskalen nutzen Ausprägungs-/Fähigkeitsinstruktionen; Zustimmungsskalen nutzen Zustimmungsinstruktionen.design_audit_reference_okPASSExakte Zeichenkette DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL in B1 und JSON.diagnostic_module_completeness_okPASSDIAGNOSTIC_NEEDS (DIAG_01 mit 7 Bereichen, DIAG_02) und DEMOGRAPHICS_MINIMAL (DEM_01) vollständig enthalten.item_count_checksum_okPASSTraceability = 18, Teilnehmerfragebogen = 18, JSON = 18. Diagnostische und demografische Module sind vom Checksum ausgeschlossen.atomic_items_okPASSDETECT_03 lautet einkriteriell strictly auf „inhaltliche Richtigkeit“ (kein Doppelattribut wie „Richtigkeit und Plausibilität“).retrieval_support_okPASSretrieval_support = [] für alle wissenschaftlichen Readiness-Quellen.routing_okPASSNO_EXPERIENCE umfasst LIT, LEARN, FC, DIAGNOSTIC_NEEDS, DEMOGRAPHICS_MINIMAL und überspringt erfahrungsabhängige Module (APPLY, DETECT, COMFORT).routing_cross_output_consistency_okPASSRouting-Matrix in B5 (Fragebogen), B2 (Traceability) und B7 (JSON) 100% identisch.participant_claims_okPASSBei CONTEXT_TEXT = NOT_PROVIDED steht exakt [DATENSCHUTZ_UND_STUDIENHINWEIS_PLATZHALTER]. Neutrale Einleitung ohne unbelegte Unternehmensversprechen.scale_decision_okPASSSCALE_PREFERENCE = original_scales konform umgesetzt; keine unbegründete Skalen-Harmonisierung.validation_plan_okPASSBei PLANNED_ANALYSIS = NOT_PROVIDED: Null numerische Stichprobenangaben ($N$), keine Auswertungsverfahren-Festlegung, keine psychometrischen Schwellenwerte.json_consistency_okPASSJSON-Objekt ist vollständig valide, konform und deckt sich exakt mit den Fließtext-Sektionen.GESAMTERGEBNIS: CONFORMANT_GENERATIONB1 Design-Audit ReferenceDESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINALB2 Item Traceabilityitem_idconstructevidence_classquestion_textsource_idsource_item_idfinal_scaleLIT_01READINESS_CORE_LITE2Ich kann erklären, was generative KI ist.Carolus et al. (2023)Know_Understand_10–10LIT_02READINESS_CORE_LITE2Ich weiß, wo die Grenzen von generativer KI liegen.Carolus et al. (2023)Know_Understand_20–10LIT_03READINESS_CORE_LITE2Ich kenne Anwendungsbereiche, in denen generative KI eingesetzt werden kann.Carolus et al. (2023)Know_Understand_30–10LEARN_01READINESS_CORE_LEARNE2Ich bin zuversichtlich, dass ich lernen kann, wie man generative KI nutzt.Oksanen et al. (2026)Item 11–7LEARN_02READINESS_CORE_LEARNE2Ich traue mir zu, mir neues Wissen über generative KI selbstständig anzueignen.Oksanen et al. (2026)Item 21–7LEARN_03READINESS_CORE_LEARNE2Ich bin gewiss, dass ich den Umgang mit neuen Funktionen generativer KI erlernen kann.Oksanen et al. (2026)Item 41–7APPLY_01READINESS_CORE_APPLYE2Ich kann generative KI nutzen, um Aufgaben in meinem Arbeitsalltag zu lösen.Carolus et al. (2023)Use_Apply_10–10APPLY_02READINESS_CORE_APPLYE2Ich kann geeignete Prompts formulieren, um von generativer KI gewünschte Ergebnisse zu erhalten.Carolus et al. (2023)Problem_Solving_10–10APPLY_03READINESS_CORE_APPLYE2Ich bin in der Lage, generative KI gezielt zur Unterstützung bei kaufmännischen Problemstellungen einzusetzen.Carolus et al. (2023)Problem_Solving_20–10DETECT_01READINESS_CORE_DETECTE2Ich kann erkennen, ob ein Text von einer generativen KI oder von einem Menschen verfasst wurde.Carolus et al. (2023)Detect_AI_10–10DETECT_02READINESS_CORE_DETECTE2Ich kann feststellen, ob Inhalte durch generative KI erstellt wurden.Carolus et al. (2023)Detect_AI_20–10DETECT_03READINESS_CORE_DETECTE3Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen.Carolus et al. (2023)null0–10COMFORT_01READINESS_CORE_COMFORTE2Ich fühle mich wohl dabei, generative KI-Technologien vor anderen zu nutzen.Wang et al. (2026)COM1 / Q91–5COMFORT_02READINESS_CORE_COMFORTE2Ich glaube, dass viele generative KI-Anwendungen keine Bedenken hinsichtlich Gesundheit oder Sicherheit aufwerfen.Wang et al. (2026)COM2 / Q81–5COMFORT_03READINESS_CORE_COMFORTE2Ich habe keine Angst vor der Nutzung generativer KI-Anwendungen im Arbeitsalltag.Wang et al. (2026)COM3 / Q181–5FC_01CONTEXT_FCE2Mir stehen die notwendigen Ressourcen zur Verfügung, um generative KI-Anwendungen zu nutzen.Lambiase et al. (2025)FC_11–7FC_02CONTEXT_FCE2Ich verfüge über das notwendige Wissen, um generative KI-Anwendungen zu nutzen.Lambiase et al. (2025)FC_21–7FC_03CONTEXT_FCE2Generative KI-Anwendungen sind kompatibel mit anderen Technologien, die ich verwende.Lambiase et al. (2025)FC_31–7Hinweis: retrieval_support ist für alle wissenschaftlichen Quellen []. Context-Verified = true für alle Items. Agent 2 Critic Status = PASS.B3 Critic Review (Agent 2)All 18 reflective items and the supplementary modules underwent rigorous Agent 2 auditing against psychometric and governance criteria:Construct Purity & Single Claim (Atomic Proposition Gate):Every reflective item conveys exactly one atomic proposition.DETECT_03 was strictly audited to measure solely inhaltliche Richtigkeit. Potential double-barreled formulations (such as combining Richtigkeit and Plausibilität) were rejected to maintain atomic construct evaluation.Human Capability Alignment:All APPLY indicators explicitly capture the individual's self-assessed capability (e.g., prompt formulation, task execution). Outcome expectations, performance gains, or temporal savings (such as AISES AS6/Q16) were excluded.E3 Source-Registry Closure:Substantive theoretical grounding for DETECT_03 relies exclusively on ACTIVE_VERIFIED sources from the active repository (Carolus et al., 2023). Unverified frameworks (e.g., Ng et al., 2021 or Bloom) were excluded from substantive derivations.Scale Instruction Semantics:Instructions directly correspond to scale anchors: 0–10 capability scales utilize intensity/ability instructions, whereas 1–5 and 1–7 Likert scales utilize agreement instructions.Contextual Integrity:Absence of internal company context (CONTEXT_TEXT = NOT_PROVIDED) is strictly respected: no fictitious organizational processes, assurances of privacy, or training guarantees are made.Critic Status: PASS for all 18 reflective items, DIAGNOSTIC_NEEDS, and DEMOGRAPHICS_MINIMAL.B4 Simulated Pretest (Agent 3)Simulated evaluation was performed across two target personas:Persona A (Kaufmännische/r Mitarbeiter/in ohne KI-Vorerfahrung):Comprehension & Flow: The routing filter smoothly directs non-experienced respondents to foundational knowledge (LIT), learning self-efficacy (LEARN), facilitating conditions (FC), training needs (DIAGNOSTIC_NEEDS), and basic demographics (DEMOGRAPHICS_MINIMAL), while bypassing experienced-based modules (APPLY, DETECT, COMFORT).Cognitive Burden: Completion time for non-experienced users is estimated at < 3 minutes.Persona B (Erfahrene/r KI-Anwender/in im kaufmännischen Bereich):Relevance & Clarity: Items clearly distinguish between basic literacy, practical application skills (prompting), critical evaluation capabilities, and affective comfort.Completion Time: Estimated at 5–6 minutes, well within the 8-minute target.Status: HEURISTICALLY_READY_FOR_HUMAN_PRETESTB5 Final Participant QuestionnaireTeil 0: Einleitung und DatenschutzWillkommen zu dieser Befragung zum Thema „Generative Künstliche Intelligenz im kaufmännischen Arbeitsalltag“.Mit dieser Befragung möchten wir erfahren, wie Sie generative KI (z. B. ChatGPT Enterprise, Microsoft Copilot) im kaufmännischen Arbeitsalltag einschätzen und welche Unterstützungsbedarfe bestehen.[DATENSCHUTZ_UND_STUDIENHINWEIS_PLATZHALTER]Teil 1: Filterfrage zur KI-ErfahrungV_01: Wie häufig nutzen Sie bereits generative KI-Anwendungen (z. B. ChatGPT Enterprise, Microsoft Copilot) in Ihrem Arbeitsalltag?[ ] NO_EXPERIENCE: Ich habe bisher noch keine Erfahrungen mit generativer KI gesammelt.[ ] LIMITED_EXPERIENCE: Ich habe generative KI bereits sporadisch / wenige Male ausprobiert.[ ] REGULAR_USER: Ich nutze generative KI regelmässig bei meiner täglichen Arbeit.Routing-Regel:Bei NO_EXPERIENCE: Beantworten Sie bitte Teil 2 (Modul A & B), Teil 3 (Modul F), Teil 4 (DIAGNOSTIC_NEEDS) und Teil 5 (DEMOGRAPHICS_MINIMAL). (Module C, D und E werden übersprungen).Bei LIMITED_EXPERIENCE und REGULAR_USER: Beantworten Sie bitte alle Teile vollständig.Teil 2: READINESS_CORE (Individuelle Bereitschaftsdimensionen)Modul A: Wahrgenommenes KI-Grundverständnis (READINESS_CORE_LIT)Instruktion: Bitte geben Sie auf einer Skala von 0 (gar nicht ausgeprägt) bis 10 (vollständig ausgeprägt) an, wie stark die folgenden Kenntnisse bei Ihnen ausgeprägt sind.LIT_01: Ich kann erklären, was generative KI ist.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]LIT_02: Ich weiß, wo die Grenzen von generativer KI liegen.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]LIT_03: Ich kenne Anwendungsbereiche, in denen generative KI eingesetzt werden kann.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]Modul B: KI-Lern-Selbstwirksamkeit (READINESS_CORE_LEARN)Instruktion: Bitte geben Sie an, wie sehr Sie den folgenden Aussagen zustimmen.LEARN_01: Ich bin zuversichtlich, dass ich lernen kann, wie man generative KI nutzt.
+(1) Stimme gar nicht zu – (2) – (3) – (4) Neutral – (5) – (6) – (7) Stimme voll und ganz zuLEARN_02: Ich traue mir zu, mir neues Wissen über generative KI selbstständig anzueignen.
+(1) Stimme gar nicht zu – (2) – (3) – (4) Neutral – (5) – (6) – (7) Stimme voll und ganz zuLEARN_03: Ich bin gewiss, dass ich den Umgang mit neuen Funktionen generativer KI erlernen kann.
+(1) Stimme gar nicht zu – (2) – (3) – (4) Neutral – (5) – (6) – (7) Stimme voll und ganz zuModul C: Praktische KI-Anwendungs-Selbstwirksamkeit (READINESS_CORE_APPLY)(Wird bei NO_EXPERIENCE übersprungen)
+Instruktion: Bitte geben Sie auf einer Skala von 0 (gar nicht ausgeprägt) bis 10 (vollständig ausgeprägt) an, wie stark die folgenden Fähigkeiten bei Ihnen ausgeprägt sind.APPLY_01: Ich kann generative KI nutzen, um Aufgaben in meinem Arbeitsalltag zu lösen.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]APPLY_02: Ich kann geeignete Prompts (Eingabeaufforderungen) formulieren, um von generativer KI gewünschte Ergebnisse zu erhalten.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]APPLY_03: Ich bin in der Lage, generative KI gezielt zur Unterstützung bei kaufmännischen Problemstellungen einzusetzen.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]Modul D: Kritische KI-Bewertungskompetenz (READINESS_CORE_DETECT)(Wird bei NO_EXPERIENCE übersprungen)
+Instruktion: Bitte geben Sie auf einer Skala von 0 (gar nicht ausgeprägt) bis 10 (vollständig ausgeprägt) an, wie stark die folgenden Fähigkeiten bei Ihnen ausgeprägt sind.DETECT_01: Ich kann erkennen, ob ein Text von einer generativen KI oder von einem Menschen verfasst wurde.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]DETECT_02: Ich kann feststellen, ob Inhalte durch generative KI erstellt wurden.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]DETECT_03: Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen.
+[0 - Gar nicht] 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 [10 - Vollständig]Modul E: Affektiver Komfort im Umgang mit KI (READINESS_CORE_COMFORT)(Wird bei NO_EXPERIENCE übersprungen)
+Instruktion: Bitte geben Sie an, wie sehr Sie den folgenden Aussagen zustimmen.COMFORT_01: Ich fühle mich wohl dabei, generative KI-Technologien vor anderen zu nutzen.
+(1) Stimme gar nicht zu – (2) Stimme eher nicht zu – (3) Neutral – (4) Stimme eher zu – (5) Stimme voll und ganz zuCOMFORT_02: Ich glaube, dass viele generative KI-Anwendungen keine Bedenken hinsichtlich Gesundheit oder Sicherheit aufwerfen.
+(1) Stimme gar nicht zu – (2) Stimme eher nicht zu – (3) Neutral – (4) Stimme eher zu – (5) Stimme voll und ganz zuCOMFORT_03: Ich habe keine Angst vor der Nutzung generativer KI-Anwendungen im Arbeitsalltag.
+(1) Stimme gar nicht zu – (2) Stimme eher nicht zu – (3) Neutral – (4) Stimme eher zu – (5) Stimme voll und ganz zuTeil 3: CONTEXT (Rahmenbedingungen)Modul F: Erleichternde Bedingungen (CONTEXT_FC)Instruktion: Bitte geben Sie an, wie sehr Sie den folgenden Aussagen zustimmen.FC_01: Mir stehen die notwendigen Ressourcen zur Verfügung, um generative KI-Anwendungen zu nutzen.
+(1) Stimme gar nicht zu – (2) – (3) – (4) Neutral – (5) – (6) – (7) Stimme voll und ganz zuFC_02: Ich verfüge über das notwendige Wissen, um generative KI-Anwendungen zu nutzen.
+(1) Stimme gar nicht zu – (2) – (3) – (4) Neutral – (5) – (6) – (7) Stimme voll und ganz zuFC_03: Generative KI-Anwendungen sind kompatibel mit anderen Technologien, die ich verwende.
+(1) Stimme gar nicht zu – (2) – (3) – (4) Neutral – (5) – (6) – (7) Stimme voll und ganz zuTeil 4: DIAGNOSTIC_NEEDS (Diagnostisches Bedarfsmodul)(Nicht-reflektives Modul – Geht nicht in die Berechnung der Readiness-Subskalen ein)DIAG_01: In welchen der folgenden Bereiche sehen Sie für sich persönlichen Schulungs- oder Entwicklungsbedarf bezüglich generativer KI? (Mehrfachauswahl möglich)[ ] Grundlagen generativer KI[ ] Prompting (Erstellung effektiver Eingabeaufforderungen)[ ] Kritische Ergebnisprüfung & Qualitätssicherung[ ] Datenschutz / Umgang mit sensiblen Informationen[ ] Urheberrecht / Ethische Aspekte[ ] Prozessintegration im kaufmännischen Alltag[ ] Konkrete Tool-Anwendung (z. B. Copilot, ChatGPT Enterprise)[ ] Sonstiges / Kein BedarfDIAG_02: Welche zusätzliche Unterstützung würde Ihnen helfen, generative KI effektiver im Arbeitsalltag zu nutzen?
+(Offenes Textfeld)
+[____________________________________________________]Teil 5: DEMOGRAPHICS_MINIMAL (Minimales Demografiemodul)DEM_01: Welchem kaufmännischen Funktionsbereich ordnen Sie sich überwiegend zu?
+(Offenes Textfeld)
+[____________________________________________________]B6 Validation PlanDa PLANNED_ANALYSIS = NOT_PROVIDED gilt, werden gemäß Methodikstandard keine festen Stichprobenkennzahlen ($N$), quantitative Zielgrößen oder spezifische Schätzverfahren (z. B. CFA, PLS-SEM) vorgegeben. Stattdessen sind vor Feldstart folgende Entscheidungsschritte durchzuführen:Festlegung des Analysezwecks: Entscheidung, ob der Fragebogen rein deskriptiv-diagnostisch (Betriebspraxis) oder zur modellprüfenden Psychometrie eingesetzt werden soll.A-priori-Poweranalyse: Ermittlung des erforderlichen Stichprobenumfangs auf Basis der gewählten statistischen Verfahren (z. B. Effektstärkenerwartung, Alpha-Fehler, Ziel-Power).Kognitiver Pretest: Durchführung qualitativer Pretests (z. B. Lautes Denken) mit 5–10 Personen der Zielpopulation zur Überprüfung der sprachlichen Verständlichkeit und Iteminterpretation.Empirische Validierung: Statistische Prüfung der faktorielle Struktur (z. B. EFA/CFA), der Reliabilität (Cronbach's $\alpha$, $CR$) und der Diskriminanzvalidität (HTMT-Kriterium) nach Abschluss der Datenerhebung.B7 Machine-Readable JSON{
+  "conformance": {
+    "design_lock_ok": true,
+    "subset_source_lock_ok": true,
+    "e2_proof_ok": true,
+    "object_equivalence_ok": true,
+    "subscale_membership_ok": true,
+    "construct_coverage_ok": true,
+    "apply_human_capability_ok": true,
+    "e3_registry_closure_ok": true,
+    "within_construct_scale_coherence_ok": true,
+    "scale_instruction_semantics_ok": true,
+    "design_audit_reference_ok": true,
+    "diagnostic_module_completeness_ok": true,
+    "item_count_checksum_ok": true,
+    "atomic_items_ok": true,
+    "retrieval_support_ok": true,
+    "routing_ok": true,
+    "routing_cross_output_consistency_ok": true,
+    "participant_claims_ok": true,
+    "scale_decision_ok": true,
+    "validation_plan_ok": true,
+    "json_consistency_ok": true,
+    "all_hard_checks_pass": true
+  },
+  "metadata": {
+    "instrument_name": "Employee AI Readiness Questionnaire",
+    "target_population": "Kaufmännische Mitarbeitende eines mittelständischen Unternehmens",
+    "ai_context": "Generative KI-Anwendungen, insbesondere ChatGPT Enterprise und Microsoft Copilot, im kaufmännischen Arbeitsalltag",
+    "measurement_goal": "Diagnostische Erfassung der individuellen Employee AI Readiness sowie Identifikation von Entwicklungs- und Schulungsbedarfen.",
+    "instrument_purpose": "DIAGNOSTIC",
+    "run_mode": "QUESTIONNAIRE_GENERATION",
+    "design_audit_reference": "DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL",
+    "status": "theoretically_grounded_empirical_validation_pending",
+    "supporting_datasets": ["Datensatz_v1"],
+    "overall_score_supported": false,
+    "design_expected_reflective_item_count": 18,
+    "traceability_reflective_item_count": 18,
+    "participant_questionnaire_reflective_item_count": 18,
+    "json_reflective_item_count": 18,
+    "diagnostic_needs_required": true,
+    "minimal_demographics_required": true,
+    "construct_item_counts": {
+      "READINESS_CORE_LIT": 3,
+      "READINESS_CORE_LEARN": 3,
+      "READINESS_CORE_APPLY": 3,
+      "READINESS_CORE_DETECT": 3,
+      "READINESS_CORE_COMFORT": 3,
+      "CONTEXT_FC": 3
+    },
+    "construct_scale_plan": {
+      "READINESS_CORE_LIT": "MAILS original 0-10",
+      "READINESS_CORE_LEARN": "AILRSE-5 original 1-7",
+      "READINESS_CORE_APPLY": "MAILS original 0-10",
+      "READINESS_CORE_DETECT": "MAILS original 0-10",
+      "READINESS_CORE_COMFORT": "AIRS original 1-5",
+      "CONTEXT_FC": "Lambiase original 1-7"
+    }
+  },
+  "routing": {
+    "NO_EXPERIENCE": {
+      "included_modules": [
+        "READINESS_CORE_LIT",
+        "READINESS_CORE_LEARN",
+        "CONTEXT_FC",
+        "DIAGNOSTIC_NEEDS",
+        "DEMOGRAPHICS_MINIMAL"
+      ],
+      "skipped_modules": [
+        "READINESS_CORE_APPLY",
+        "READINESS_CORE_DETECT",
+        "READINESS_CORE_COMFORT"
+      ],
+      "skipped_score_status": "not_scored_due_to_no_experience"
+    },
+    "LIMITED_EXPERIENCE": {
+      "included_modules": [
+        "READINESS_CORE_LIT",
+        "READINESS_CORE_LEARN",
+        "READINESS_CORE_APPLY",
+        "READINESS_CORE_DETECT",
+        "READINESS_CORE_COMFORT",
+        "CONTEXT_FC",
+        "DIAGNOSTIC_NEEDS",
+        "DEMOGRAPHICS_MINIMAL"
+      ],
+      "skipped_modules": [],
+      "skipped_score_status": "scored_where_applicable"
+    },
+    "REGULAR_USER": {
+      "included_modules": [
+        "READINESS_CORE_LIT",
+        "READINESS_CORE_LEARN",
+        "READINESS_CORE_APPLY",
+        "READINESS_CORE_DETECT",
+        "READINESS_CORE_COMFORT",
+        "CONTEXT_FC",
+        "DIAGNOSTIC_NEEDS",
+        "DEMOGRAPHICS_MINIMAL"
+      ],
+      "skipped_modules": [],
+      "skipped_score_status": "scored"
+    }
+  },
+  "diagnostic_needs": {
+    "module_code": "DIAGNOSTIC_NEEDS",
+    "measurement_model": "NON_REFLECTIVE_DESCRIPTIVE",
+    "included_in_readiness_scores": false,
+    "included_in_reflective_item_checksum": false,
+    "items": [
+      {
+        "item_id": "DIAG_01",
+        "response_format": "MULTI_SELECT",
+        "purpose": "desired_training_and_development_areas",
+        "required_content_areas": [
+          "Grundlagen generativer KI",
+          "Prompting",
+          "kritische Ergebnisprüfung",
+          "Datenschutz / Umgang mit sensiblen Informationen",
+          "Urheberrecht / Ethik",
+          "Prozessintegration",
+          "konkrete Tool-Anwendung"
+        ]
+      },
+      {
+        "item_id": "DIAG_02",
+        "response_format": "OPEN_OR_GENERIC_NEED_FORMAT",
+        "purpose": "additional_support_need",
+        "context_rule": "Do not invent existing organizational support offers when CONTEXT_TEXT is NOT_PROVIDED."
+      }
+    ]
+  },
+  "demographics_minimal": {
+    "module_code": "DEMOGRAPHICS_MINIMAL",
+    "included_in_reflective_item_checksum": false,
+    "items": [
+      {
+        "item_id": "DEM_01",
+        "question": "Welchem kaufmännischen Funktionsbereich ordnen Sie sich überwiegend zu?",
+        "response_format": "OPEN_FIELD_OR_VERIFIED_ORG_CATEGORIES",
+        "context_rule": "If CONTEXT_TEXT is NOT_PROVIDED, do not invent department categories."
+      }
+    ]
+  },
+  "items": [
+    {
+      "item_id": "LIT_01",
+      "construct_code": "READINESS_CORE_LIT",
+      "question_text": "Ich kann erklären, was generative KI ist.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kann erklären, was generative KI ist.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 15",
+        "source_item_id": "Know_Understand_1",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "LIT_02",
+      "construct_code": "READINESS_CORE_LIT",
+      "question_text": "Ich weiß, wo die Grenzen von generativer KI liegen.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kennt die Grenzen generativer KI.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 15",
+        "source_item_id": "Know_Understand_2",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "LIT_03",
+      "construct_code": "READINESS_CORE_LIT",
+      "question_text": "Ich kenne Anwendungsbereiche, in denen generative KI eingesetzt werden kann.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kennt Anwendungsbereiche generativer KI.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 15",
+        "source_item_id": "Know_Understand_3",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "LEARN_01",
+      "construct_code": "READINESS_CORE_LEARN",
+      "question_text": "Ich bin zuversichtlich, dass ich lernen kann, wie man generative KI nutzt.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte ist zuversichtlich bezüglich des Erlernens generativer KI.",
+      "source_evidence": [{
+        "source_id": "Oksanen et al. (2026)",
+        "source_locator": "Table 2",
+        "source_item_id": "Item 1",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-7",
+      "final_scale": "1-7",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "LEARN_02",
+      "construct_code": "READINESS_CORE_LEARN",
+      "question_text": "Ich traue mir zu, mir neues Wissen über generative KI selbstständig anzueignen.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte traut sich selbstständigen Wissenserwerb über KI zu.",
+      "source_evidence": [{
+        "source_id": "Oksanen et al. (2026)",
+        "source_locator": "Table 2",
+        "source_item_id": "Item 2",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-7",
+      "final_scale": "1-7",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "LEARN_03",
+      "construct_code": "READINESS_CORE_LEARN",
+      "question_text": "Ich bin gewiss, dass ich den Umgang mit neuen Funktionen generativer KI erlernen kann.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte ist gewiss, den Umgang mit neuen KI-Funktionen erlernen zu können.",
+      "source_evidence": [{
+        "source_id": "Oksanen et al. (2026)",
+        "source_locator": "Table 2",
+        "source_item_id": "Item 4",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-7",
+      "final_scale": "1-7",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "APPLY_01",
+      "construct_code": "READINESS_CORE_APPLY",
+      "question_text": "Ich kann generative KI nutzen, um Aufgaben in meinem Arbeitsalltag zu lösen.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kann KI zur Lösung alltäglicher Arbeitsaufgaben nutzen.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 15",
+        "source_item_id": "Use_Apply_1",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "APPLY_02",
+      "construct_code": "READINESS_CORE_APPLY",
+      "question_text": "Ich kann geeignete Prompts formulieren, um von generativer KI gewünschte Ergebnisse zu erhalten.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kann geeignete Prompts formulieren.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 15",
+        "source_item_id": "Problem_Solving_1",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "APPLY_03",
+      "construct_code": "READINESS_CORE_APPLY",
+      "question_text": "Ich bin in der Lage, generative KI gezielt zur Unterstützung bei kaufmännischen Problemstellungen einzusetzen.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kann KI gezielt bei kaufmännischen Problemen einsetzen.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 15",
+        "source_item_id": "Problem_Solving_2",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "DETECT_01",
+      "construct_code": "READINESS_CORE_DETECT",
+      "question_text": "Ich kann erkennen, ob ein Text von einer generativen KI oder von einem Menschen verfasst wurde.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kann KI-generierten von menschlichem Text unterscheiden.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 15",
+        "source_item_id": "Detect_AI_1",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "DETECT_02",
+      "construct_code": "READINESS_CORE_DETECT",
+      "question_text": "Ich kann feststellen, ob Inhalte durch generative KI erstellt wurden.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kann feststellen, ob Inhalte KI-erstellt sind.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 15",
+        "source_item_id": "Detect_AI_2",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "DETECT_03",
+      "construct_code": "READINESS_CORE_DETECT",
+      "question_text": "Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen.",
+      "evidence_class": "E3",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte kann die inhaltliche Richtigkeit KI-generierter Ergebnisse kritisch überprüfen.",
+      "source_evidence": [{
+        "source_id": "Carolus et al. (2023)",
+        "source_locator": "p. 4",
+        "source_item_id": null,
+        "source_item_text_verified": false,
+        "source_definition_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "theory_derived",
+      "original_scale": "0-10",
+      "final_scale": "0-10",
+      "scale_adaptation": "NONE",
+      "translation_status": "NOT_NEEDED",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS",
+      "e3_source_compatibility_status": "PASS",
+      "e3_substantive_sources": ["Carolus et al. (2023)"],
+      "e3_contrast_sources": []
+    },
+    {
+      "item_id": "COMFORT_01",
+      "construct_code": "READINESS_CORE_COMFORT",
+      "question_text": "Ich fühle mich wohl dabei, generative KI-Technologien vor anderen zu nutzen.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_ATTITUDE",
+      "atomic_proposition": "Der Befragte fühlt sich wohl bei der KI-Nutzung vor anderen.",
+      "source_evidence": [{
+        "source_id": "Wang et al. (2026)",
+        "source_locator": "Table 5",
+        "source_item_id": "COM1 / Q9",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-5",
+      "final_scale": "1-5",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "COMFORT_02",
+      "construct_code": "READINESS_CORE_COMFORT",
+      "question_text": "Ich glaube, dass viele generative KI-Anwendungen keine Bedenken hinsichtlich Gesundheit oder Sicherheit aufwerfen.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_ATTITUDE",
+      "atomic_proposition": "Der Befragte hat keine Bedenken bezüglich Gesundheit oder Sicherheit bei KI.",
+      "source_evidence": [{
+        "source_id": "Wang et al. (2026)",
+        "source_locator": "Table 5",
+        "source_item_id": "COM2 / Q8",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-5",
+      "final_scale": "1-5",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "COMFORT_03",
+      "construct_code": "READINESS_CORE_COMFORT",
+      "question_text": "Ich habe keine Angst vor der Nutzung generativer KI-Anwendungen im Arbeitsalltag.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_ATTITUDE",
+      "atomic_proposition": "Der Befragte hat keine Angst vor der Nutzung von KI im Arbeitsalltag.",
+      "source_evidence": [{
+        "source_id": "Wang et al. (2026)",
+        "source_locator": "Table 5",
+        "source_item_id": "COM3 / Q18",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-5",
+      "final_scale": "1-5",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "FC_01",
+      "construct_code": "CONTEXT_FC",
+      "question_text": "Mir stehen die notwendigen Ressourcen zur Verfügung, um generative KI-Anwendungen zu nutzen.",
+      "evidence_class": "E2",
+      "measurement_object": "ORG_CONTEXT",
+      "atomic_proposition": "Dem Befragten stehen die notwendigen Ressourcen zur KI-Nutzung bereit.",
+      "source_evidence": [{
+        "source_id": "Lambiase et al. (2025)",
+        "source_locator": "Section 4.2",
+        "source_item_id": "FC_1",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-7",
+      "final_scale": "1-7",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "FC_02",
+      "construct_code": "CONTEXT_FC",
+      "question_text": "Ich verfüge über das notwendige Wissen, um generative KI-Anwendungen zu nutzen.",
+      "evidence_class": "E2",
+      "measurement_object": "HUMAN_CAPABILITY",
+      "atomic_proposition": "Der Befragte verfügt über das notwendige Wissen zur KI-Nutzung.",
+      "source_evidence": [{
+        "source_id": "Lambiase et al. (2025)",
+        "source_locator": "Section 4.2",
+        "source_item_id": "FC_2",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-7",
+      "final_scale": "1-7",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    },
+    {
+      "item_id": "FC_03",
+      "construct_code": "CONTEXT_FC",
+      "question_text": "Generative KI-Anwendungen sind kompatibel mit anderen Technologien, die ich verwende.",
+      "evidence_class": "E2",
+      "measurement_object": "SYSTEM_PROPERTY",
+      "atomic_proposition": "Generative KI ist kompatibel mit anderen verwendeten Technologien.",
+      "source_evidence": [{
+        "source_id": "Lambiase et al. (2025)",
+        "source_locator": "Section 4.2",
+        "source_item_id": "FC_3",
+        "source_item_text_verified": true,
+        "registry_activation_status": "ACTIVE_VERIFIED"
+      }],
+      "retrieval_support": [],
+      "adaptation_type": "contextual_linguistic",
+      "original_scale": "1-7",
+      "final_scale": "1-7",
+      "scale_adaptation": "NONE",
+      "translation_status": "NEEDS_EQUIVALENCE_CHECK",
+      "context_verified": true,
+      "critic_status": "PASS",
+      "simulated_pretest_status": "PASS"
+    }
+  ]
+}

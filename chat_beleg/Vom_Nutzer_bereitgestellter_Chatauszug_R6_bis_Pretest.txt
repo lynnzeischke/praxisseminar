@@ -1,0 +1,286 @@
+1 Auswahl
+mache das
+
+8m 14s nachgedacht
+V3.5-R6 ist erstellt. Ich habe den bisherigen R5-Masterprompt gezielt korrigiert, ohne die wissenschaftliche Grundstruktur oder die 18 Item-Kandidaten zu verändern.
+
+Optimierter Masterprompt V3.5-R6
+
+Mit vollständig integriertem Design Audit · Ein-Befehl-Ausführung · 18 Items
+
+Masterprompt für NotebookLM herunterladen (.txt)
+
+Änderungsprotokoll und Regressionstests
+
+Dokumentiert die Korrekturen für deine Design-Science-Research-Evaluation
+
+Änderungsprotokoll herunterladen
+
+Was jetzt korrigiert ist
+Bereich
+
+Verbesserung in R6
+
+Routing
+
+NO_EXPERIENCE beantwortet zwingend Teil 2 und 3, danach Teil 7–9
+
+JSON-Routing
+
+Alle drei Erfahrungsgruppen müssen vollständig enthalten sein
+
+Validierungsplan
+
+B6 verwendet einen festgelegten Text ohne erfundene Stichprobengrößen oder verpflichtende statistische Verfahren
+
+Wissenschaftliche Zuordnung
+
+B2 muss den vollständigen deutschen Wortlaut jedes Items enthalten
+
+Quellenkennzeichnung
+
+Auf generative KI angepasste MAILS-Items dürfen nicht als unveränderte Originalitems gelten
+
+Fragebogendarstellung
+
+Keine leeren Formatierungszeichen; passende Antwortskalen und vollständige Auswahlmöglichkeiten
+
+Qualitätskontrolle
+
+Zusätzliche Prüfungen verhindern unbegründete PASS-Meldungen
+
+Meine lokalen Prüfungen sind bestanden: Der eingebettete Design Audit ist unverändert, alle 18 Item-Kandidaten entsprechen R5, und die neue JSON-Routing-Vorlage ist syntaktisch gültig.
+
+So startest du NotebookLM
+Verwende den R6-Masterprompt statt R5 und wähle deine wissenschaftlichen Quellen einschließlich des bereinigten FC-Quellenauszugs aus. Ein separater Design Audit ist nicht nötig.
+
+Führe RUN_MODE = QUESTIONNAIRE_GENERATION aus.
+
+Status: TEST_CANDIDATE. R6 ist bereit für den nächsten vollständigen NotebookLM-Lauf. Eine erfolgreiche NotebookLM-Ausführung und die wissenschaftliche Freigabe sind damit noch nicht nachgewiesen. Erst wenn das erzeugte Ergebnis die Prüfungen tatsächlich besteht, sollten wir die Version einfrieren.
+
+
+Eingefügter Text(20261019-160739).txt
+Dokument
+
+4m 34s nachgedacht
+Prüfung deines NotebookLM-Ergebnisses mit V3.5-R6
+Die technischen Fehler der vorherigen Läufe sind behoben.
+
+Ich habe das JSON unabhängig mit einem Parser geprüft und die Fragen aus B2, B5 und B7 automatisiert verglichen. Das Ergebnis:
+
+Prüfkriterium
+
+Ergebnis
+
+JSON syntaktisch gültig
+
+ PASS
+
+Genau 18 eindeutige reflektive Items
+
+ PASS
+
+Sechs Konstrukte mit jeweils drei Items
+
+ PASS
+
+Identische Itemformulierungen in B2, B5 und B7
+
+ PASS
+
+Routing für alle drei Erfahrungsgruppen
+
+ PASS
+
+Schulungsbedarf und Demografie
+
+ PASS
+
+FC-Sonderantwort „Kann ich nicht beurteilen“
+
+ PASS
+
+B6 ohne feste Stichprobenzahlen oder CFA-Vorgaben
+
+ PASS
+
+Kennzeichnung der adaptierten MAILS-Items
+
+ PASS
+
+Besonders erfreulich: Personen ohne KI-Erfahrung durchlaufen jetzt korrekt die Teile 2, 3, 7, 8 und 9. Auch die deutsche Adaptionskennzeichnung ist gegenüber R5 korrigiert. 
+Eingefügter Text.txt
+ 
+Eingefügter Text.txt
+
+Was noch fehlt
+Bei der wissenschaftlichen Prüfung bleibt ein wesentlicher Nachweis offen.
+
+DETECT_03 – Quellenfundierung des selbst entwickelten Items
+
+NotebookLM kennzeichnet die Frage zur Überprüfung der inhaltlichen Richtigkeit von KI-Ergebnissen korrekt als E3. Allerdings steht im JSON nur THEORY_DEVELOPED_E3 mit dem Locator NOT_APPLICABLE. Gleichzeitig wird source_definition_verified = true behauptet, ohne dafür eine konkrete Quellenstelle anzugeben. 
+Eingefügter Text.txt
+
+Eine passende theoretische Stütze ist bereits vorhanden: Lambiase et al. diskutieren in Abschnitt 6.2.4 falsche bzw. halluzinierte LLM-Ausgaben und die Bedeutung menschlicher Überprüfung. Das begründet die Relevanz von DETECT_03, ist aber kein validiertes Originalitem. 
+Lambiase et al. (2025).pdf
+
+Außerdem würde ich zwei kleine Formulierungen bereinigen:
+
+Die Angabe „5 bis 8 Minuten“ in der Teilnehmereinleitung ist bisher nicht durch einen echten Bearbeitungszeittest belegt. 
+Eingefügter Text.txt
+
+Die Aussage, in der Simulation seien keine Abbruchreize aufgetreten, klingt zu sehr nach einem tatsächlich beobachteten Ergebnis. Besser wäre eine vorsichtige, ausdrücklich heuristische Einschätzung. 
+Eingefügter Text.txt
+
+Mein Gesamturteil
+Technisch: PASS. Wissenschaftliche Gesamtfreigabe: noch REVISION_REQUIRED.
+
+Ich würde jetzt keine neue umfassende Masterprompt-Version entwickeln. Die R6-Struktur funktioniert. Es genügt eine gezielte letzte Korrektur der E3-Quellenbegründung und der beiden Formulierungen.
+
+Danach ist der Fragebogen ein gut dokumentierter, theoretisch fundierter Forschungsentwurf. Für den tatsächlichen Einsatz fehlen weiterhin der reale kognitive Pretest und die empirische Validierung. Genau diese Abgrenzung ist für eine wissenschaftlich überzeugende DSR-Prüfungsleistung entscheidend.
+
+optimiere
+
+5m 54s nachgedacht
+Ich habe den Masterprompt gezielt optimiert. Die neue Version heißt V3.5-R6.1 – Evidence-Locked und behebt die drei letzten wissenschaftlichen Schwachstellen des NotebookLM-Fragebogens.
+
+Optimierter Masterprompt V3.5-R6.1
+
+Integrierter Design Audit · Ein-Befehl-Ausführung · 18 Items · Quellenprüfung
+
+Masterprompt für NotebookLM herunterladen (.txt)
+
+Alternativ: Markdown-Version
+
+Die letzten Optimierungen
+DETECT_03: Der Masterprompt verlangt jetzt einen konkreten Quellenbeleg aus Lambiase et al., Abschnitt 6.2.4, zu fehlerhaften und halluzinierten LLM-Ausgaben. Gleichzeitig muss NotebookLM deutlich machen, dass DETECT_03 eine theoriegeleitete Eigenentwicklung und kein validiertes Originalitem ist.
+
+Bearbeitungsdauer: Die Zielvorgabe von maximal acht Minuten bleibt erhalten. Im Teilnehmerfragebogen darf aber keine tatsächlich gemessene Bearbeitungszeit behauptet werden, solange kein entsprechender Test durchgeführt wurde.
+
+Simulierter Pretest: NotebookLM darf nur potenzielle Verständnisprobleme identifizieren. Aussagen wie „Es traten keine Abbruchreize auf“ sind ohne reale Versuchspersonen ausdrücklich verboten.
+
+Was unverändert bleibt
+Die 18 Item-Kandidaten, sechs Konstrukte, Antwortskalen, Routing-Regeln und diagnostischen Zusatzmodule bleiben erhalten. Auch der vollständige freigegebene Design Audit ist weiterhin integriert.
+
+Die neue Datei habe ich statisch geprüft: Der Original-Audit ist unverändert, das 18-Item-Register ist erhalten und die enthaltene JSON-Routing-Vorlage ist syntaktisch gültig.
+
+Änderungsprotokoll und Regressionstests herunterladen
+
+Dein NotebookLM-Startbefehl
+Ersetze R6 durch R6.1. Die wissenschaftlichen Quellen und den FC-Originalitem-Auszug lässt du ausgewählt.
+
+Führe RUN_MODE = QUESTIONNAIRE_GENERATION aus.
+
+Status: TEST_CANDIDATE. Es ist kein weiterer Vorbereitungsprompt nötig. Wenn R6.1 den vollständigen Fragebogen erzeugt hat, sollten wir insbesondere die E3-Quellenbegründung und die tatsächlichen PASS-Bedingungen noch einmal unabhängig prüfen, bevor wir die Version als FINAL einfrieren.
+
+
+V3_5_R6_1_AENDERUNGSPROTOKOLL_UND_REGRESSION.md
+Dokument
+
+Eingefügter Text(20261019-162519).txt
+Dokument
+
+3m 10s nachgedacht
+
+
+
+Prüfung deines neuen NotebookLM-Ergebnisses mit V3.5-R6.1
+Das Ergebnis ist ein deutlicher Fortschritt. Ich habe den JSON-Export tatsächlich eingelesen und die Itemtexte zwischen B2, B5 und B7 automatisch verglichen.
+
+Prüfkriterium
+
+Ergebnis
+
+JSON syntaktisch gültig
+
+ PASS
+
+18 eindeutige reflektive Items
+
+ PASS
+
+6 Konstrukte mit jeweils 3 Items
+
+ PASS
+
+Identische Itemtexte in B2, B5 und B7
+
+ PASS
+
+Routing für alle drei Erfahrungsgruppen
+
+ PASS
+
+Diagnose- und Demografiemodule
+
+ PASS
+
+B6 ohne unbegründete Stichprobengrößen
+
+ PASS
+
+Besonders wichtig: DETECT_03 ist jetzt korrekt als theoriegeleitete Eigenentwicklung gekennzeichnet. Der Quellenbezug auf Lambiase et al., Abschnitt 6.2.4, wird ausdrücklich von einem validierten Originalitem unterschieden. Die notwendigen JSON-Felder sind vorhanden: source_item_id = null, source_item_text_verified = false, original_scale = null und ein separater Theorieanker. 
+Eingefügter Text.txt
+
+Damit sind die zuvor festgestellten gravierenden technischen Probleme weitgehend behoben.
+
+Zwei Punkte würde ich noch korrigieren
+1. Der Teilnehmerfragebogen ist noch nicht vollständig ausfüllbar. In B5 stehen die Skalen jeweils über den Frageblöcken, aber unter den einzelnen Items fehlen auswählbare Zahlen beziehungsweise Antwortfelder. Für eine druckfertige Version sollte jede Frage eine passende Antwortzeile erhalten, beispielsweise 0 1 2 3 4 5 6 7 8 9 10. 
+Eingefügter Text.txt
+
+2. Die tatsächliche Quellenliste muss stimmen. In B7 wird 1_originalDataset.csv als konsultierte Quelle genannt. Wenn du stattdessen nur den bereinigten FC-Quellenauszug in NotebookLM ausgewählt hast, muss dessen Dateiname im Export stehen. Eine Quelle darf nicht als tatsächlich konsultiert ausgewiesen werden, wenn sie nicht ausgewählt war. 
+Eingefügter Text.txt
+
+Außerdem ist die abschließende B0-Matrix eine Selbstprüfung durch NotebookLM, auch wenn sie als unabhängig bezeichnet wird. Die technische Prüfung habe ich separat durchgeführt; sie ersetzt jedoch keinen realen Pretest.
+
+Gesamturteil
+Technischer Kern: PASS
+
+Freigabe zur realen Befragung: noch ausstehend
+
+Meine Empfehlung: Jetzt keine erneute umfassende Überarbeitung des Masterprompts. Die R6.1-Version erfüllt die wesentlichen strukturellen Anforderungen. Als nächsten Schritt würde ich den Fragebogen sauber mit Antwortfeldern formatieren, den Datenschutz- und Studienhinweis ergänzen und anschließend einen echten kognitiven Pretest durchführen.
+
+Damit kannst du für dein Praxisseminar nicht nur einen funktionierenden Masterprompt, sondern auch einen nachvollziehbaren Entwicklungs- und Evaluationsprozess im Sinne des Design Science Research dokumentieren.
+
+
+1 Auswahl
+mache das
+
+12m 52s nachgedacht
+Ich habe dir das vollständige Pretest-Paket für dein Praxisseminar erstellt. Alle Dokumente basieren auf dem letzten NotebookLM-Ergebnis mit V3.5-R6.1 und deinem freigegebenen Design Audit.
+
+Komplettes Pretest-Paket
+
+Alle drei Dokumente als PDF und bearbeitbare Word-Datei
+
+Gesamtes Paket als ZIP herunterladen
+
+Die drei fertigen Dokumente
+1. Fragebogen – 4 Seiten
+
+Alle 18 Items mit anklickbaren Antwortmöglichkeiten auf Papier, korrekten Skalen, Erfahrungssprüngen sowie Schulungsbedarf und Freitextfeldern.
+
+PDF ansehen
+Word bearbeiten
+
+2. Studien- und Datenschutzinformation – 2 Seiten
+
+Ausfüllvorlage mit Studienzweck, Verantwortlichen, Datenverarbeitung, Rechtsgrundlage, Speicherung, Betroffenenrechten und Pretest-Hinweisen.
+
+PDF ansehen
+Word bearbeiten
+
+3. Kognitiver Pretest – 4 Seiten
+
+Think-Aloud-Leitfaden, neutrale Interviewfragen, Beobachtungsprotokoll für alle 18 Items und Vorlage zur wissenschaftlichen Dokumentation der Ergebnisse.
+
+PDF ansehen
+Word bearbeiten
+
+Was du noch machen musst
+Den echten kognitiven Pretest kann ich nicht ohne reale kaufmännische Mitarbeitende durchführen. Dafür ist jetzt aber alles vorbereitet. Du musst zunächst die unternehmensspezifischen Pflichtangaben im Datenschutztext ergänzen und prüfen lassen, dann geeignete Testpersonen auswählen und die Interviews durchführen.
+
+Nach dem Pretest können wir die tatsächlichen Beobachtungen auswerten, die Bearbeitungsdauer mit dem Ziel von maximal acht Minuten vergleichen und mögliche Itemanpassungen wissenschaftlich dokumentieren.
+
+Qualitätsprüfung: Die 18 Frageformulierungen habe ich mit dem letzten NotebookLM-JSON abgeglichen – sie stimmen überein. Die PDFs wurden gerendert und visuell geprüft. Die Dokumente sind als Pretest-Entwürfe, nicht als empirisch validierter oder datenschutzrechtlich freigegebener Feldfragebogen gekennzeichnet.
+

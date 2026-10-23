@@ -1,0 +1,191 @@
+{
+  "dateien": [
+    {
+      "id": "N01",
+      "datei": "Design-Science-Framework.md",
+      "sha256": "47d74cfb35cb76a3a19201396b990d73f336b94ae7d5908f9cd2aaa420ff06ae",
+      "bytes": 114843
+    },
+    {
+      "id": "N02",
+      "datei": "Projektuebersicht_Praxisseminar.md",
+      "sha256": "b5e9366a0bebd4b28a1efca23ff61cdee33fbbc532a2bf0f830cefd5d660293b",
+      "bytes": 200011
+    },
+    {
+      "id": "N03",
+      "datei": "Design-Audits.md",
+      "sha256": "b01aacaf8e2d4b71cb2c2cfaaeb76657a3874ae602ac8f686a88f9a8cbc92bb6",
+      "bytes": 92411
+    },
+    {
+      "id": "N04",
+      "datei": "Stresstest_01_Aufgabenkontext.md",
+      "sha256": "aa70b43edf3ebbd2474a79c018359f28953bf5bf4ed9235d82d7a03905cfb2fd",
+      "bytes": 36899
+    },
+    {
+      "id": "N05",
+      "datei": "Stresstest_02_Firmenkontext.md",
+      "sha256": "9e2c15692777637309fddc2223f62871ebc804fbaabdd046bf774d35736d58f4",
+      "bytes": 13740
+    },
+    {
+      "id": "N06",
+      "datei": "Stresstest_03_Mehrfachkriterien.md",
+      "sha256": "97418a7ae66e251f89e2959b8fef1f866794de0dd29d9c18ca95e42cf5674f7e",
+      "bytes": 14715
+    },
+    {
+      "id": "N07",
+      "datei": "Runmode_01-05.md",
+      "sha256": "34651270c927113ada8ff399d1b0b4c20483f9e1d588941573370ce0917581b9",
+      "bytes": 394348
+    },
+    {
+      "id": "N08",
+      "datei": "Runmode_06.md",
+      "sha256": "d59a3cd6718d08246d6d3c61badd402d9173346cc67a1899e51eb6f9b2fa94ad",
+      "bytes": 34832
+    },
+    {
+      "id": "N09",
+      "datei": "Runmode_07.md",
+      "sha256": "eea526b8b912b58992156a4ad6bf1bb272f35078b1b84ed8d6bf3b577f4db4f3",
+      "bytes": 57659
+    },
+    {
+      "id": "N10",
+      "datei": "Runmode_08.md",
+      "sha256": "755d75ad22968fb711f43ef44fe3e8c76c599923ed5c92cd7fa991178da24a64",
+      "bytes": 31936
+    },
+    {
+      "id": "N11",
+      "datei": "Runmode_09.md",
+      "sha256": "f0c2097239bfc76799a8b87f37c7c750fe8abfd85e4a5d19b1d5a86b340585ec",
+      "bytes": 81892
+    },
+    {
+      "id": "N12",
+      "datei": "Runmode_10.md",
+      "sha256": "163b3d4752886700fbb08e6050fce3e77a7842cf9ccad19a50a01e788e280e03",
+      "bytes": 63047
+    },
+    {
+      "id": "N13",
+      "datei": "Runmode_11.md",
+      "sha256": "1804576d9af52f5ed257d0f71c0b219befe43a0f8dac95b3a1b6d85d52b04698",
+      "bytes": 48579
+    },
+    {
+      "id": "N14",
+      "datei": "Runmode_12.md",
+      "sha256": "80a5c626f392e274e6c8f70aa7552a0343c0b889257f5a98b18fd75e0dd61415",
+      "bytes": 52443
+    },
+    {
+      "id": "N15",
+      "datei": "Runmode_13.md",
+      "sha256": "b828cc0bf107a8d7a53f0b226d7378d1d51adc310d4aba377bd0d797c9ac2f76",
+      "bytes": 135
+    },
+    {
+      "id": "N16",
+      "datei": "Runmode_14.md",
+      "sha256": "f63a3bb061b185a2b56000b00e9b8f6ddecdb476711d0a433b8d87d922eebec7",
+      "bytes": 28242
+    },
+    {
+      "id": "N17",
+      "datei": "Runmode_15.md",
+      "sha256": "e73dec1b266559be3a5766086dfc7a5528404ecc9e07bcdf7352a8be9f5a96bc",
+      "bytes": 61104
+    },
+    {
+      "id": "N18",
+      "datei": "Runmode_16.md",
+      "sha256": "79aff3ec343d8ec7d709263cf4bdb83b903192694ccffb14eb005f97e67cad3f",
+      "bytes": 65862
+    },
+    {
+      "id": "N19",
+      "datei": "Runmode_17.md",
+      "sha256": "0c48158871b717ab47479d053147b255f47258d59980908e46d11e9ca9472091",
+      "bytes": 32817
+    },
+    {
+      "id": "N20",
+      "datei": "Runmode_18.md",
+      "sha256": "90b73177dd50ccc6b311091ea0d2240a2654d7eb27cd13276862021c9a96e867",
+      "bytes": 40138
+    },
+    {
+      "id": "N21",
+      "datei": "Runmode_18_NOTEBOOKLM.md",
+      "sha256": "2cfb4e6910d6e9ae741f161238bd91eb1be5b79755e548a5505a6a83ada5cea3",
+      "bytes": 41280
+    }
+  ],
+  "testlaeufe": {
+    "R5": {
+      "chat_datei": "Runmode_17.md",
+      "archiv_datei": "NotebookLM_Ausgabe_R5.txt",
+      "chat_json_gefunden": true,
+      "archiv_json_gefunden": true,
+      "json_identisch": true,
+      "chat_item_anzahl": 18,
+      "archiv_item_anzahl": 18,
+      "b2_textpraesenz": "0/18",
+      "b2_fehlend": [
+        "LIT_01",
+        "LIT_02",
+        "LIT_03",
+        "LEARN_01",
+        "LEARN_02",
+        "LEARN_03",
+        "APPLY_01",
+        "APPLY_02",
+        "APPLY_03",
+        "DETECT_01",
+        "DETECT_02",
+        "DETECT_03",
+        "COMFORT_01",
+        "COMFORT_02",
+        "COMFORT_03",
+        "FC_01",
+        "FC_02",
+        "FC_03"
+      ],
+      "b5_textpraesenz": "18/18",
+      "b5_fehlend": []
+    },
+    "R6": {
+      "chat_datei": "Runmode_18.md",
+      "archiv_datei": "NotebookLM_Ausgabe_R6.txt",
+      "chat_json_gefunden": true,
+      "archiv_json_gefunden": true,
+      "json_identisch": true,
+      "chat_item_anzahl": 18,
+      "archiv_item_anzahl": 18,
+      "b2_textpraesenz": "18/18",
+      "b2_fehlend": [],
+      "b5_textpraesenz": "18/18",
+      "b5_fehlend": []
+    },
+    "R6.1": {
+      "chat_datei": "Runmode_18_NOTEBOOKLM.md",
+      "archiv_datei": "NotebookLM_Ausgabe_R6_1.txt",
+      "chat_json_gefunden": true,
+      "archiv_json_gefunden": true,
+      "json_identisch": true,
+      "chat_item_anzahl": 18,
+      "archiv_item_anzahl": 18,
+      "b2_textpraesenz": "18/18",
+      "b2_fehlend": [],
+      "b5_textpraesenz": "18/18",
+      "b5_fehlend": []
+    }
+  },
+  "hinweis": "Prueft Textpraesenz nach Normalisierung und JSON-Gleichheit. Kein Nachweis semantischer Quellenaequivalenz, Uebersetzungstreue oder psychometrischer Validitaet."
+}

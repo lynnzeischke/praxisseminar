@@ -1,0 +1,24 @@
+# Originalfrage-Extrakt – Lambiase et al. (2025): Facilitating Conditions
+
+## Nachweis und Quellenhierarchie
+
+- Wissenschaftliche Hauptquelle: Lambiase, Catolino, Palomba, Ferrucci & Russo, *Exploring Individual Factors in the Adoption of LLMs for Specific Software Engineering Purposes*, arXiv:2504.02553v2 (2026er PDF-Version der 2025er Arbeit; bibliografisches Jahr am tatsächlich gewählten PDF nachprüfen).
+- Der im Paper unter Literaturangabe [35] verlinkte Online-Anhang: https://figshare.com/s/c0d84aafdd5c57dd9099
+- Datenartefakt: `1_originalDataset.csv`, Datei aus dem vom Nutzer bereitgestellten Anhangspaket.
+- Fundstelle: **zweite CSV-Zeile** (nach der Variablenkopfzeile); Spalten `FC_1` bis `FC_4`.
+- Methode: Wörtliche, programmgesteuerte Extraktion der Frageformulierungen; **keine Teilnehmerantworten übernommen**.
+- Beweisgrenze: Fragewortlaut/Item-ID werden als im Originaldatenartefakt dokumentiert behandelt. Diese Datei ist **keine** unabhängige Validierungsstudie; der Bezug zum im Paper referenzierten Online-Anhang ist anhand der Veröffentlichungsmetadaten gegenzuprüfen.
+- Antwortformat laut Frage-Einleitung: Zustimmung zu Aussagen über LLMs; die veröffentlichte Studie/Design-Audit geben 1–7 an. Kein empirischer Transfer von Reliabilitätskoeffizienten auf die neue 3er-Teilskala.
+
+## Originalfrageformulierungen (wortgetreu)
+
+- **`FC_1`:** State your level of agreement with the following statements about Large Language Models (LLMs) - I have the resources necessary to use LLMs to support my job
+- **`FC_2`:** State your level of agreement with the following statements about Large Language Models (LLMs) - I have the knowledge necessary to use LLMs to support my job
+- **`FC_3`:** State your level of agreement with the following statements about Large Language Models (LLMs) - LLMs are compatible with other technologies I use in my job
+- **`FC_4`:** State your level of agreement with the following statements about Large Language Models (LLMs) - I can get help from others when I have difficulties using LLMs to support my job
+
+## Geplante Instrumentenauswahl
+
+Im neuen Instrument nur `FC_1`, `FC_2` und `FC_3` als transparent adaptiertes Drei-Item-Subset verwenden. `FC_4` nur zur Abgrenzung dokumentieren, nicht als viertes reflektives Item einsetzen.
+
+**Vorsicht:** Diese Auszugsdatei ist `ITEM_WORDING_RETRIEVAL_SUPPORT`, nicht `VALIDATION_SOURCE`. Für die wissenschaftliche Begründung weiterhin Lambiase et al. (2025 / Version des PDFs) und das freigegebene integrierte Design Audit heranziehen.
