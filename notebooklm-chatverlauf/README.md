@@ -16,6 +16,8 @@ Masterprompt „Employee AI Readiness" ausgeführt und geprüft wurde.
 | `Stresstest_01_Aufgabenkontext.md` | Stresstest: TTF-Items ohne vorgegebenen Aufgabenkontext angefordert. |
 | `Stresstest_02_Firmenkontext.md` | Stresstest: TTF-Items ohne vorgegebenen Firmenkontext angefordert. |
 | `Stresstest_03_Mehrfachkriterien.md` | Stresstest: Items mit mehreren Kriterien / Konstrukt-Grenzfällen angefordert. |
+| `GT1_Test_Uebersetzungsstoppregel.md` | Testlauf zur Übersetzungs-Stoppregel (Fall A: übersetzbares Item → E2; Fall B: Stopp bei Konstruktverschiebung, nicht bei Übersetzungsmehrdeutigkeit). |
+| `GT2_Test_E1E2E3_Klassifikation.md` | Testlauf zur E1/E2/E3-Klassifikationsgrenze (vier Fälle: Direktübernahme, Übersetzung, Tool-Adaption, Synthese). |
 
 ## Befund (für Kap. 5 Evaluation der Hausarbeit relevant)
 
@@ -53,6 +55,18 @@ Kap. 5 / Anhang B.
 - Modellinterne Konformitäts- oder PASS-Meldungen sind daher kein
   Vollständigkeits- oder Qualitätsnachweis — erst der Abgleich mit dem
   tatsächlichen Inhalt (Itemanzahl, Itemtext, Routinglogik) entscheidet.
+- **Ergänzende Governance-Testläufe (N22–N23, inhaltlich an GT1/GT2 aus
+  MASTER_ARTEFAKT V8.4.11 angelehnt, nicht Bestandteil der offiziellen
+  Blockierbedingungen des tatsächlich genutzten OPERATIONAL/AUTORUN-Prompts):**
+  - **N22 (`GT1_Test_Uebersetzungsstoppregel.md`):** Fall A (übersetzbares
+    Item) erfüllt die Erwartung exakt. Fall B löst zwar korrekt einen Stopp
+    aus, prüft aber eine Konstruktverschiebung statt einer sprachlichen
+    Übersetzungsmehrdeutigkeit — testet damit nicht wortgetreu GT1-B.
+  - **N23 (`GT2_Test_E1E2E3_Klassifikation.md`):** Alle vier Fälle (E1/E2/E2/E3)
+    entsprechen exakt der Erwartung. Zwei der zitierten Originalitems (MAILS
+    Pos. 7 und Pos. 24) konnten im verfügbaren Volltext nicht wortgleich
+    verifiziert werden und sind vor Übernahme in Anhang B gegen die
+    Originalpublikation zu prüfen.
 
 ## Hinweis zur Vollständigkeit
 
