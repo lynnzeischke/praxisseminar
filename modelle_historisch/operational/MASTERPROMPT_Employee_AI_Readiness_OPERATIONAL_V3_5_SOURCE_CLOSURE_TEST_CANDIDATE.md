@@ -325,7 +325,6 @@ Before any final participant questionnaire is emitted, create these Boolean chec
 - `within_construct_scale_coherence_ok`
 - `scale_instruction_semantics_ok`
 - `design_audit_reference_ok`
-- `diagnostic_module_completeness_ok`
 - `item_count_checksum_ok`
 - `atomic_items_ok`
 - `retrieval_support_ok`
@@ -385,103 +384,6 @@ If any count differs:
 - `B0 = REVISION_REQUIRED`
 
 A truncated JSON item array is a hard failure even if the prose questionnaire contains all 18 items.
-
-Important:
-- the 18-item checksum covers **reflective measurement items only**;
-- `DIAGNOSTIC_NEEDS` does **not** count toward the 18 reflective items;
-- minimal demographic/control variables do **not** count toward the 18 reflective items.
-
-## DIAGNOSTIC MODULE COMPLETENESS LOCK
-
-For:
-`DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL`
-
-the final instrument must contain, in addition to the 18 reflective items:
-
-1. `DIAGNOSTIC_NEEDS`
-2. `DEMOGRAPHICS_MINIMAL`
-
-### `DIAGNOSTIC_NEEDS`
-
-Status:
-- separate,
-- non-reflective,
-- descriptive/action-oriented,
-- excluded from all readiness subscales,
-- excluded from any overall readiness score,
-- excluded from the 18-item reflective checksum.
-
-It must contain at least:
-
-#### `DIAG_01` – desired training/development areas
-Multi-select or equivalent diagnostic format covering the Design-Audit areas:
-- Grundlagen generativer KI,
-- Prompting,
-- kritische Ergebnisprüfung,
-- Datenschutz / Umgang mit sensiblen Informationen,
-- Urheberrecht / Ethik,
-- Prozessintegration,
-- konkrete Tool-Anwendung.
-
-#### `DIAG_02` – support need
-Ask which additional support would help the respondent in using generative AI at work.
-
-If `CONTEXT_TEXT = NOT_PROVIDED`:
-- do not invent existing company support offers;
-- do not claim that training, help desks, office hours or named contacts already exist;
-- use an open response or generic need formulation rather than fictional organizational services.
-
-### `DEMOGRAPHICS_MINIMAL`
-
-Include only justified minimal control information from the Design Audit.
-
-For audit `004_FINAL`, include:
-`DEM_01 = kaufmännischer Funktionsbereich`
-
-If actual company function categories are not verified in `CONTEXT_TEXT`, use:
-- a neutral open field, or
-- `[FUNKTIONSBEREICHE_DER_ORGANISATION_EINFÜGEN]`
-
-Do not invent department names.
-
-### Required presence across outputs
-
-`DIAGNOSTIC_NEEDS` must appear in:
-- participant questionnaire,
-- routing,
-- machine-readable JSON.
-
-`DEMOGRAPHICS_MINIMAL` must appear in:
-- participant questionnaire,
-- routing or universal-tail section,
-- machine-readable JSON.
-
-### Routing requirement
-
-For `NO_EXPERIENCE`, included modules must contain:
-- `READINESS_CORE_LIT`
-- `READINESS_CORE_LEARN`
-- `CONTEXT_FC`
-- `DIAGNOSTIC_NEEDS`
-- `DEMOGRAPHICS_MINIMAL`
-
-For `LIMITED_EXPERIENCE` and `REGULAR_USER`:
-- all applicable reflective modules,
-- `DIAGNOSTIC_NEEDS`,
-- `DEMOGRAPHICS_MINIMAL`.
-
-### Fail-closed rule
-
-If `DIAGNOSTIC_NEEDS` is missing:
-- `diagnostic_module_completeness_ok = false`
-- `design_lock_ok = false`
-- `routing_ok = false`
-- `B0 = REVISION_REQUIRED`
-
-If `DEMOGRAPHICS_MINIMAL` is missing:
-- `diagnostic_module_completeness_ok = false`
-- `design_lock_ok = false`
-- `B0 = REVISION_REQUIRED`
 
 ---
 
@@ -1575,16 +1477,8 @@ Use:
 ### `LIMITED_EXPERIENCE`
 Include all six reflective modules if the person has personally used generative AI at least once and can answer from experience. Otherwise apply the same skip rule to any experience-dependent module they cannot validly judge.
 
-Always also include:
-- `DIAGNOSTIC_NEEDS`
-- `DEMOGRAPHICS_MINIMAL`
-
 ### `REGULAR_USER`
 Include all six reflective modules.
-
-Always also include:
-- `DIAGNOSTIC_NEEDS`
-- `DEMOGRAPHICS_MINIMAL`
 
 For `CONTEXT_FC`, allow `Kann ich nicht beurteilen`; code as missing, never as the neutral midpoint.
 
@@ -1971,10 +1865,7 @@ Agent 2 must set `REVISE` or `REJECT` automatically if any of the following is t
 - `DETECT_03` contains both Richtigkeit and Plausibilität or any second independently answerable criterion,
 - the privacy placeholder contains substantive privacy/process wording,
 - participant scale instructions describe agreement while anchors describe capability/intensity, or vice versa,
-- the JSON Design-Audit reference differs from the exact canonical identifier,
-- `DIAGNOSTIC_NEEDS` is missing from questionnaire, routing or JSON,
-- minimal demographic/control information required by the Design Audit is missing,
-- diagnostic items are incorrectly counted among the 18 reflective items.
+- the JSON Design-Audit reference differs from the exact canonical identifier.
 
 Agent 2 must not use an overall “looks acceptable” judgment to override a failed hard condition.
 
@@ -2201,7 +2092,6 @@ First print the hard-check matrix:
 | within_construct_scale_coherence_ok | |
 | scale_instruction_semantics_ok | |
 | design_audit_reference_ok | |
-| diagnostic_module_completeness_ok | |
 | item_count_checksum_ok | |
 | atomic_items_ok | |
 | retrieval_support_ok | |
@@ -2257,17 +2147,6 @@ The participant-facing questionnaire contains only:
 8. `not applicable / no experience / cannot judge` where justified
 9. minimal control variables where justified
 10. neutral closing
-
-For audit `004_FINAL`, the participant questionnaire must additionally contain:
-
-### Part 4 – `DIAGNOSTIC_NEEDS`
-- `DIAG_01` training/development areas according to the Design Audit;
-- `DIAG_02` additional support need;
-- clearly labeled as a diagnostic/descriptive module, not a reflective readiness scale.
-
-### Part 5 – `DEMOGRAPHICS_MINIMAL`
-- `DEM_01` kaufmännischer Funktionsbereich;
-- do not invent company-specific department categories when `CONTEXT_TEXT` is missing.
 
 Before releasing participant-facing text, verify:
 - privacy placeholder is exactly `[DATENSCHUTZ_UND_STUDIENHINWEIS_PLATZHALTER]` when context is missing;
@@ -2431,7 +2310,6 @@ Return valid JSON with at least:
     "within_construct_scale_coherence_ok": true,
     "scale_instruction_semantics_ok": true,
     "design_audit_reference_ok": true,
-    "diagnostic_module_completeness_ok": true,
     "item_count_checksum_ok": true,
     "atomic_items_ok": true,
     "retrieval_support_ok": true,
@@ -2454,12 +2332,10 @@ Return valid JSON with at least:
     "status": "theoretically_grounded_empirical_validation_pending",
     "supporting_datasets": ["Datensatz_v1"],
     "overall_score_supported": false,
-    "design_expected_reflective_item_count": 18,
-    "traceability_reflective_item_count": 18,
-    "participant_questionnaire_reflective_item_count": 18,
-    "json_reflective_item_count": 18,
-    "diagnostic_needs_required": true,
-    "minimal_demographics_required": true,
+    "design_expected_item_count": 18,
+    "traceability_item_count": 18,
+    "participant_questionnaire_item_count": 18,
+    "json_item_count": 18,
     "construct_item_counts": {
       "READINESS_CORE_LIT": 3,
       "READINESS_CORE_LEARN": 3,
@@ -2488,88 +2364,10 @@ Return valid JSON with at least:
   ],
   "routing": {
     "NO_EXPERIENCE": {
-      "included_modules": [
-        "READINESS_CORE_LIT",
-        "READINESS_CORE_LEARN",
-        "CONTEXT_FC",
-        "DIAGNOSTIC_NEEDS",
-        "DEMOGRAPHICS_MINIMAL"
-      ],
-      "skipped_modules": [
-        "READINESS_CORE_APPLY",
-        "READINESS_CORE_DETECT",
-        "READINESS_CORE_COMFORT"
-      ],
+      "included_modules": [],
+      "skipped_modules": [],
       "skipped_score_status": "not_scored_due_to_no_experience"
-    },
-    "LIMITED_EXPERIENCE": {
-      "included_modules": [
-        "READINESS_CORE_LIT",
-        "READINESS_CORE_LEARN",
-        "READINESS_CORE_APPLY",
-        "READINESS_CORE_DETECT",
-        "READINESS_CORE_COMFORT",
-        "CONTEXT_FC",
-        "DIAGNOSTIC_NEEDS",
-        "DEMOGRAPHICS_MINIMAL"
-      ],
-      "skipped_modules": [],
-      "skipped_score_status": "scored_where_applicable"
-    },
-    "REGULAR_USER": {
-      "included_modules": [
-        "READINESS_CORE_LIT",
-        "READINESS_CORE_LEARN",
-        "READINESS_CORE_APPLY",
-        "READINESS_CORE_DETECT",
-        "READINESS_CORE_COMFORT",
-        "CONTEXT_FC",
-        "DIAGNOSTIC_NEEDS",
-        "DEMOGRAPHICS_MINIMAL"
-      ],
-      "skipped_modules": [],
-      "skipped_score_status": "scored"
     }
-  },
-  "diagnostic_needs": {
-    "module_code": "DIAGNOSTIC_NEEDS",
-    "measurement_model": "NON_REFLECTIVE_DESCRIPTIVE",
-    "included_in_readiness_scores": false,
-    "included_in_reflective_item_checksum": false,
-    "items": [
-      {
-        "item_id": "DIAG_01",
-        "response_format": "MULTI_SELECT",
-        "purpose": "desired_training_and_development_areas",
-        "required_content_areas": [
-          "Grundlagen generativer KI",
-          "Prompting",
-          "kritische Ergebnisprüfung",
-          "Datenschutz / Umgang mit sensiblen Informationen",
-          "Urheberrecht / Ethik",
-          "Prozessintegration",
-          "konkrete Tool-Anwendung"
-        ]
-      },
-      {
-        "item_id": "DIAG_02",
-        "response_format": "OPEN_OR_GENERIC_NEED_FORMAT",
-        "purpose": "additional_support_need",
-        "context_rule": "Do not invent existing organizational support offers when CONTEXT_TEXT is NOT_PROVIDED."
-      }
-    ]
-  },
-  "demographics_minimal": {
-    "module_code": "DEMOGRAPHICS_MINIMAL",
-    "included_in_reflective_item_checksum": false,
-    "items": [
-      {
-        "item_id": "DEM_01",
-        "question": "Welchem kaufmännischen Funktionsbereich ordnen Sie sich überwiegend zu?",
-        "response_format": "OPEN_FIELD_OR_VERIFIED_ORG_CATEGORIES",
-        "context_rule": "If CONTEXT_TEXT is NOT_PROVIDED, do not invent department categories."
-      }
-    ]
   },
   "items": [
     {
@@ -2809,11 +2607,6 @@ Before output, answer internally YES/NO:
 - is the participant introduction neutral when CONTEXT_TEXT is missing?
 - do capability scales use capability instructions rather than agreement wording?
 - does JSON `metadata.design_audit_reference` exactly equal `DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL`?
-- is `DIAGNOSTIC_NEEDS` present in participant questionnaire, routing and JSON?
-- does `DIAGNOSTIC_NEEDS` cover the Design-Audit training/development areas and an additional support-need question?
-- is `DEMOGRAPHICS_MINIMAL` present with kaufmännischer Funktionsbereich and no invented department categories?
-- are DIAGNOSTIC_NEEDS and DEMOGRAPHICS_MINIMAL excluded from the 18-reflective-item checksum?
-- does NO_EXPERIENCE include LIT, LEARN, FC, DIAGNOSTIC_NEEDS and DEMOGRAPHICS_MINIMAL?
 - is each item's `measurement_object` classified independently of its construct's analysis level?
 - complete item list included?
 - JSON valid?
@@ -2878,7 +2671,6 @@ The following behaviors are mandatory for V3.5 SOURCE-CLOSURE:
 - `GEN44_NEUTRAL_PARTICIPANT_INTRO`: with missing CONTEXT_TEXT do not assert an ongoing organizational transformation/process initiative.
 - `GEN45_SCALE_INSTRUCTION_SEMANTICS`: capability/intensity anchors require capability instructions; agreement anchors require agreement instructions.
 - `GEN46_CANONICAL_AUDIT_REFERENCE`: JSON and B1 must contain exactly `DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL` as a plain string.
-- `GEN47_DIAGNOSTIC_COMPLETENESS`: audit 004_FINAL requires `DIAGNOSTIC_NEEDS` plus `DEMOGRAPHICS_MINIMAL` in participant questionnaire, routing and JSON; both are excluded from the 18-reflective-item checksum.
 
 If a mandatory behavior fails, the affected output is not FINAL and must be revised before use.
 
@@ -2915,14 +2707,12 @@ V3.5 adds:
 - neutral introduction rule under missing CONTEXT_TEXT,
 - participant scale-instruction semantic-fit gate,
 - canonical Design-Audit identifier serialization,
-- diagnostic-module completeness lock from the approved Design Audit,
-- minimal-demographics completeness lock,
-- acceptance checks GEN40–GEN47.
+- acceptance checks GEN40–GEN46.
 
 Before renaming this file to `...V3_5_FINAL`, run:
 - previously passed ST01 / ST03 / ST04 / ST06B,
-- GEN17–GEN47,
-- especially GEN40–GEN47.
+- GEN17–GEN46,
+- especially GEN40–GEN46.
 
 Freeze rule:
 Only when every hard check passes and `all_hard_checks_pass = true`

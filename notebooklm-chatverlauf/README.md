@@ -19,21 +19,40 @@ Masterprompt „Employee AI Readiness" ausgeführt und geprüft wurde.
 
 ## Befund (für Kap. 5 Evaluation der Hausarbeit relevant)
 
-- In **18 von 18** Generierungsläufen (Runmode 01–18): Gesamtstatus
-  `CONFORMANT_GENERATION`, `critic_status = PASS` für alle 18 reflektiven
-  Kernitems sowie die Zusatzmodule `DIAGNOSTIC_NEEDS` und
-  `DEMOGRAPHICS_MINIMAL`. Das spricht für die Reproduzierbarkeit des
-  Masterprompt-Verhaltens über wiederholte, unabhängige NotebookLM-Sitzungen
-  hinweg.
-- In **allen 3 Stresstests**: Das Artefakt hat bei fehlendem
-  Pflichtkontext (`TASK_CONTEXT`, Firmenkontext) korrekt die zugehörigen
-  Hard Gates aktiviert (`HARD TTF GATE ACTIVE`, `HARD COMPANY CONTEXT GATE
-  ACTIVE`, `GLOBAL HARD STOP GATE ACTIVE`) und **keine** Platzhalter- oder
-  Beispiel-Items erzeugt — die Fail-Closed-Architektur hat sich damit unter
-  gezielt adversarialen Bedingungen bewährt.
-- Dies ergänzt die in `../artefakt/README.md` dokumentierten drei
-  strukturgeprüften Kernläufe (R5 FAIL erwartet, R6 PASS, R6.1 PASS) um
-  eine breitere Stichprobe realer NotebookLM-Sitzungen.
+**Korrigiert am 23.10.2026:** Eine frühere Fassung dieses Abschnitts behauptete
+pauschal „18 von 18 Generierungsläufen CONFORMANT_GENERATION" und „alle 3
+Stresstests korrekt blockiert". Das widersprach den in der Hausarbeit (Kap. 5)
+selbst dokumentierten Gegenfällen und wurde durch den tatsächlichen Chat-Inhalt
+widerlegt. Der folgende Befund ist differenziert und deckt sich mit Hausarbeit
+Kap. 5 / Anhang B.
+
+- **Generierungsläufe (Runmode 01–18, N07–N21):** Die Mehrheit der Läufe
+  meldet `CONFORMANT_GENERATION` mit 18 geprüften Kernitems. Es gibt jedoch
+  dokumentierte Gegenfälle, in denen das gemeldete Modellurteil die
+  tatsächliche Ausgabe nicht trägt:
+  - **N10 (`Runmode_08.md`):** Die JSON-Itemliste enthält nur **6** statt 18
+    Objekte; `all_hard_checks_pass` steht trotzdem auf `true`.
+  - **N16 (`Runmode_14.md`):** Es fehlt eine Top-Level-Itemliste vollständig,
+    während die Metadaten 18 Items behaupten.
+  - **N15 (`Runmode_13.md`):** Enthält nur Titel, Notebook-URL und
+    Exportzeitpunkt; daraus lässt sich kein Testergebnis ableiten.
+  - Für die strukturgeprüften Kernläufe R5/R6/R6.1 (N19–N21) siehe
+    `../evaluation/TECHNISCHE_PRUEFERGEBNISSE.md` und
+    `../Nachweise/Chatbelege_Pruefergebnisse.json` (R5 FAIL erwartet, R6/R6.1
+    PASS, unabhängig reproduziert).
+- **Stresstests (N04–N06):** Kein pauschaler Blockierungserfolg.
+  - **N04 (`Stresstest_01_Aufgabenkontext.md`):** Das Modell erklärt zwar
+    einen Stopp bei fehlendem `TASK_CONTEXT`, liefert in Austausch 2
+    anschließend trotzdem drei explorative TTF-Items und setzt in Austausch 3
+    interne Richtlinien/Schulungen als Firmenkontext voraus, obwohl diese
+    Angaben fehlten. Der Vorbehalt `context_verified = pending` verhindert
+    die unbelegte Ausgabe nicht.
+  - **N05, N06:** siehe Hausarbeit Kap. 5 für die jeweilige Einzelauswertung.
+  - Die Fail-Closed-Architektur greift damit nicht lückenlos; das ist in der
+    Hausarbeit explizit als Grenze des Artefakts benannt, nicht als Erfolg.
+- Modellinterne Konformitäts- oder PASS-Meldungen sind daher kein
+  Vollständigkeits- oder Qualitätsnachweis — erst der Abgleich mit dem
+  tatsächlichen Inhalt (Itemanzahl, Itemtext, Routinglogik) entscheidet.
 
 ## Hinweis zur Vollständigkeit
 

@@ -18,7 +18,7 @@ und werden vor Abgabe auf Vollständigkeit und Zugänglichkeit geprüft.
 | Masterprompt (finale, extern strukturgeprüfte Fassung) | `V3.5-R6.1` (Evidence-Locked) |
 | Design Audit | `DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL` |
 | Gespeicherte, extern strukturgeprüfte Kernläufe | R5 (FAIL, erwartet — korrektes Gate-Blockierverhalten), R6 (PASS), R6.1 (PASS; B2/B5/B7 wortlautidentisch) |
-| Zusätzliche Reproduzierbarkeitsläufe | 18/18 Generierungsläufe `CONFORMANT_GENERATION`, 3/3 Stresstests korrekt blockiert (siehe `../notebooklm-chatverlauf/README.md`) |
+| Zusätzliche Reproduzierbarkeitsläufe | Mehrheit der Generierungsläufe `CONFORMANT_GENERATION`, mit dokumentierten Gegenfällen (N10, N16) und nicht lückenlos blockierten Stresstests (N04); differenzierter Befund in `../notebooklm-chatverlauf/README.md` |
 | Start-Kommando für die Demonstration | `Führe RUN_MODE = QUESTIONNAIRE_GENERATION aus.` |
 
 ## Verwendete Hilfsmittel (Transparenz)
