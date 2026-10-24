@@ -4,6 +4,19 @@
 
 Dieses Repository dokumentiert die iterative Entwicklung eines **Leitlinien-/Masterprompt-Artefakts**, das in **Google NotebookLM** einen wissenschaftlich nachvollziehbar abgeleiteten Fragebogen zur Employee AI Readiness kaufmännischer Mitarbeitender erstellen soll. Leitidee sind nachvollziehbare Quellenbindungen, feste Designgrenzen und eine unabhängige Prüfung der NotebookLM-Ausgabe – nicht eine behauptete empirische Validierung durch das Sprachmodell.
 
+## Geprüfte Weiterentwicklung vom 24 Oktober 2026
+
+- **[Aktueller Testkandidat R6.2](artefakt/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_2_NOTEBOOKLM.txt)**
+- **[Prüfbericht R6.2](evaluation/R6_2_PRUEFBERICHT.md)** und **[vollständige Testnachweise](evaluation/R6_2_TESTNACHWEISE.zip)**
+- Drei neue Einzelitemläufe: **22/24** Kriterienerfüllungen (8/8, 7/8, 7/8).
+  Historische R6.1-Serie: 21/24. Bekannte Fälle und zeitlich getrennte kleine
+  Serien erlauben keinen allgemeinen Wirksamkeitsnachweis. Ein separater
+  angeleiteter Transferlauf erfüllt 4/4 Kriterien.
+- R6.2 bleibt **TEST_CANDIDATE**. Offene Quellen-/Fundstellenfehler und
+  methodische Nebenfehler sind dokumentiert; eine neue vollständige
+  18-Item-Generierung ist noch nicht geprüft. Die unten beschriebene
+  vollständige Demonstration bezieht sich auf das historische R6.1.
+
 ## Schnellzugriff
 
 - **[Erweiterter Chat- und Entwicklungsverlauf](CHATVERLAUF.md)** – echte überlieferte Dialogzitate sowie als Rekonstruktion markierte frühere Entwicklungsphasen.
@@ -11,7 +24,7 @@ Dieses Repository dokumentiert die iterative Entwicklung eines **Leitlinien-/Mas
 - **[Vom Nutzer bereitgestellter früherer Chat-Auszug](chat_beleg/Vom_Nutzer_bereitgestellter_Chatauszug_R6_bis_Pretest.txt)** – unveränderter Belegauszug (kein Plattform-Rohdatenexport).
 - **[Historische NotebookLM-Testbelege](evaluation/HISTORISCHE_MODELLTESTS.md)** – frühere Fehlzustände und Zuordnungsgrenzen.
 - **[Iterations- und Evaluationsmatrix](ITERATIONEN.md)** – Probleme, Lösungsschritte, Testbefunde und Grenzen.
-- **[Masterprompt V3.5-R6.1](artefakt/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_1_NOTEBOOKLM.txt)** – zuletzt getestete Prompt-Version mit integriertem freigegebenem Design Audit.
+- **[Masterprompt V3.5-R6.1](artefakt/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_1_NOTEBOOKLM.txt)** – historische Referenz mit gespeichertem Fragebogenlauf und integriertem Design Audit.
 - **NotebookLM-Testausgaben:** [R5](notebooklm_tests/NotebookLM_Ausgabe_R5.txt) · [R6](notebooklm_tests/NotebookLM_Ausgabe_R6.txt) · [R6.1](notebooklm_tests/NotebookLM_Ausgabe_R6_1.txt).
 - **[Änderungsprotokoll zu R6.1](evaluation/V3_5_R6_1_AENDERUNGSPROTOKOLL_UND_REGRESSION.md)**
 - **[Reproduzierbare technische Prüfergebnisse](evaluation/TECHNISCHE_PRUEFERGEBNISSE.md)** – R5 FAIL, R6/R6.1 Struktur-PASS; wissenschaftliche Grenzen klar getrennt.
@@ -19,9 +32,9 @@ Dieses Repository dokumentiert die iterative Entwicklung eines **Leitlinien-/Mas
 
 ## Entwicklungsstand und Versionsfamilien
 
-Das Repository enthält neben dem zuletzt getesteten **R6.1** jetzt die tatsächlich vorhandenen Vorläufer aus den Familien **frühe Masterprompts (1.0 bis V8.1)**, **V8.x-Masterartefakte**, **OPERATIONAL V2–V3.5** sowie **AUTORUN R3–R6**. Sie sind als historische Belege archiviert, nicht als parallel aktivierte NotebookLM-Quellen. **Für neue Läufe nur R6.1 aktivieren.** Auch bei früher als `FINAL` benannten Dateien ist eine externe Freigabe oder psychometrische Validierung nicht belegt. Details: [MODELLHISTORIE.md](MODELLHISTORIE.md).
+Das Repository enthält neben der weiterentwickelten **R6.2** und der historischen Referenz **R6.1** jetzt die tatsächlich vorhandenen Vorläufer aus den Familien **frühe Masterprompts (1.0 bis V8.1)**, **V8.x-Masterartefakte**, **OPERATIONAL V2–V3.5** sowie **AUTORUN R3–R6**. Sie sind als historische Belege archiviert, nicht als parallel aktivierte NotebookLM-Quellen. **Nur eine Promptversion pro Notebook aktivieren.** Für die R6.2-Einzelitemprüfung gelten die Dateien und Grenzen im neuen Prüfbericht; historische vollständige Läufe werden mit R6.1 repliziert. Auch bei früher als `FINAL` benannten Dateien ist eine externe Freigabe oder psychometrische Validierung nicht belegt. Details: [MODELLHISTORIE.md](MODELLHISTORIE.md).
 
-## Replikation mit NotebookLM
+## Replikation der historischen R6.1-Demonstration mit NotebookLM
 
 1. Neues NotebookLM-Notebook erstellen und die wissenschaftlichen Originalquellen **MAILS, AILRSE-5, AISES, AIRS und Lambiase et al.** sowie die für den theoretischen Kontext erforderlichen ergänzenden Papers als Quellen bereitstellen.
 2. Den dokumentierten **FC-Originalitem-Auszug ohne Befragtendaten** ergänzen. Eine Kopie dieses Auszugs ist [hier](artefakt/NOTEBOOKLM_FC_ORIGINALITEMS_OHNE_TEILNEHMERDATEN.txt) enthalten, um die ursprünglichen Formulierungen kenntlich zu machen. Aus Vertraulichkeitsgründen **keine individuellen Antwortdaten auf GitHub hochladen**.
@@ -42,7 +55,15 @@ Das Repository enthält neben dem zuletzt getesteten **R6.1** jetzt die tatsäch
 
 ## Zugang für die Prüfung
 
-Als Nachweis- und Zugriffspunkt für die Prüfung dient dieses GitHub-Repository (`https://github.com/lynnzeischke/praxisseminar`). Anstelle eines live zugänglichen NotebookLM-Freigabelinks dokumentiert dieses Projekt den vollständigen NotebookLM-Chatverlauf (21 Rohexporte aller Generierungsläufe und Stresstests, siehe [`notebooklm-chatverlauf/`](notebooklm-chatverlauf/)) im Repository. Grund dieser Lösung: Die Entwicklung erfolgte über zahlreiche einzelne, zeitlich getrennte NotebookLM-Sitzungen (Design-Audits, 18 Generierungsläufe, 3 Stresstests); eine Einladung der Prüfenden zu jeder dieser einzelnen Sitzungen wäre organisatorisch aufwendig und für die Prüfenden unpraktisch gewesen. Der vollständige schriftliche Export an einer zentralen Stelle bietet dieselbe Nachvollziehbarkeit wie ein Live-Zugriff, ohne dass im Notebook selbst verbleibende, nicht zur Veröffentlichung vorgesehene Zwischenstände einzeln offengelegt werden müssten. Alle für die Prüfung erforderlichen Artefakte – Masterprompts, NotebookLM-Rohexporte, Testausgaben und Prüfskripte – liegen vollständig und reproduzierbar in diesem Repository vor; Abschnitt „Replikation mit NotebookLM" oben beschreibt, wie sich die Ergebnisse in einem eigenen, neu angelegten Notebook nachvollziehen lassen.
+Das Repository ist privat; Prüfende benötigen ausdrücklich eingerichteten Zugriff.
+Das historische Korpus enthält 24 Markdown-Dateien mit 66 exportierten
+Frage-Antwort-Paaren (N01–N24; siehe [Chatverlauf](notebooklm-chatverlauf/)).
+Diese Belegkennungen sind keine gesicherte Zählung unabhängiger Versuche.
+N22–N24 setzen denselben operativen R6.1-Chat fort. Schriftliche Exporte
+stützen Nachvollziehbarkeit, ersetzen aber weder sämtliche Live-Metadaten
+noch eine unabhängige Quellenprüfung. Die sechs ergänzenden Basis-/R6.1-
+Vergleichsläufe und vier R6.2-Läufe werden separat im neuen Testnachweispaket
+archiviert; sie verändern die historischen N01–N24 nicht.
 
 ## Wissenschaftliche Einordnung
 
@@ -56,16 +77,16 @@ Das Design folgt der übergeordneten Projektaufgabe zur DSR-Methode nach Peffers
 
 Die Datei `CHATVERLAUF.md` ist **kein Rohdatenexport** des gesamten Chats. Sie enthält wörtliche Zitat-Auszüge aus dem vorliegenden Gespräch, einen vom Nutzer nachgereichten Teil-Auszug sowie klar gekennzeichnete **dateigestützt rekonstruierte frühere Entwicklungsphasen**. Es wurden keine fehlenden Chat-Turns erfunden. Unveränderte Originalexporte mit vollständigen Metadaten sind über die verwendeten Chat-Plattformfunktionen gesondert zu beschaffen, falls für den Nachweis verlangt.
 
-Nicht enthalten: personenbezogene Befragtenantworten, SmartPLS-Rohdaten, vollständige wissenschaftliche Verlags-PDFs, unbereinigte Chat-Exporte oder vermeintliche Human-Pretestergebnisse.
+Nicht enthalten: personenbezogene Befragtenantworten, SmartPLS-Rohdaten, vollständige wissenschaftliche Verlags-PDFs oder vermeintliche Human-Pretestergebnisse. Die Testnachweise enthalten gesicherte sichtbare Seitenaufnahmen der neuen Modellantworten.
 
 ## Stand
 
-Version: **V3.5-R6.1 (`TEST_CANDIDATE`)**  
-Status: technisch wiederholt demonstriertes Artefakt; **empirische Validierung und realer kognitiver Pretest stehen aus**.
+Version: **V3.5-R6.2 (`TEST_CANDIDATE`)**, historische Vollausgabe: R6.1  
+Status: R6.2 in begrenzten Einzelitemprüfungen untersucht, allgemeine Freigabe ausstehend; **empirische Validierung und realer kognitiver Pretest stehen aus**.
 
 ## Zusätzliche Materialien (separat ergänzt)
 
 - **[Visueller Entwicklungs-Zeitstrahl](artefakt/artefakt-zeitstrahl.html)** – Build-/Evaluate-Learn-Übersicht der gesamten Versionskette (im Browser öffnen).
-- **[Vollständiger NotebookLM-Chatexport](notebooklm-chatverlauf/)** – 21 Rohexporte (Design Audits, 18 Generierungsläufe, 3 Stresstests), Grundlage der N01–N21-Zitate.
+- **[Vollständiger NotebookLM-Chatexport](notebooklm-chatverlauf/)** – 24 Markdown-Exporte mit 66 Frage-Antwort-Paaren, Grundlage der N01–N24-Belege.
 - **[ChatGPT-Entwicklungsprotokoll](chatgpt-entwicklungsprotokoll/)** – vollständiger Chatverlauf der Masterprompt-Entwicklung mit ChatGPT.
 - **[Nachweise/](Nachweise/)** – Hash- und Textabgleich der NotebookLM-Rohexporte gegen die archivierten R5/R6/R6.1-Ausgaben (`check_chat_evidence.py`, `Chatbelege_Pruefergebnisse.json`).
