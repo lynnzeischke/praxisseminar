@@ -21,6 +21,23 @@
 
 Die zuvor lokal verwendeten Ordnernamen `Nachweise/Promptarchiv` und `Ergänzendes_Nachweispaket` beziehen sich auf das lokale Abgabepaket. Im Repository sind dieselben Nachweisfamilien den bestehenden Bereichen `modelle_historisch/`, `artefakt/` und `evaluation/` zugeordnet. Für den aktuellen vollständigen Lauf gilt der oben genannte eindeutige Pfad.
 
+## Duplikate in modelle_historisch
+
+`modelle_historisch/` enthält sechs Dateipaare mit inhaltsgleichem Text (per Git-Blob-Hash geprüft, nicht nur am Dateinamen erkannt):
+
+| Datei A | Datei B |
+|---|---|
+| `operational/MASTERPROMPT_Employee_AI_Readiness_OPERATIONAL_FINAL.md` | `operational/MASTERPROMPT_Employee_AI_Readiness_OPERATIONAL_FINAL_Kopie.md` |
+| `operational/MASTERPROMPT_Employee_AI_Readiness_OPERATIONAL_V3_5_SOURCE_CLOSURE_FINAL_TEST_CANDIDATE.md` | `operational/MASTERPROMPT_Employee_AI_Readiness_OPERATIONAL_V3_5_SOURCE_CLOSURE_FINAL_TEST_CANDIDATE_Kopie.md` |
+| `operational/MASTERPROMPT_Employee_AI_Readiness_OPERATIONAL_V3_FINAL.md` | `operational/MASTERPROMPT_Employee_AI_Readiness_OPERATIONAL_V3_FINAL.txt` |
+| `masterartefakt_v8/MASTER_ARTEFAKT_Employee_AI_Readiness_V8_4_11_TEST_CANDIDATE.md` | `masterartefakt_v8/MASTER_ARTEFAKT_Employee_AI_Readiness_V8_4_11_TEST_CANDIDATE_Kopie.md` |
+| `autorun_r3_bis_r6/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_INTEGRATED_AUDIT_AUTORUN_OUTPUT_LOCKED_NOTEBOOKLM.txt` | `autorun_r3_bis_r6/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_INTEGRATED_AUDIT_AUTORUN_OUTPUT_LOCKED_TEST_CANDIDATE.md` |
+| `artefakt/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_1_NOTEBOOKLM.txt` | `autorun_r3_bis_r6/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_1_INTEGRATED_AUDIT_EVIDENCE_LOCKED_TEST_CANDIDATE.md` |
+
+Ähnlich benannte, aber **inhaltlich unterschiedliche** Dateien (z. B. `..._SOURCE_CLOSURE_TEST_CANDIDATE.md` vs. `..._SOURCE_CLOSURE_TEST_CANDIDATE_Kopie.md`, ohne „FINAL") sind keine Duplikate und wurden entsprechend nicht zusammengeführt.
+
+Die Duplikate stammen aus dem iterativen Entwicklungsprozess (parallele Arbeitskopien, Exportbenennungen) und wurden bewusst nicht bereinigt: Die Hausarbeit (Anhang A, Modellhistorie) verlinkt jede Datei in `modelle_historisch/` einzeln über ihren GitHub-Blob-Pfad. Ein Löschen würde diese bereits gesetzten Verweise ungültig machen. Die Dopplung ist damit ein dokumentiertes Merkmal des Archivs, kein unbeabsichtigter Rest.
+
 ## Umfang der Ablage
 
 Das Repository bündelt die Projektartefakte und die gesicherten Prüfbelege. Die Hausarbeit und ihre Word-Anhänge werden separat abgegeben. Wissenschaftliche Verlags-PDFs und individuelle Befragtenantworten sind nicht Teil des Repositorys. GitHub-Zugriff und Notebook-Zugriff sind getrennte Berechtigungen. Frühere Aussagen in historischen Berichten oder im visuellen Zeitstrahl werden durch die aktuellen Prüfberichte eingeordnet, nicht rückwirkend zu bestätigten Befunden erklärt.

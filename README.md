@@ -42,7 +42,7 @@ Die Skripte prüfen gespeicherte Ausgaben. Sie reproduzieren keine identischen n
 - `evaluation/`: Prüfberichte, Kodierungen und neue vollständige R6.2-Testbelege.
 - `notebooklm_tests/`: unveränderte historische Vollausgaben R5/R6/R6.1.
 - `notebooklm-chatverlauf/`: historische Exporte N01–N24 mit 66 Austauschen, keine 24 unabhängigen Tests.
-- `modelle_historisch/`: ältere Promptfamilien; nicht parallel aktivieren.
+- `modelle_historisch/`: ältere Promptfamilien; nicht parallel aktivieren. Enthält sechs inhaltsgleiche Dateipaare aus dem Entwicklungsprozess (z. B. `..._Kopie.md`-Varianten); diese wurden bewusst nicht entfernt, weil die Hausarbeit (Anhang A, Modellhistorie) jede Datei einzeln verlinkt – siehe [STRUKTUR.md](STRUKTUR.md#duplikate-in-modelle_historisch).
 - `tools/` und `Nachweise/`: vorhandene externe Prüfer.
 - `chat_beleg/`, `chatgpt-entwicklungsprotokoll/`, `CHATVERLAUF.md`: ergänzende Entwicklungsdokumentation mit ihren jeweiligen Authentizitätsgrenzen.
 
