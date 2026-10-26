@@ -22,4 +22,4 @@ Die tatsächliche Antwort sichern und extern prüfen. Das Modell darf nicht durc
 
 ## Historische Referenzen
 
-[R6.1](MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_1_NOTEBOOKLM.txt) bleibt Referenz der früheren vollständigen Demonstration. [Ältere Versionen](../modelle_historisch/) und der [historische Zeitstrahl](artefakt-zeitstrahl.html) dokumentieren Entwicklungsstände. Der Zeitstrahl kann frühere modellseitige Erfolgsangaben wiedergeben; für die aktuelle Bewertung gelten die [Evaluationsberichte](../evaluation/README.md).
+[R6.1](MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_1_NOTEBOOKLM.txt) bleibt Referenz der früheren vollständigen Demonstration. [Ältere Versionen](../modelle_historisch/) und die [Modellhistorie](../MODELLHISTORIE.md) dokumentieren Entwicklungsstände. Für die aktuelle Bewertung gelten die [Evaluationsberichte](../evaluation/README.md).
