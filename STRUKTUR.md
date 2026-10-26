@@ -8,7 +8,6 @@
 | [notebooklm-chatverlauf](notebooklm-chatverlauf/) | N01–N24, ursprüngliche Exporte | 66 Austausche, keine unabhängige Testserie |
 | [modelle_historisch](modelle_historisch/) | Frühere Versionen und Versionsfamilien | Unverändert archiviert |
 | [tools](tools/) und [Nachweise](Nachweise/) | Bestehende unabhängige Struktur- und Textprüfer | Prüfgrenzen in den Berichten |
-| [chat_beleg](chat_beleg/) und [chatgpt-entwicklungsprotokoll](chatgpt-entwicklungsprotokoll/) | Ergänzende Entwicklungsdokumentation | Jeweilige Export-/Rekonstruktionsgrenzen beachten |
 
 ## Referenzzuordnung der Hausarbeit
 
@@ -20,6 +19,15 @@
 - Anhang D wird lokal mit der Hausarbeit abgegeben; seine unveränderte Textquelle liegt unter `artefakt/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_2_NOTEBOOKLM.txt`.
 
 Die zuvor lokal verwendeten Ordnernamen `Nachweise/Promptarchiv` und `Ergänzendes_Nachweispaket` beziehen sich auf das lokale Abgabepaket. Im Repository sind dieselben Nachweisfamilien den bestehenden Bereichen `modelle_historisch/`, `artefakt/` und `evaluation/` zugeordnet. Für den aktuellen vollständigen Lauf gilt der oben genannte eindeutige Pfad.
+
+## Umfang der Ablage
+
+Das Repository bündelt die Projektartefakte und die gesicherten Prüfbelege. Die Hausarbeit und ihre Word-Anhänge werden separat abgegeben. Wissenschaftliche Verlags-PDFs und individuelle Befragtenantworten sind nicht Teil des Repositorys. GitHub-Zugriff und Notebook-Zugriff sind getrennte Berechtigungen. Frühere Aussagen in historischen Berichten werden durch die aktuellen Prüfberichte eingeordnet, nicht rückwirkend zu bestätigten Befunden erklärt.
+
+## Bereinigung am 26 Oktober 2026
+
+Aus dem aktuellen Dateibaum wurden sechs ergänzende Arbeits- und Darstellungsdateien entfernt. Unveränderte Primärartefakte, ursprüngliche NotebookLM-Exporte und sämtliche zitierten Testnachweise bleiben erhalten. Die entfernten Dateien sind im vorherigen Git-Stand wiederherstellbar. Die aktuelle Prüfsummenliste bildet ausschließlich den bereinigten Stand ab; frühere Listen unter evaluation/ sind historische Snapshots.
+
 
 ## Duplikate in modelle_historisch
 
@@ -38,6 +46,3 @@ Die zuvor lokal verwendeten Ordnernamen `Nachweise/Promptarchiv` und `Ergänzend
 
 Die Duplikate stammen aus dem iterativen Entwicklungsprozess (parallele Arbeitskopien, Exportbenennungen) und wurden bewusst nicht bereinigt: Die Hausarbeit (Anhang A, Modellhistorie) verlinkt jede Datei in `modelle_historisch/` einzeln über ihren GitHub-Blob-Pfad. Ein Löschen würde diese bereits gesetzten Verweise ungültig machen. Die Dopplung ist damit ein dokumentiertes Merkmal des Archivs, kein unbeabsichtigter Rest.
 
-## Umfang der Ablage
-
-Das Repository bündelt die Projektartefakte und die gesicherten Prüfbelege. Die Hausarbeit und ihre Word-Anhänge werden separat abgegeben. Wissenschaftliche Verlags-PDFs und individuelle Befragtenantworten sind nicht Teil des Repositorys. GitHub-Zugriff und Notebook-Zugriff sind getrennte Berechtigungen. Frühere Aussagen in historischen Berichten oder im visuellen Zeitstrahl werden durch die aktuellen Prüfberichte eingeordnet, nicht rückwirkend zu bestätigten Befunden erklärt.
