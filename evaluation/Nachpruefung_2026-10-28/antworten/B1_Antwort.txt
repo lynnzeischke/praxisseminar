@@ -1,0 +1,70 @@
+Thoughts
+expand_more
+Hier ist die wissenschaftliche Prüfung der fünf Fälle für den deutschen Fragebogen zur GenAI-Readiness kaufmännischer Mitarbeitender anhand der geladenen Originalquellen:
+Fall J
+Item: „Ich kann unterscheiden, ob ich mit einer KI oder einem echten Menschen interagiere.“
+Behauptung: Unverändertes deutsches Original, MAILS Appendix A Pos. 15.
+Klasse: E1 (Unverändertes belegtes Original)
+Quellenfundstelle: MAILS.pdf (Carolus et al., 2023), Appendix A, Bereich „Detect AI“, Item 15
+1
+.
+Kurze Begründung: Das Item stammt aus der deutschen Originalentwicklung der Meta AI Literacy Scale (MAILS) im Faktor „Detect AI“ (Pos. 15: „I can distinguish if I interact with an AI or a 'real human'“ / deutsches Erhebungsoriginal: „Ich kann unterscheiden, ob ich mit einer KI oder einem 'echten Menschen' interagiere“)
+1
+. Die Skala wurde mit 300 deutschsprachigen Erwachsenen empirisch validiert
+2
+. Die Behauptung ist somit korrekt.
+Entscheidung: Freigabe
+Fall K
+Aufgabe: Übersetzung von AISES CF4/Q23 ("When interacting with AI technologies/products, I feel very peaceful.") und Prüfung der empirischen Belegung der Übersetzungsäquivalenz.
+Übersetzung: „Wenn ich mit KI-Technologien/-Produkten interagiere, fühle ich mich sehr friedvoll [ruhig / friedlich].“
+Klasse: E2 (Adaption / Übersetzung)
+Quellenfundstelle: AISES.pdf (Wang & Chuang, 2024), Table 3 (S. 4795) & Table 6 (S. 4800), Faktor „Comfort with AI“, Item CF4/Q23
+3
+4
+.
+Kurze Begründung: Der Originalwortlaut ist in der AISES-Skala unter dem Faktor „Comfort with AI“ eindeutig belegt
+3
+4
+. Eine deutschsprachige Übersetzungsäquivalenz ist in den geladenen Quellen jedoch nicht empirisch belegt, da die Validierung der AISES-Skala in Taiwan (auf Englisch/Chinesisch) durchgeführt wurde
+5
+6
+.
+Entscheidung: Stopp (Freigabe erst nach empirischer Überprüfung der deutschen Übersetzung auf Äquivalenz).
+Fall L
+Item: „Ich bin zuversichtlich, dass ich lernen kann, neue KI-Technologien zu nutzen, um ein Problem zu lösen.“
+Behauptete Grundlage: AILRSE-5 Table 2, Item 3.
+Klasse: E2 (Adaption / Übersetzung mit fehlerhafter Quellenzuordnung)
+Quellenfundstelle: AILRSE-5.pdf (Oksanen et al., 2026), Table 2 (S. 100251), Item 4 (nicht Item 3!)
+7
+.
+Kurze Begründung: Die behauptete Quellenangabe ist falsch. Item 3 in Table 2 lautet „I'm confident in my ability to learn how to apply new AI technologies in my daily life“ (Anwendung im Alltag)
+7
+. Der deutsche Wortlaut („um ein Problem zu lösen“) entspricht hingegen exakt Item 4 („I'm confident in my ability to learn how to use new AI technologies to solve a problem“)
+7
+. Zudem handelt es sich um eine Übersetzung des englischen Original-Items.
+Entscheidung: Stopp (Korrektur der Quellenfundstelle von Item 3 auf Item 4 erforderlich).
+Fall M
+Item: „Ich glaube, dass KI-Technologien meine Arbeit effizienter machen.“
+Behauptete Grundlage: AIRS Table 5, SEC2/Q12. Zweck: Item für den Readiness-Kern.
+Klasse: E2 / E3 (Fehlerhaft behauptete Quelle)
+Quellenfundstelle: AIRS.pdf (Wang et al., 2026), Table 5 (S. 101429)
+8
+.
+Kurze Begründung: Die Behauptung trifft inhaltlich nicht zu. Das behauptete Item SEC2/Q12 in der AIRS-Skala lautet in Wahrheit: „I have confidence in understanding how AI technologies/products operate“ (Verständnis der Funktionsweise im Bereich Selbstwirksamkeit/Kognition)
+8
+. Aussagen zur Effizienz finden sich in AIRS stattdessen unter Item CLW1/Q20 („collaborating with AI... improve work efficiency“) oder OPT2/Q2 („make my daily life more efficient“)
+8
+. Der Beleg ist somit inhaltlich falsch zugeordnet.
+Entscheidung: Stopp (Falsche Quellenangabe und inhaltliche Fehlkonstruktion).
+Fall N
+Item: „Ich kann ChatGPT Enterprise nutzen, um Lieferantenrechnungen zu prüfen, und vertraue den Ergebnissen.“
+Behauptung: E2-Adaption von MAILS Appendix A Pos. 1.
+Klasse: E3 (Neuentwicklung / Konstruktveränderung)
+Quellenfundstelle: MAILS.pdf (Carolus et al., 2023), Appendix A, Bereich „Apply AI“, Item 1
+1
+.
+Kurze Begründung: MAILS Pos. 1 lautet im Original „I can operate AI applications in everyday life“ (allgemeine Bedienung von KI-Anwendungen)
+1
+. Das vorgelegte Item N verengt die Aussage nicht nur auf ein spezifisches Produkt (ChatGPT Enterprise) und einen spezifischen Prozess (Lieferantenrechnungen prüfen), sondern ergänzt mit „und vertraue den Ergebnissen“ ein völlig neues Konstrukt (Vertrauen/Trust). Es handelt sich daher um eine Neuentwicklung (E3) mit unzulässiger Konstruktvermischung (Fähigkeit + Vertrauen) und nicht um eine reine E2-Adaption.
+Entscheidung: Stopp (Konstruktverfälschung und fehlerhafte Einstufung als E2-Adaption).
+💡 Möchtest du, dass wir für die gestoppten Fälle (K, L, M, N) methodisch saubere Alternativformulierungen erarbeiten, die sich exakt an den wissenschaftlichen Originalkonstrukten orientieren?

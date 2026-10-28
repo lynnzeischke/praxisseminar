@@ -1,0 +1,12 @@
+{
+  "id": "W1",
+  "url": "https://notebook.google.com/notebook/c3fe5848-eaa2-437b-98df-08c57919fa5a",
+  "captured": "2026-10-28T16:16:52.750Z",
+  "prompt": [
+    "Führe RUN_MODE = QUESTIONNAIRE_GENERATION aus."
+  ],
+  "answers": 1,
+  "chars": 58996,
+  "sources": 24,
+  "answerCapture": "innerText der Antwortkarte (to-user-message-inner-content)"
+}

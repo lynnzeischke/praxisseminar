@@ -48,7 +48,7 @@ def evaluate(path):
         check_msg = (res.stdout + res.stderr).strip()
         got = {i["item_id"]: i.get("question_text", "") for i in j.get("items", [])}
         k3 = set(got) == set(ref_items) and all(norm(got[k]) == norm(v) for k, v in ref_items.items())
-        aises = [i for i in j.get("items", []) if i.get("source_evidence", {}).get("source_id") == "AISES"]
+        aises = [i for i in j.get("items", []) if str(i.get("source_evidence", {}).get("source_id", "")).upper().startswith("AISES")]
         k4 = len(aises) == 3 and all("Table 3" in i["source_evidence"].get("locator", "") and
                                      "Table 2" not in i["source_evidence"].get("locator", "") for i in aises)
     return {"lauf": path.stem.split("_")[0], "W-K1_eine_Folge": k1, "W-K2_Strukturcheck": k2,

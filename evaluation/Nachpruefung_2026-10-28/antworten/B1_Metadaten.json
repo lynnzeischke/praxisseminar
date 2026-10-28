@@ -1,0 +1,11 @@
+{
+  "lauf": "B1",
+  "url": "https://notebook.google.com/notebook/418c102c-b66b-4378-8ead-2700c3a8d57c",
+  "titel": "DSR Neue Faelle B1 Basis 28 Oktober - Gemini Notebook",
+  "gesendet_utc": "2026-10-28T16:45:39Z (ca., Klick vor 16:45:42.051Z)",
+  "erfasst_utc": "2026-10-28T16:47:52.353Z",
+  "zeichen": 4775,
+  "ausgewaehlte_checkboxen": 5,
+  "antwortkarten": 1,
+  "methode": "innerText der Antwortkarte (.to-user-message-inner-content), Download via Blob durch Claude in Chrome"
+}
