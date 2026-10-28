@@ -7,7 +7,7 @@ Begleitmaterial zur Hausarbeit im Praxisseminar Master CMP. Das untersuchte Arte
 | Schritt | Unterlagen | Prüfzweck |
 |---|---|---|
 | 1 Artefakt ansehen | [Masterprompt R6.2](artefakt/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_2_NOTEBOOKLM.txt) · [Anleitung](artefakt/README.md) | Vollständige geprüfte Promptfassung einschließlich Design Audit |
-| 2 Aktuellen Test prüfen | [Vollständiger R6.2-Lauf](evaluation/R6_2_Vollproduktion_2026-10-26/README.md) | Vorabplan, Originalantwort, JSON und externe Prüfung |
+| 2 Aktuellen Test prüfen | [Vollständiger R6.2-Lauf](evaluation/R6_2_Vollproduktion_2026-10-26/README.md) · [Erzeugter Fragebogen](evaluation/R6_2_Vollproduktion_2026-10-26/Fragebogen_B5.md) | Vorabplan, Originalantwort, JSON, externe Prüfung und Lesefassung des Fragebogens |
 | 3 Evaluation einordnen | [Evaluationsübersicht](evaluation/README.md) | Basisvergleich, Einzelitemtests und Grenzen |
 | 4 Entwicklung nachverfolgen | [Modellhistorie](MODELLHISTORIE.md) · [Iterationen](ITERATIONEN.md) | Frühere Artefakte und ihre Entwicklung |
 | 5 Belege zuordnen | [Ablage und Hausarbeitsverweise](STRUKTUR.md) | Quellenpfade zu den Anhängen A bis D |

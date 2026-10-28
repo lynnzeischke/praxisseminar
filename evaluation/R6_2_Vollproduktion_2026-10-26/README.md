@@ -1,6 +1,6 @@
 # Vollständiger R6.2 Test vom 26 Oktober 2026
 
-Ein neuer vollständiger NotebookLM-Lauf mit dem unveränderten R6.2 und zwölf ausgewählten Quellen. [Vorabplan](Vorabplan.json), [Prüfbericht](Pruefbericht.md), [Originalseiteninhalt](Seiteninhalt_original.txt), [DOM-Sicherung](DOM_original.txt), [extrahiertes JSON](B7_extrahiert.json) und [automatische Befunde](Automatische_Pruefung.json) sind getrennt abgelegt.
+Ein neuer vollständiger NotebookLM-Lauf mit dem unveränderten R6.2 und zwölf ausgewählten Quellen. [Vorabplan](Vorabplan.json), [Prüfbericht](Pruefbericht.md), [Originalseiteninhalt](Seiteninhalt_original.txt), [DOM-Sicherung](DOM_original.txt), [extrahiertes JSON](B7_extrahiert.json) und [automatische Befunde](Automatische_Pruefung.json) sind getrennt abgelegt. Der erzeugte Fragebogen liegt als [Lesefassung](Fragebogen_B5.md) mit unverändertem Wortlaut und geprüften Fundstellen vor.
 
 **Ergebnis:** JSON-Struktur-PASS mit 18 Items; zugleich nicht konforme Gesamtfolge (B1–B5 doppelt) und drei falsche AISES-Wortlaut-Locatoren. R6.2 bleibt TEST_CANDIDATE. Der Lauf ist kein Robustheits- oder psychometrischer Nachweis.
 
