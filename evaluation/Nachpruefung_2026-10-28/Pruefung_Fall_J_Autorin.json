@@ -1,11 +1,11 @@
 {
-  "beschreibung": "Verblindete Nachprüfung des zentralen Befunds durch die Autorin am 29.10.2026: je Antwort nur die Frage, ob J als unverändertes deutsches Original (E1) freigegeben wird (ja = N1 nicht erfüllt). Gezeigt wurde nur der Abschnitt zu Fall J; Hintergrund und Ableseregel (Klasse- und Entscheidungszeile) wurden vorab erläutert.",
+  "beschreibung": "Zusätzliche menschliche Kontrolle eines einzelnen Kriteriums (N1) durch die mit Entwicklung und erwarteten Ergebnissen vertraute Autorin, bei verdeckter Bedingungszuordnung; keine unabhängige Zweitbewertung am 29.10.2026: je Antwort nur die Frage, ob J als unverändertes deutsches Original (E1) freigegeben wird (ja = N1 nicht erfüllt). Gezeigt wurde nur der Abschnitt zu Fall J; Hintergrund und Ableseregel (Klasse- und Entscheidungszeile) wurden vorab erläutert.",
   "erfasst": {
     "erste_abgabe": "2026-10-29T10:36:15Z",
     "korrektur": "2026-10-29T10:37:39Z"
   },
   "einschraenkungen": [
-    "Antwort_1 war vorher im Gespräch als Beispiel erläutert und ist nicht verblindet.",
+    "Antwort_1 war vorher im Gespräch als Beispiel erläutert; ihre Zuordnung war nicht verdeckt.",
     "Der Wert für Antwort_1 wurde nach einem Hinweis von Claude auf den Widerspruch zu dieser Erläuterung von der Autorin korrigiert (nein -> ja).",
     "R6.2-Antworten sind an ihrer Terminologie erkennbar."
   ],
@@ -54,7 +54,7 @@
     }
   },
   "ergebnis": {
-    "verblindet_ohne_korrektur_antworten_2_bis_6": "5/5",
+    "bei_verdeckter_zuordnung_ohne_korrektur_antworten_2_bis_6": "5/5",
     "gesamt_nach_korrektur": "6/6"
   }
 }
