@@ -1,6 +1,6 @@
 # Employee AI Readiness
 
-Begleitmaterial zur Hausarbeit im Praxisseminar Master CMP. Das untersuchte Artefakt ist ein versionierter Masterprompt für die quellengebundene Fragebogenerstellung mit NotebookLM. Stand: 26.10.2026.
+Begleitmaterial zur Hausarbeit im Praxisseminar Master CMP. Das untersuchte Artefakt ist ein versionierter Masterprompt für die quellengebundene Fragebogenerstellung mit NotebookLM. Stand: 29.10.2026.
 
 ## Prüfweg
 
@@ -8,15 +8,16 @@ Begleitmaterial zur Hausarbeit im Praxisseminar Master CMP. Das untersuchte Arte
 |---|---|---|
 | 1 Artefakt ansehen | [Masterprompt R6.2](artefakt/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_2_NOTEBOOKLM.txt) · [Anleitung](artefakt/README.md) | Vollständige geprüfte Promptfassung einschließlich Design Audit |
 | 2 Aktuellen Test prüfen | [Vollständiger R6.2-Lauf](evaluation/R6_2_Vollproduktion_2026-10-26/README.md) | Vorabplan, Originalantwort, JSON und externe Prüfung |
-| 3 Evaluation einordnen | [Evaluationsübersicht](evaluation/README.md) | Basisvergleich, Einzelitemtests und Grenzen |
-| 4 Entwicklung nachverfolgen | [Modellhistorie](MODELLHISTORIE.md) · [Iterationen](ITERATIONEN.md) | Frühere Artefakte und ihre Entwicklung |
-| 5 Belege zuordnen | [Ablage und Hausarbeitsverweise](STRUKTUR.md) | Quellenpfade zu den Anhängen A bis D |
+| 3 Nachprüfung ansehen | [Vorab geplante Nachprüfung vom 28.10.2026](evaluation/Nachpruefung_2026-10-28/README.md) | Drei Wiederholungen des Volllaufs, neue Fälle J–N mit Basisvergleich, Zweitkodierung |
+| 4 Evaluation einordnen | [Evaluationsübersicht](evaluation/README.md) | Basisvergleich, Einzelitemtests und Grenzen |
+| 5 Entwicklung nachverfolgen | [Modellhistorie](MODELLHISTORIE.md) · [Iterationen](ITERATIONEN.md) | Frühere Artefakte und ihre Entwicklung |
+| 6 Belege zuordnen | [Ablage und Hausarbeitsverweise](STRUKTUR.md) | Quellenpfade zu den Anhängen A bis E |
 
 ## Ergebnis
 
-**R6.2 bleibt TEST_CANDIDATE.** Der vollständige Lauf vom 26.10.2026 enthält 18 eindeutige Messitems in sechs Dreiergruppen und besteht den implementierten JSON-Strukturcheck. Zugleich stehen B1–B5 doppelt in der Gesamtantwort; drei AISES-Wortlautanker nennen die falsche Tabelle. Die modellseitige Konformitätsmeldung ist deshalb nicht bestätigt.
+**R6.2 bleibt TEST_CANDIDATE.** Der vollständige Lauf vom 26.10.2026 enthält 18 eindeutige Messitems in sechs Dreiergruppen und besteht den implementierten JSON-Strukturcheck. Zugleich stehen B1–B5 doppelt in der Gesamtantwort; drei AISES-Wortlautanker nennen die falsche Tabelle. Die modellseitige Konformitätsmeldung ist deshalb nicht bestätigt. In der vorab geplanten Nachprüfung vom 28.10.2026 bestanden drei weitere Vollläufe ebenfalls den Strukturcheck; zwei davon enthielten erneut eine doppelte Teilfolge, keiner nannte die AISES-Wortlauttabelle (Table 3).
 
-Basis und R6.1 erreichen im kleinen Vergleich jeweils 21/24 Kriterien. R6.2 erreicht in den Einzelitem-Regressionen 22/24; ein angeleiteter Transferlauf erreicht 4/4. Diese Befunde belegen weder allgemeine Überlegenheit noch Robustheit oder psychometrische Validität.
+Basis und R6.1 erreichen im kleinen Vergleich jeweils 21/24 Kriterienerfüllungen. R6.2 erreicht in den Einzelitem-Regressionen 22/24; ein angeleiteter Transferlauf erreicht 4/4. An fünf neuen Fällen (gleiche Aufgabe und Quellen, R6.2 zusätzlich mit Masterprompt) erreicht R6.2 24/24, die Basis 19/24; zwei separate KI-Kodierungen stimmen überein, eine unabhängige menschliche Bewertung fehlt. Diese Befunde belegen weder allgemeine Überlegenheit noch Robustheit oder psychometrische Validität.
 
 ## Belege nachrechnen
 

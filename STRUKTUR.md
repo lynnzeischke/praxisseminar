@@ -16,6 +16,8 @@
 - Anhang B: `notebooklm-chatverlauf/`, `notebooklm_tests/`, `Nachweise/check_chat_evidence.py` und `Chatbelege_Pruefergebnisse.json`.
 - Anhang C1–C3: `evaluation/R6_2_PRUEFBERICHT.md`, `R6_2_KODIERUNG.csv`, `R6_2_ERGEBNISSE.json` und das vollständige damalige `R6_2_TESTNACHWEISE.zip` (enthält auch den ergänzenden Basisvergleich).
 - Anhang C4: `evaluation/R6_2_Vollproduktion_2026-10-26/` mit Originalantwort, Vorabplan und Prüfer.
+- Anhang C5: `evaluation/Nachpruefung_2026-10-28/` mit Vorabplan, Protokoll, neun Antworten, Auswertung, Erst- und Zweitkodierung sowie der Kontrolle von Fall J durch die Autorin.
+- Anhang E: erzeugter Fragebogen aus dem R6.2-Lauf (siehe Anhang C4).
 - Anhang D wird lokal mit der Hausarbeit abgegeben; seine unveränderte Textquelle liegt unter `artefakt/MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_2_NOTEBOOKLM.txt`.
 
 Die zuvor lokal verwendeten Ordnernamen `Nachweise/Promptarchiv` und `Ergänzendes_Nachweispaket` beziehen sich auf das lokale Abgabepaket. Im Repository sind dieselben Nachweisfamilien den bestehenden Bereichen `modelle_historisch/`, `artefakt/` und `evaluation/` zugeordnet. Für den aktuellen vollständigen Lauf gilt der oben genannte eindeutige Pfad.

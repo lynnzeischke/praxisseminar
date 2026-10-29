@@ -2,6 +2,7 @@
 
 | Prüfbereich | Nachweis | Aussagegrenze |
 |---|---|---|
+| Vorab geplante Nachprüfung, 28.10.2026 | [Plan, Antworten, Auswertung](Nachpruefung_2026-10-28/README.md) | Doppelte Teilfolge in 3 von 4 Vollläufen; neue Fälle: Basis 19/24, R6.2 24/24 Kriterienerfüllungen; KI-kodiert, n = 3 je Bedingung |
 | Vollständige R6.2-Produktion, 26.10.2026 | [Plan, Rohantwort, JSON und Prüfer](R6_2_Vollproduktion_2026-10-26/README.md) | 18-Item-JSON besteht Strukturcheck, Gesamtfolge und AISES-Locatoren fehlerhaft; ein Lauf |
 | R6.2 Einzelitem-Regression und Transfer, 24.10.2026 | [Prüfbericht](R6_2_PRUEFBERICHT.md), [Kodierung](R6_2_KODIERUNG.csv), [Testpaket](R6_2_TESTNACHWEISE.zip) | 22/24 bekannte Kriterien, angeleiteter Transfer 4/4; keine allgemeine Überlegenheit |
 | Historischer Basisvergleich und R6.1 | [Testpaket](R6_2_TESTNACHWEISE.zip), Hausarbeit Anhang C2 | Basis und R6.1 je 21/24; kleine, zeitlich begrenzte Serien |
