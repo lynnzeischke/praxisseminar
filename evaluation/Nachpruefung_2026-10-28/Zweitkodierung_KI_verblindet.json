@@ -1,5 +1,5 @@
 {
-  "beschreibung": "Zweite, unabhängige KI-Kodierung (Claude-Subagent, eigener Kontext ohne Kenntnis der Erstkodierung, der Zuordnung oder des Repositorys; nur anonymisierte Antworten, Aufgabe, Kriterien und Sollantworten). Auslegungshinweise zu N3, N6 und N8 wurden vorgegeben und stammen aus der Erstkodierung.",
+  "beschreibung": "Separate KI-Kodierung (Claude-Durchgang in einem neuen Kontext ohne Kenntnis der Erstkodierung, der Zuordnung oder des Repositorys; nur anonymisierte Antworten, Aufgabe, Kriterien und Sollantworten). Auslegungshinweise zu N3, N6 und N8 wurden vorgegeben und stammen aus der Erstkodierung.",
   "datum": "2026-10-29",
   "zweitkodierung_verblindet": {
     "kodierung": "unabhaengige KI-Zweitkodierung, verblindet",
