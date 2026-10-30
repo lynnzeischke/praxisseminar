@@ -1,0 +1,405 @@
+# Vergleich_2026-10-24_A3
+
+Originalchat: https://notebook.google.com/notebook/cfbad104-b71f-4e0f-b956-4065a994fdcc
+
+## Eingabe
+
+Nutze zusätzlich die Regeln des geladenen MASTERPROMPT_R6_1.txt für die folgende Einzelitemprüfung.
+
+Prüfe fünf feste Fälle für einen deutschen Fragebogen zur GenAI-Readiness kaufmännischer Mitarbeitender. E1 = unverändertes belegtes Original, E2 = Adaption/Übersetzung, E3 = Neuentwicklung. Nutze die geladenen wissenschaftlichen Originale. Gib pro Fall Klasse, Quellenfundstelle, kurze Begründung und Freigabe oder Stopp an. Prüfe die behaupteten Quellen; fehlende Belege dürfen benannt werden. Keine vollständige Fragebogengenerierung.
+A: „Ich kenne die wichtigsten Grundbegriffe der künstlichen Intelligenz.“ Behauptung: unverändertes deutsches Original, MAILS Appendix A Pos. 7.
+B: Übersetze AILRSE-5 Item 1: "I'm confident in my ability to understand how new AI technologies work."
+C: „Ich kann ChatGPT Enterprise sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.“ Grundlage: MAILS Pos. 3. Kontext ist ein hypothetisches Unternehmen, keine Behauptung seiner tatsächlichen Richtlinien.
+D: „Ich kann komplexe Aufgaben mit generativer KI selbstständig umsetzen und Anwendungsprobleme beheben.“ Behauptete Synthese: MAILS Pos. 24 plus AISES Technological Skills „I can use AI to perform complex tasks.“
+E: Übersetze AISES TS3/Q6: "When using an AI technology/product, there is nothing that I do not know why." Prüfe mögliche Bedeutungsverschiebungen. Kennzeichne, ob Übersetzungsäquivalenz empirisch belegt ist.
+
+## Text des archivierten DOM-Abbilds einschließlich Oberfläche
+
+- button "Google-Apps":
+- 'button "Google-Konto: Lynn Zeischke (lynn.zeischke@gmail.com)"':
+- link "Gemini Notebook-Startseite":
+  - /url: /
+  - img "Gemini Notebook-Logo"
+- textbox: DSR Vergleich A3 R6 1 24 Oktober
+- generic "Notebook erstellen":
+  - button "Notebook erstellen":
+    - img: add_2
+    - generic: Notebook erstellen
+- generic "Notebook freigeben":
+  - button "Notebook freigeben":
+    - img: share_1
+    - generic: Freigeben
+- generic "Notebook-Konfiguration":
+  - button "Notebook-Konfiguration":
+    - img: more_vert
+- generic "Einstellungen":
+  - button "Einstellungen":
+    - img: settings
+- navigation:
+  - heading "Quellen" [level=2]:
+    - generic: Quellen
+- button "Bereich „Quellen“ minimieren":
+  - img: side_nav
+- generic "Quelle hinzufügen":
+  - button "Quelle hinzufügen":
+    - img: add_2
+    - generic: Quellen hinzufügen
+- textbox "Anhand der eingegebenen Anfrage nach Quellen suchen":
+  - /placeholder: Im Web nach neuen Quellen suchen
+- button "Web":
+  - img: language
+  - generic: Web
+  - img: keyboard_arrow_down
+- button "Schnelle Recherche":
+  - img: search_spark
+  - generic: Schnelle Recherche
+  - img: keyboard_arrow_down
+- generic "Senden":
+  - button "Senden" [disabled]:
+    - img: arrow_forward
+- button "Quellen automatisch ein Label für das jeweilige Thema hinzufügen":
+  - img: label_auto
+- button "Quellen sortieren":
+  - img: sort
+- generic: Alle auswählen
+- text: check_box
+- checkbox "Alle Quellen auswählen" [checked]
+- button "AILRSE-5.pdf"
+- img: drive_pdf
+- generic: AILRSE-5.pdf
+- button "Mehr"
+- text: check_box
+- checkbox "AILRSE-5.pdf auswählen" [checked]
+- button "AIRS.pdf"
+- img: drive_pdf
+- generic: AIRS.pdf
+- button "Mehr"
+- text: check_box
+- checkbox "AIRS.pdf auswählen" [checked]
+- button "AISES.pdf"
+- img: drive_pdf
+- generic: AISES.pdf
+- button "Mehr"
+- text: check_box
+- checkbox "AISES.pdf auswählen" [checked]
+- button "MAILS.pdf"
+- img: drive_pdf
+- generic: MAILS.pdf
+- button "Mehr"
+- text: check_box
+- checkbox "MAILS.pdf auswählen" [checked]
+- button "MASTERPROMPT_R6_1.txt"
+- img: markdown
+- generic: MASTERPROMPT_R6_1.txt
+- button "Mehr"
+- text: check_box
+- checkbox "MASTERPROMPT_R6_1.txt auswählen" [checked]
+- button "Notebook anpassen"
+- img: landscape_2
+- generic: 📋
+- heading "DSR Vergleich A3 R6 1 24 Oktober" [level=2]
+- generic: 5 Quellen
+- generic: ·
+- generic "Sat Oct 24 2026 10:07:30 GMT+0200 (Mitteleuropäische Sommerzeit)": 24.10.2026
+- generic: Heute • 10:12
+- heading [level=3]:
+  - paragraph: Nutze zusätzlich die Regeln des geladenen MASTERPROMPT_R6_1.txt für die folgende Einzelitemprüfung.
+  - paragraph: "Prüfe fünf feste Fälle für einen deutschen Fragebogen zur GenAI-Readiness kaufmännischer Mitarbeitender. E1 = unverändertes belegtes Original, E2 = Adaption/Übersetzung, E3 = Neuentwicklung. Nutze die geladenen wissenschaftlichen Originale. Gib pro Fall Klasse, Quellenfundstelle, kurze Begründung und Freigabe oder Stopp an. Prüfe die behaupteten Quellen; fehlende Belege dürfen benannt werden. Keine vollständige Fragebogengenerierung. A: „Ich kenne die wichtigsten Grundbegriffe der künstlichen Intelligenz.“ Behauptung: unverändertes deutsches Original, MAILS Appendix A Pos. 7. B: Übersetze AILRSE-5 Item 1: \"I'm confident in my ability to understand how new AI technologies work.\" C: „Ich kann ChatGPT Enterprise sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.“ Grundlage: MAILS Pos. 3. Kontext ist ein hypothetisches Unternehmen, keine Behauptung seiner tatsächlichen Richtlinien. D: „Ich kann komplexe Aufgaben mit generativer KI selbstständig umsetzen und Anwendungsprobleme beheben.“ Behauptete Synthese: MAILS Pos. 24 plus AISES Technological Skills „I can use AI to perform complex tasks.“ E: Übersetze AISES TS3/Q6: \"When using an AI technology/product, there is nothing that I do not know why.\" Prüfe mögliche Bedeutungsverschiebungen. Kennzeichne, ob Übersetzungsäquivalenz empirisch belegt ist."
+- button "Thoughts":
+  - generic: Thoughts
+  - img: expand_more
+- text: Hier ist die wissenschaftliche Einzelitemprüfung für die fünf angegebenen Fälle auf Basis der Primärquellen und der Governance-Regeln des MASTERPROMPT_R6_1.txt
+- 'button "1: MASTERPROMPT_R6_1.txt"':
+  - 'generic "1: MASTERPROMPT_R6_1.txt"': "1"
+- button:
+  - img: more_horiz
+- text: .
+- separator
+- 'heading "Fall A: „Ich kenne die wichtigsten Grundbegriffe der künstlichen Intelligenz.“" [level=3]'
+- list:
+  - listitem: "Behauptung: Unverändertes deutsches Original, MAILS Appendix A Pos. 7."
+  - text: "Klasse: E2 (fälschlicherweise als E1 behauptet)"
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: .
+  - text: "Quellenfundstelle: Carolus et al. (2023), MAILS, Appendix A, Pos. 7 („Understand AI“)"
+  - 'button "4: MAILS.pdf"':
+    - 'generic "4: MAILS.pdf"': "4"
+  - text: ; MASTERPROMPT_R6_1, § 4 & § 5 (Kandidat
+  - code: LIT_01
+  - text: )
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+  - text: "Begründung: Die Behauptung, es handle sich um ein „unverändertes deutsches Original“ (E1), ist primärquellenseitig nicht haltbar: In der Publikation von Carolus et al. (2023) ist Appendix A in englischer Sprache publiziert („I know the most important concepts of the topic 'artificial intelligence'“)"
+  - 'button "4: MAILS.pdf"':
+    - 'generic "4: MAILS.pdf"': "4"
+  - text: . Eine deutsche Fassung stellt somit eine Übersetzung dar
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: . Zudem verlangen die R6.1-Regeln zwingend, dass für den spezifischen Messgegenstand der GenAI-Readiness der Wortlaut auf „generative KI“ spezialisiert wird (
+  - code: LIT_01
+  - text: ": „Ich kenne die wichtigsten Grundbegriffe generativer KI.“), was per Definition die Evidenzklasse E2 ("
+  - code: GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+  - text: ) bedingt
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+  - text: "Entscheidung: STOPP für die Behauptung E1 sowie den unkontextualisierten Wortlaut. Freigabe nur als E2 nach Kontextanpassung auf generative KI ("
+  - code: LIT_01
+  - text: )
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+- separator
+- 'heading "Fall B: Übersetze AILRSE-5 Item 1: \"I''m confident in my ability to understand how new AI technologies work.\"" [level=3]'
+- list:
+  - text: "Klasse: E2 ("
+  - code: GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+  - text: )
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+  - text: "Quellenfundstelle: Oksanen et al. (2026), AILRSE-5, Table 2, Item 1 (S. 5)"
+  - 'button "6: AILRSE-5.pdf"':
+    - 'generic "6: AILRSE-5.pdf"': "6"
+  - text: ; MASTERPROMPT_R6_1, § 5 (Kandidat
+  - code: LEARN_01
+  - text: )
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+  - text: "Begründung: Das englische Original („I'm confident in my ability to understand how new AI technologies work.“)"
+  - 'button "6: AILRSE-5.pdf"':
+    - 'generic "6: AILRSE-5.pdf"': "6"
+  - text: "wird für das deutsche Zielinstrument präzise übersetzt und kontextualisiert: „Ich bin zuversichtlich, dass ich verstehen kann, wie neue generative KI-Anwendungen funktionieren.“"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: Da das Quellitem auf Englisch publiziert ist, handelt es sich um eine E2-Adaption
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: .
+  - text: "Empirische Äquivalenz: Nicht empirisch belegt ("
+  - code: translation_equivalence_status = NOT_EMPIRICALLY_ESTABLISHED
+  - text: )
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: . Die Übersetzung und Kontextanpassung ist theoretisch fundiert, erfordert jedoch vor dem Feldeinsatz eine reale empirische Prüfung (kognitiver Pretest)
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - button:
+    - img: more_horiz
+  - text: .
+  - text: "Entscheidung: FREIGABE als E2-Kandidat ("
+  - code: LEARN_01
+  - text: ) für das R6.1-Fragebogeninstrument
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+- separator
+- 'heading "Fall C: „Ich kann ChatGPT Enterprise sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.“" [level=3]'
+- list:
+  - listitem: "Grundlage: MAILS Pos. 3."
+  - text: "Klasse: E2 (bei produktneutraler Formulierung)"
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+  - text: "Quellenfundstelle: Carolus et al. (2023), MAILS, Appendix A, Pos. 3 („Apply AI“)"
+  - 'button "4: MAILS.pdf"':
+    - 'generic "4: MAILS.pdf"': "4"
+  - text: ; MASTERPROMPT_R6_1, § 5 (Kandidat
+  - code: APPLY_02
+  - text: )
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+  - text: "Begründung: Das zugrunde liegende Originalitem MAILS Pos. 3 lautet: „I can use artificial intelligence meaningfully to achieve my everyday goals.“"
+  - 'button "4: MAILS.pdf"':
+    - 'generic "4: MAILS.pdf"': "4"
+  - text: Die Spezialisierung von „everyday goals“ zu „Arbeitsziele“ ist eine regelkonforme E2-Kontextadaption
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: . Die Nennung eines spezifischen Herstellers/Produkts („ChatGPT Enterprise“) im Itemstamm verstößt jedoch gegen das Designprinzip eines generischen diagnostischen Messinstruments (welches ohne unbelegte unternehmensspezifische Tool-Vorgaben auskommen muss)
+  - 'button "9: MASTERPROMPT_R6_1.txt"':
+    - 'generic "9: MASTERPROMPT_R6_1.txt"': "9"
+  - 'button "10: MASTERPROMPT_R6_1.txt"':
+    - 'generic "10: MASTERPROMPT_R6_1.txt"': "10"
+  - text: .
+  - text: "Entscheidung: STOPP für die Marken-Nennung („ChatGPT Enterprise“) im reflektiven Itemstamm. Freigabe nur als E2 bei produktneutraler Formulierung gemäß"
+  - code: APPLY_02
+  - text: ": „Ich kann generative KI sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.“"
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+- separator
+- 'heading "Fall D: „Ich kann komplexe Aufgaben mit generativer KI selbstständig umsetzen und Anwendungsprobleme beheben.“" [level=3]'
+- list:
+  - listitem: "Behauptete Synthese: MAILS Pos. 24 plus AISES Technological Skills „I can use AI to perform complex tasks.“"
+  - text: "Klasse: E3 (Neuentwicklung / unzulässige Synthese; falsch als E2 deklariert)"
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: .
+  - text: "Quellenfundstelle: MAILS Appendix A, Pos. 24"
+  - 'button "4: MAILS.pdf"':
+    - 'generic "4: MAILS.pdf"': "4"
+  - text: ; die behauptete AISES-Quelle existiert in Wang & Chuang (2024) nicht
+  - 'button "11: AISES.pdf"':
+    - 'generic "11: AISES.pdf"': "11"
+  - text: .
+  - text: "Begründung: Die Überprüfung des Primärtexts von Wang & Chuang (2024, Table 3) zeigt, dass der behauptete AISES-Teil „I can use AI to perform complex tasks“ in der publizierten 22-Item-Skala (TS1–TS4) nicht enthalten ist"
+  - 'button "11: AISES.pdf"':
+    - 'generic "11: AISES.pdf"': "11"
+  - text: . Es liegt eine fehlerhafte Quellenbehauptung vor (
+  - code: E2_NOT_VERIFIED
+  - text: )
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: . Zudem koppelt der Entwurf zwei eigenständige Fähigkeiten (komplexe Aufgaben umsetzen + Probleme beheben) in einer Aussage, was gegen das methodische Verbot von Double-Barreled-Items (
+  - code: DR09_BIAS_CONTROL
+  - text: ) verstößt
+  - 'button "12: MASTERPROMPT_R6_1.txt"':
+    - 'generic "12: MASTERPROMPT_R6_1.txt"': "12"
+  - 'button "13: MASTERPROMPT_R6_1.txt"':
+    - 'generic "13: MASTERPROMPT_R6_1.txt"': "13"
+  - text: .
+  - text: "Entscheidung: STOPP. Die behauptete E2-Synthese scheitert am Nachweis der Primärquelle"
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: . Erforderlich ist die Nutzung des sauberen, unvermengten MAILS-Pos.-24-Adaptionstextes als
+  - code: APPLY_03
+  - text: ": „Die meisten Probleme im Umgang mit generativer KI kann ich aus eigener Kraft meistern.“ (Klasse E2)"
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - text: .
+- separator
+- 'heading "Fall E: Übersetze AISES TS3/Q6: \"When using an AI technology/product, there is nothing that I do not know why.\"" [level=3]'
+- list:
+  - text: "Klasse: E2 ("
+  - code: GERMAN_TRANSLATED_FROM_SOURCE
+  - text: )
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: .
+  - text: "Quellenfundstelle: Wang & Chuang (2024), AISES, Table 3, Item TS3 / Q6 (S. 4796)"
+  - 'button "11: AISES.pdf"':
+    - 'generic "11: AISES.pdf"': "11"
+  - text: .
+  - text: "Übersetzung & Bedeutungsanalyse:"
+  - list:
+    - listitem: "Wörtlich: „Wenn ich eine KI-Technologie/ein KI-Produkt nutze, gibt es nichts, bei dem ich nicht weiß, warum.“"
+    - listitem: "Flüssig: „Wenn ich eine KI-Anwendung nutze, verstehe ich stets, warum sie bestimmte Handlungen oder Ergebnisse ausführt.“"
+    - text: "Bedeutungsverschiebung: Das englische Original enthält eine doppelte Verneinung („nothing that I do not know why“)"
+    - 'button "11: AISES.pdf"':
+      - 'generic "11: AISES.pdf"': "11"
+    - text: ", die auf das Kognitionswissen um das KI-Systemverhalten (Erklärbarkeit/Transparenz) zielt. Eine vereinfachende Übersetzung zu einer reinen Selbsteinschätzung eigener Handlungssicherheit führt zu einer semantischen Verschiebung von der Systemtransparenz zur allgemeinen Nutzungskompetenz."
+  - text: "Empirische Äquivalenz: Nicht empirisch belegt ("
+  - code: translation_equivalence_status = NOT_EMPIRICALLY_ESTABLISHED
+  - text: )
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - text: . In Wang & Chuang (2024) existiert nur die englisch-chinesische Fassung; eine validierte deutsche Übersetzung ist im wissenschaftlichen Original nicht enthalten
+  - 'button "2: MASTERPROMPT_R6_1.txt"':
+    - 'generic "2: MASTERPROMPT_R6_1.txt"': "2"
+  - button:
+    - img: more_horiz
+  - text: .
+  - text: "Entscheidung: FREIGABE als E2-Übersetzung für Analysezwecke. STOPP für den R6.1-Kernfragebogen: Das R6.1-Design sieht für"
+  - code: READINESS_CORE_COMFORT
+  - text: aus AISES ausschließlich drei affektive Comfort-Items (
+  - code: COMFORT_01
+  - text: –
+  - code: "03"
+  - text: ) vor; Technological-Skills-Items wie TS3 gehören nicht zur freigegebenen 18-Item-Architektur
+  - 'button "5: MASTERPROMPT_R6_1.txt"':
+    - 'generic "5: MASTERPROMPT_R6_1.txt"': "5"
+  - button:
+    - img: more_horiz
+  - text: .
+- separator
+- text: 🔍 Möchtest du, dass wir für andere Konstrukte (wie
+- code: READINESS_CORE_DETECT
+- text: oder
+- code: CONTEXT_FC
+- text: ) die genauen Quellenanker und Verifikationspfade der restlichen Katalog-Items detailliert abgleichen?
+- generic "Nachricht in einer Notiz speichern":
+  - button "Nachricht in einer Notiz speichern":
+    - img: keep_pin
+    - generic: In Notiz speichern
+- generic "Antwort des Modells in Zwischenablage kopieren":
+  - button "Antwort des Modells in Zwischenablage kopieren":
+    - img: copy
+- generic "Antwort als gut bewerten":
+  - button "Antwort als gut bewerten":
+    - img: thumb_up
+- generic "Antwort als schlecht bewerten":
+  - button "Antwort als schlecht bewerten":
+    - img: thumb_down
+- button "Sollen wir weitere Konstrukte des Katalogs analysieren?":
+  - generic: Sollen wir weitere Konstrukte des Katalogs analysieren?
+  - img: subdirectory_arrow_right
+- button "Welche Items sollen wir als Nächstes auf E2 prüfen?":
+  - generic: Welche Items sollen wir als Nächstes auf E2 prüfen?
+  - img: subdirectory_arrow_right
+- button "Zeige mir Details zur Skala AILRSE-5.":
+  - generic: Zeige mir Details zur Skala AILRSE-5.
+  - img: subdirectory_arrow_right
+- textbox "Feld für Anfragen":
+  - /placeholder: Frage stellen oder etwas erstellen
+- generic: 5 Quellen
+- generic "Senden":
+  - button "Senden" [disabled]:
+    - img: arrow_upward
+- generic: Gemini Notebook kann Fehler machen. Bitte überprüfen Sie die Antworten.
+- navigation:
+  - heading "Studio" [level=2]:
+    - generic: Studio
+- button "Studio-Steuerfeld minimieren":
+  - img: side_nav
+- button "Audio-Zusammenfassung":
+  - img: audio_spark
+  - generic: Audio-Zusammenfassung
+- button "Präsentation":
+  - img: tablet
+  - generic: Präsentation
+- button "Videoübersicht":
+  - img: videocam
+  - generic: Videoübersicht
+- button "Mindmap":
+  - img: flowchart
+  - generic: Mindmap
+- button "Berichte":
+  - img: auto_tab_group
+  - generic: Berichte
+- generic: Neu!
+- button "Karteikarten":
+  - img: copy
+  - generic: Karteikarten
+- button "Quiz":
+  - img: quiz
+  - generic: Quiz
+- button "Infografik":
+  - img: stacked_bar_chart
+  - generic: Infografik
+- button "Datentabelle":
+  - img: format_list_bulleted
+  - generic: Datentabelle
+- img: edit_fix_auto
+- generic: Hier wird die Ausgabe von Studio gespeichert.
+- generic: Nachdem Sie Quellen hinzugefügt haben, klicken Sie, um Audio-Zusammenfassungen, Arbeitshilfen, Mindmaps und mehr hinzuzufügen.
+- button "Notiz hinzufügen":
+  - img: article
+  - generic: Notiz hinzufügen
+- generic: Antwort ist fertig.

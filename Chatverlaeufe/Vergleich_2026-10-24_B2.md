@@ -1,0 +1,314 @@
+# Vergleich_2026-10-24_B2
+
+Originalchat: https://notebook.google.com/notebook/9050aef8-0ad7-411b-bf52-48fdda11b915
+
+## Eingabe
+
+Prüfe fünf feste Fälle für einen deutschen Fragebogen zur GenAI-Readiness kaufmännischer Mitarbeitender. E1 = unverändertes belegtes Original, E2 = Adaption/Übersetzung, E3 = Neuentwicklung. Nutze die geladenen wissenschaftlichen Originale. Gib pro Fall Klasse, Quellenfundstelle, kurze Begründung und Freigabe oder Stopp an. Prüfe die behaupteten Quellen; fehlende Belege dürfen benannt werden. Keine vollständige Fragebogengenerierung.
+A: „Ich kenne die wichtigsten Grundbegriffe der künstlichen Intelligenz.“ Behauptung: unverändertes deutsches Original, MAILS Appendix A Pos. 7.
+B: Übersetze AILRSE-5 Item 1: "I'm confident in my ability to understand how new AI technologies work."
+C: „Ich kann ChatGPT Enterprise sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.“ Grundlage: MAILS Pos. 3. Kontext ist ein hypothetisches Unternehmen, keine Behauptung seiner tatsächlichen Richtlinien.
+D: „Ich kann komplexe Aufgaben mit generativer KI selbstständig umsetzen und Anwendungsprobleme beheben.“ Behauptete Synthese: MAILS Pos. 24 plus AISES Technological Skills „I can use AI to perform complex tasks.“
+E: Übersetze AISES TS3/Q6: "When using an AI technology/product, there is nothing that I do not know why." Prüfe mögliche Bedeutungsverschiebungen. Kennzeichne, ob Übersetzungsäquivalenz empirisch belegt ist.
+
+## Text des archivierten DOM-Abbilds einschließlich Oberfläche
+
+- button "Google-Apps":
+- 'button "Google-Konto: Lynn Zeischke (lynn.zeischke@gmail.com)"':
+- link "Gemini Notebook-Startseite":
+  - /url: /
+  - img "Gemini Notebook-Logo"
+- textbox: DSR Vergleich B2 Basis 24 Oktober
+- generic "Notebook erstellen":
+  - button "Notebook erstellen":
+    - img: add_2
+    - generic: Notebook erstellen
+- generic "Notebook freigeben":
+  - button "Notebook freigeben":
+    - img: share_1
+    - generic: Freigeben
+- generic "Notebook-Konfiguration":
+  - button "Notebook-Konfiguration":
+    - img: more_vert
+- generic "Einstellungen":
+  - button "Einstellungen":
+    - img: settings
+- navigation:
+  - heading "Quellen" [level=2]:
+    - generic: Quellen
+- button "Bereich „Quellen“ minimieren":
+  - img: side_nav
+- generic "Quelle hinzufügen":
+  - button "Quelle hinzufügen":
+    - img: add_2
+    - generic: Quellen hinzufügen
+- textbox "Anhand der eingegebenen Anfrage nach Quellen suchen":
+  - /placeholder: Im Web nach neuen Quellen suchen
+- button "Web":
+  - img: language
+  - generic: Web
+  - img: keyboard_arrow_down
+- button "Schnelle Recherche":
+  - img: search_spark
+  - generic: Schnelle Recherche
+  - img: keyboard_arrow_down
+- generic "Senden":
+  - button "Senden" [disabled]:
+    - img: arrow_forward
+- button "Quellen sortieren":
+  - img: sort
+- generic: Alle auswählen
+- text: check_box
+- checkbox "Alle Quellen auswählen" [checked]
+- button "AILRSE-5.pdf"
+- img: drive_pdf
+- generic: AILRSE-5.pdf
+- button "Mehr"
+- text: check_box
+- checkbox "AILRSE-5.pdf auswählen" [checked]
+- button "AIRS.pdf"
+- img: drive_pdf
+- generic: AIRS.pdf
+- button "Mehr"
+- text: check_box
+- checkbox "AIRS.pdf auswählen" [checked]
+- button "AISES.pdf"
+- img: drive_pdf
+- generic: AISES.pdf
+- button "Mehr"
+- text: check_box
+- checkbox "AISES.pdf auswählen" [checked]
+- button "MAILS.pdf"
+- img: drive_pdf
+- generic: MAILS.pdf
+- button "Mehr"
+- text: check_box
+- checkbox "MAILS.pdf auswählen" [checked]
+- button "Notebook anpassen"
+- img: landscape_2
+- generic: 🤖
+- heading "DSR Vergleich B2 Basis 24 Oktober" [level=2]
+- generic: 4 Quellen
+- generic: ·
+- generic "Sat Oct 24 2026 10:03:58 GMT+0200 (Mitteleuropäische Sommerzeit)": 24.10.2026
+- generic: Heute • 10:05
+- heading [level=3]:
+  - paragraph: "Prüfe fünf feste Fälle für einen deutschen Fragebogen zur GenAI-Readiness kaufmännischer Mitarbeitender. E1 = unverändertes belegtes Original, E2 = Adaption/Übersetzung, E3 = Neuentwicklung. Nutze die geladenen wissenschaftlichen Originale. Gib pro Fall Klasse, Quellenfundstelle, kurze Begründung und Freigabe oder Stopp an. Prüfe die behaupteten Quellen; fehlende Belege dürfen benannt werden. Keine vollständige Fragebogengenerierung. A: „Ich kenne die wichtigsten Grundbegriffe der künstlichen Intelligenz.“ Behauptung: unverändertes deutsches Original, MAILS Appendix A Pos. 7. B: Übersetze AILRSE-5 Item 1: \"I'm confident in my ability to understand how new AI technologies work.\" C: „Ich kann ChatGPT Enterprise sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.“ Grundlage: MAILS Pos. 3. Kontext ist ein hypothetisches Unternehmen, keine Behauptung seiner tatsächlichen Richtlinien. D: „Ich kann komplexe Aufgaben mit generativer KI selbstständig umsetzen und Anwendungsprobleme beheben.“ Behauptete Synthese: MAILS Pos. 24 plus AISES Technological Skills „I can use AI to perform complex tasks.“ E: Übersetze AISES TS3/Q6: \"When using an AI technology/product, there is nothing that I do not know why.\" Prüfe mögliche Bedeutungsverschiebungen. Kennzeichne, ob Übersetzungsäquivalenz empirisch belegt ist."
+- button "Thoughts":
+  - generic: Thoughts
+  - img: expand_more
+- generic: Hier ist die systematische Prüfung der fünf Fälle für den deutschen Fragebogen zur GenAI-Readiness kaufmännischer Mitarbeitender auf Basis der geladenen wissenschaftlichen Originalarbeiten.
+- separator
+- heading "Fall A" [level=3]
+- list:
+  - listitem: "Prüf-Item: „Ich kenne die wichtigsten Grundbegriffe der künstlichen Intelligenz.“"
+  - listitem: "Behauptung: Unverändertes deutsches Original, MAILS Appendix A Pos. 7."
+  - text: "Klasse: E1 (Unverändertes belegtes Original)"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: "Quellenfundstelle: MAILS (Carolus et al., 2023), Appendix A, Dimension Understand AI, Position 7"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: .
+  - text: "Kurze Begründung: Position 7 der MAILS-Skala ist im englischen Anhang der Publikation als „I know the most important concepts of the topic 'artificial intelligence'“ dokumentiert"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: . Da die MAILS-Studie mit 300 deutschsprachigen Teilnehmenden in deutscher Sprache durchgeführt wurde
+  - 'button "2: MAILS.pdf"':
+    - 'generic "2: MAILS.pdf"': "2"
+  - 'button "3: MAILS.pdf"':
+    - 'generic "3: MAILS.pdf"': "3"
+  - text: ", entspricht diese Formulierung exakt dem deutschen Erhebungselement für das grundlegende KI-Begriffsverständnis"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: .
+  - listitem: "Freigabe oder Stopp: Freigabe."
+- separator
+- heading "Fall B" [level=3]
+- list:
+  - listitem: "Prüf-Item / Aufgabe: Übersetze AILRSE-5 Item 1: „I'm confident in my ability to understand how new AI technologies work.“"
+  - text: "Klasse: E2 (Adaption / Übersetzung)"
+  - 'button "4: AILRSE-5.pdf"':
+    - 'generic "4: AILRSE-5.pdf"': "4"
+  - text: "Quellenfundstelle: AILRSE-5 (Oksanen et al., 2026), Table 2, Item 1 (adaptiert nach Igbaria & Iivari, 1995)"
+  - 'button "4: AILRSE-5.pdf"':
+    - 'generic "4: AILRSE-5.pdf"': "4"
+  - text: .
+  - listitem: "Übersetzungsvorschlag: „Ich bin zuversichtlich, dass ich verstehen kann, wie neue KI-Technologien funktionieren.“"
+  - text: "Kurze Begründung: Es handelt sich um die Direktübersetzung eines englischsprachigen Original-Items"
+  - 'button "4: AILRSE-5.pdf"':
+    - 'generic "4: AILRSE-5.pdf"': "4"
+  - text: . Die AILRSE-5-Skala wurde im Rahmen der Validierungsstudie mittels professioneller Übersetzung und Rückübersetzung auch in Deutschland (N = 736) erfolgreich eingesetzt
+  - 'button "5: AILRSE-5.pdf"':
+    - 'generic "5: AILRSE-5.pdf"': "5"
+  - 'button "6: AILRSE-5.pdf"':
+    - 'generic "6: AILRSE-5.pdf"': "6"
+  - text: .
+  - listitem: "Freigabe oder Stopp: Freigabe."
+- separator
+- heading "Fall C" [level=3]
+- list:
+  - listitem: "Prüf-Item: „Ich kann ChatGPT Enterprise sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.“"
+  - text: "Grundlage: MAILS Pos. 3 („I can use artificial intelligence meaningfully to achieve my everyday goals.“) im Kontext eines hypothetischen Unternehmens"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: .
+  - text: "Klasse: E2 (Adaption / Kontextualisierung)"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: "Quellenfundstelle: MAILS (Carolus et al., 2023), Appendix A, Dimension Apply AI, Position 3"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: .
+  - text: "Kurze Begründung: Das Item basiert strukturell auf MAILS Pos. 3"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: ", nimmt aber zwei zulässige Kontextanpassungen vor: (1) Konkretisierung des allgemeinen Begriffs „künstliche Intelligenz“ auf ein spezifisches Unternehmens-Tool (ChatGPT Enterprise) und (2) Spezifizierung von „alltäglichen Zielen“ auf kaufmännische „Arbeitsziele“"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - text: .
+  - listitem: "Freigabe oder Stopp: Freigabe."
+- separator
+- heading "Fall D" [level=3]
+- list:
+  - listitem: "Prüf-Item: „Ich kann komplexe Aufgaben mit generativer KI selbstständig umsetzen und Anwendungsprobleme beheben.“"
+  - listitem: "Behauptete Synthese: MAILS Pos. 24 plus AISES Technological Skills „I can use AI to perform complex tasks.“"
+  - text: "Klasse: E3 (Neuentwicklung / fehlerhafte Synthese)"
+  - 'button "1: MAILS.pdf"':
+    - 'generic "1: MAILS.pdf"': "1"
+  - 'button "7: AISES.pdf"':
+    - 'generic "7: AISES.pdf"': "7"
+  - text: "Quellenfundstelle:"
+  - list:
+    - text: "MAILS Pos. 24: „I can handle most problems in dealing with artificial intelligence well on my own“"
+    - 'button "1: MAILS.pdf"':
+      - 'generic "1: MAILS.pdf"': "1"
+    - text: deckt den Teil „Anwendungsprobleme beheben / selbstständig“ ab (siehe auch MAILS Pos. 25 für „complicated tasks“)
+    - 'button "1: MAILS.pdf"':
+      - 'generic "1: MAILS.pdf"': "1"
+    - text: .
+    - text: "AISES Technological Skills: Die behauptete Belegstelle „I can use AI to perform complex tasks“ existiert in den vier Items der Dimension Technological Skills der AISES-Skala (Items TS1–TS4 / Q3–Q6) nicht"
+    - 'button "7: AISES.pdf"':
+      - 'generic "7: AISES.pdf"': "7"
+    - 'button "8: AISES.pdf"':
+      - 'generic "8: AISES.pdf"': "8"
+    - text: . Es liegt eine Falschzuschreibung / ein fehlender Quellennachweis vor.
+  - text: "Kurze Begründung:"
+  - list:
+    - listitem: "Doppelitem (Double-Barreled Item): Das Item verknüpft methodisch unzulässig zwei getrennte Konstrukte (komplexe Aufgaben umsetzen vs. Anwendungsprobleme beheben)."
+    - text: "Einschränkung auf GenAI: Die Spezifizierung auf „generative KI“ stammt weder aus MAILS noch aus AISES"
+    - 'button "1: MAILS.pdf"':
+      - 'generic "1: MAILS.pdf"': "1"
+    - 'button "7: AISES.pdf"':
+      - 'generic "7: AISES.pdf"': "7"
+    - text: .
+    - text: "Quellenabweichung: Der angegebene AISES-Teilbeleg ist in der behaupteten Quelle nicht vorhanden"
+    - 'button "7: AISES.pdf"':
+      - 'generic "7: AISES.pdf"': "7"
+    - text: .
+  - listitem: "Freigabe oder Stopp: STOPP. (Empfehlung: Aufspaltung in zwei voneinander unabhängige Einzelitems und Korrektur des Belegs)."
+- separator
+- heading "Fall E" [level=3]
+- list:
+  - listitem: "Prüf-Item / Aufgabe: Übersetze AISES TS3/Q6: „When using an AI technology/product, there is nothing that I do not know why.“ Prüfe Bedeutungsverschiebungen und empirische Beleglage."
+  - text: "Klasse: E2 (Adaption / Übersetzung)"
+  - 'button "7: AISES.pdf"':
+    - 'generic "7: AISES.pdf"': "7"
+  - text: "Quellenfundstelle: AISES (Wang & Chuang, 2024), Table 3 & Table 6, Item TS3 (Originalcode Q6, Dimension Technological Skills)"
+  - 'button "7: AISES.pdf"':
+    - 'generic "7: AISES.pdf"': "7"
+  - 'button "8: AISES.pdf"':
+    - 'generic "8: AISES.pdf"': "8"
+  - text: .
+  - text: "Übersetzungsvorschlag:"
+  - list:
+    - listitem: "Wörtlich (mit doppelter Verneinung): „Bei der Nutzung einer KI-Technologie/eines KI-Produkts gibt es nichts, von dem ich nicht weiß, warum es geschieht.“"
+    - listitem: "Semantisch geglättet: „Wenn ich eine KI-Anwendung nutze, verstehe ich stets, warum sie so reagiert.“"
+  - text: "Prüfung auf Bedeutungsverschiebungen:"
+  - list:
+    - text: "Kognitive Belastung durch doppelte Verneinung: Das englische Original („nothing that I do not know why“) ist sprachlich verschachtelt"
+    - 'button "7: AISES.pdf"':
+      - 'generic "7: AISES.pdf"': "7"
+    - text: . Eine Glättung im Deutschen verbessert zwar die Verständlichkeit, verändert aber die kognitive Verarbeitungstiefe im Vergleich zum Original.
+    - listitem: "Gefahr von Inhaltssprüngen: „Know why“ bezieht sich strikt auf das Kausalverständnis/die Erklärbarkeit des KI-Verhaltens und darf nicht als Absicht oder Sinnhaftigkeit der eigenen Nutzung („warum ich KI verwende“) missverstanden werden."
+  - text: "Kennzeichnung der Übersetzungsäquivalenz: Nicht empirisch belegt. Die AISES-Skala wurde in Taiwan entwickelt"
+  - 'button "9: AISES.pdf"':
+    - 'generic "9: AISES.pdf"': "9"
+  - 'button "10: AISES.pdf"':
+    - 'generic "10: AISES.pdf"': "10"
+  - text: ; eine psychometrisch geprüfte deutsche Übersetzung mit nachgewiesener Messinvarianz liegt in den Quellen nicht vor
+  - 'button "9: AISES.pdf"':
+    - 'generic "9: AISES.pdf"': "9"
+  - text: .
+  - listitem: "Freigabe oder Stopp: STOPP. (Empfehlung: Nur nach sprachlicher Bereinigung und Durchführen eines kognitiven Pre-Testings freigeben)."
+- separator
+- generic: 💡 Möchtest du, dass wir für die gestoppten Fälle (D und E) methodisch sauber formulierte Alternativ-Items aufstellen, die direkt auf den belegten Skalen aufbauen?
+- generic "Nachricht in einer Notiz speichern":
+  - button "Nachricht in einer Notiz speichern":
+    - img: keep_pin
+    - generic: In Notiz speichern
+- generic "Antwort des Modells in Zwischenablage kopieren":
+  - button "Antwort des Modells in Zwischenablage kopieren":
+    - img: copy
+- generic "Antwort als gut bewerten":
+  - button "Antwort als gut bewerten":
+    - img: thumb_up
+- generic "Antwort als schlecht bewerten":
+  - button "Antwort als schlecht bewerten":
+    - img: thumb_down
+- button "Lass uns methodisch saubere Alternativ-Items für Fall D und E entwickeln.":
+  - generic: Lass uns methodisch saubere Alternativ-Items für Fall D und E entwickeln.
+  - img: subdirectory_arrow_right
+- button "Wie können wir die doppelten Verneinungen in Fall E sprachlich glätten?":
+  - generic: Wie können wir die doppelten Verneinungen in Fall E sprachlich glätten?
+  - img: subdirectory_arrow_right
+- button "Welche weiteren Items aus der MAILS-Skala eignen sich für kaufmännische Mitarbeitende?":
+  - generic: Welche weiteren Items aus der MAILS-Skala eignen sich für kaufmännische Mitarbeitende?
+  - img: subdirectory_arrow_right
+- textbox "Feld für Anfragen":
+  - /placeholder: Frage stellen oder etwas erstellen
+- generic: 4 Quellen
+- generic "Senden":
+  - button "Senden" [disabled]:
+    - img: arrow_upward
+- generic: Gemini Notebook kann Fehler machen. Bitte überprüfen Sie die Antworten.
+- navigation:
+  - heading "Studio" [level=2]:
+    - generic: Studio
+- button "Studio-Steuerfeld minimieren":
+  - img: side_nav
+- button "Audio-Zusammenfassung":
+  - img: audio_spark
+  - generic: Audio-Zusammenfassung
+- button "Präsentation":
+  - img: tablet
+  - generic: Präsentation
+- button "Videoübersicht":
+  - img: videocam
+  - generic: Videoübersicht
+- button "Mindmap":
+  - img: flowchart
+  - generic: Mindmap
+- button "Berichte":
+  - img: auto_tab_group
+  - generic: Berichte
+- generic: Neu!
+- button "Karteikarten":
+  - img: copy
+  - generic: Karteikarten
+- button "Quiz":
+  - img: quiz
+  - generic: Quiz
+- button "Infografik":
+  - img: stacked_bar_chart
+  - generic: Infografik
+- button "Datentabelle":
+  - img: format_list_bulleted
+  - generic: Datentabelle
+- img: edit_fix_auto
+- generic: Hier wird die Ausgabe von Studio gespeichert.
+- generic: Nachdem Sie Quellen hinzugefügt haben, klicken Sie, um Audio-Zusammenfassungen, Arbeitshilfen, Mindmaps und mehr hinzuzufügen.
+- button "Notiz hinzufügen":
+  - img: article
+  - generic: Notiz hinzufügen
+- generic: Antwort ist fertig.

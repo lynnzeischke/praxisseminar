@@ -1,0 +1,186 @@
+# A2 – R6.2 – Neue Fälle
+
+Originalchat: https://notebook.google.com/notebook/265fa2e3-ecfa-4699-8456-3c1002ca1bd8
+
+Zeitpunkt: 2026-10-28T16:48:59Z (Senden, UTC)
+
+## Archivierte Antwort
+
+Thoughts
+expand_more
+Im Modus RUN_MODE = ITEM_EVIDENCE_REVIEW
+1
+ wurden die fünf angefragten Einzelfälle (J, K, L, M, N) gemäß den Regeln des MASTERPROMPT V3.5-R6.2
+2
+ anhand der wissenschaftlichen Primärquellen (MAILS.pdf, AISES.pdf, AILRSE-5.pdf, AIRS.pdf)
+3
+ geprüft.
+Fall J
+Item: „Ich kann unterscheiden, ob ich mit einer KI oder einem echten Menschen interagiere.“
+Behauptung: Unverändertes deutsches Original, MAILS Appendix A Pos. 15
+4
+.
+evidence_class: E2 (Adaption/Übersetzung, nicht E1)
+5
+more_horiz
+Quellenfundstelle und verifizierter Originalanker: Carolus et al. (2023), MAILS, Appendix A, Pos. 15
+8
+. Verifizierter englischer Originaltext: „I can distinguish if I interact with an AI or a 'real human'.“
+8
+source_verification_status: TARGET_LANGUAGE_ORIGINAL_NOT_VERIFIED (für behaupteten deutschen E1-Originalwortlaut)
+5
+; SOURCE_ITEM_TEXT_VERIFIED (für englischen Quelltext)
+6
+.
+Begründung: In der Primärquelle (Carolus et al., 2023) sind die Items in Appendix A ausschließlich auf Englisch publiziert
+8
+. Ein verifizierter deutscher Originalwortlaut liegt in der Publikation nicht vor
+5
+. Nach den Regeln des Masterprompts (§ 4.1 & § 4.3) setzt die Klasse E1 einen nachgewiesenen, in der Zielsprache publizierten Originalwortlaut voraus
+5
+7
+. Eine deutsche Fassung stellt daher stets eine Übersetzung/Adaption (E2) dar
+5
+7
+.
+translation_equivalence_status: NOT_EMPIRICALLY_ESTABLISHED
+9
+Entscheidung und Grund: STOPP für die Einstufung als deutsches E1-Original
+5
+. Freigabe ausschließlich als E2-Übersetzung/Adaption
+6
+ (vgl. Kandidat DETECT_02: „Ich kann unterscheiden, ob ich mit einer generativen KI oder einer Person interagiere.“
+10
+).
+Fall K
+Item / Aufgabe: Übersetze AISES CF4/Q23: „When interacting with AI technologies/products, I feel very peaceful.“ Gib die Fundstelle des Originalwortlauts an. Kennzeichne, ob Übersetzungsäquivalenz empirisch belegt ist.
+evidence_class: E2
+6
+Quellenfundstelle und verifizierter Originalanker: Wang & Chuang (2024), AISES, Table 3 (S. 4796), Item CF4 / Q23 (Faktor Comfort with AI): „When interacting with AI technologies/products, I feel very peaceful.“
+11
+12
+source_verification_status: SOURCE_ITEM_TEXT_VERIFIED
+6
+Übersetzung (E2): „Wenn ich mit KI-Technologien/-Produkten interagiere, fühle ich mich sehr friedvoll [oder: friedlich/ruhig].“ (Bei Spezialisierung auf GenAI im Bürokontext: „Wenn ich mit generativer KI interagiere, fühle ich mich sehr ruhig.“
+10
+).
+Begründung: Der englische Originaltext ist in AISES Table 3 eindeutig belegt
+11
+12
+. Eine Neuübertragung ins Deutsche ist eine klassische E2-Übersetzung
+6
+.
+translation_equivalence_status: NOT_EMPIRICALLY_ESTABLISHED
+9
+. Ohne spezifische Messinvarianzprüfung der neu übersetzten deutschen Fassung in der Zielpopulation liegt kein empirischer Äquivalenznachweis vor; Ergebnisse der englischen Vollskala dürfen nicht unbesehen übertragen werden (§ 4.2)
+9
+.
+Entscheidung und Grund: Freigabe als sprachlich plausibler E2-Übersetzungskandidat
+6
+. STOPP bezüglich jeglicher Behauptung einer bereits empirisch nachgewiesenen Übersetzungsäquivalenz
+9
+.
+Fall L
+Item: „Ich bin zuversichtlich, dass ich lernen kann, neue KI-Technologien zu nutzen, um ein Problem zu lösen.“
+Behauptete Grundlage: AILRSE-5 Table 2, Item 3.
+evidence_class: E2
+6
+Quellenfundstelle und verifizierter Originalanker: Oksanen et al. (2026), AILRSE-5, Table 2
+13
+. Der behauptete Anker Item 3 lautet im Original jedoch: „I'm confident in my ability to learn how to apply new AI technologies in my daily life.“
+13
+ Der tatsächliche Originalanker für den vorgelegten Text („solve a problem“) ist Item 4: „I'm confident in my ability to learn how to use new AI technologies to solve a problem.“
+13
+14
+source_verification_status: CLAIMED_LOCATOR_MISMATCH
+6
+Begründung: Es liegt ein Zuordnungsfehler bezüglich der Item-Nummer vor
+6
+. Der Inhalt entspricht exakt Item 4 der AILRSE-5 („solve a problem“)
+13
+14
+. Item 3 betrifft dagegen die Anwendung im Alltag („in my daily life“)
+13
+.
+translation_equivalence_status: NOT_EMPIRICALLY_ESTABLISHED
+9
+Entscheidung und Grund: STOPP für die behauptete Quellenzuordnung (Item 3 ist inkorrekt)
+6
+. Freigabe der E2-Übersetzung erst nach Korrektur der Quellenreferenz auf AILRSE-5 Table 2, Item 4
+6
+13
+.
+Fall M
+Item: „Ich glaube, dass KI-Technologien meine Arbeit effizienter machen.“
+Behauptete Grundlage: AIRS Table 5, SEC2/Q12. Zweck: Item für den Readiness-Kern.
+evidence_class: E2 (sofern als Adaption aus Nutzen-Items verstanden) / UNRESOLVED bzgl. behaupteter SEC2-Herkunft
+6
+15
+.
+Quellenfundstelle und verifizierter Originalanker: Wang et al. (2026), AIRS, Table 5
+16
+. Der behauptete Anker SEC2 / Q12 lautet im Original jedoch: „I have confidence in understanding how AI technologies/products operate.“
+16
+ (Dimension: Self-Efficacy and Cognition
+16
+).
+source_verification_status: CLAIMED_SOURCE_MISMATCH
+6
+Begründung:
+Falsche Quellenangabe: Item SEC2/Q12 in AIRS misst kognitives Verständnisselbstvertrauen („understanding how AI... operate“)
+16
+, nicht Effizienz. Effizienzaussagen stehen in AIRS an anderer Stelle (z. B. OPT2/Q2 oder CLW1/Q20)
+16
+.
+Konstrukt- und Architekturverstoß: Die Aussage misst den wahrgenommenen Systemnutzen (Performance Expectancy / Perceived Usefulness)
+17
+18
+. Gemäß freigegebenem Design Audit (§ 3 & A6/A7) sind Systemnutzen- und Outcome-Items explizit aus dem READINESS_CORE ausgeschlossen und dürfen nicht in reflektiven Readiness-Skalen eingesetzt werden
+17
+18
+.
+translation_equivalence_status: NOT_APPLICABLE
+9
+Entscheidung und Grund: STOPP
+15
+19
+. Wegen falscher Quellenzuschreibung und Unvereinbarkeit des Messgegenstands (Systemnutzen gehört nicht in den Readiness-Kern) für den vorgesehenen Zweck abgelehnt
+6
+more_horiz
+.
+Fall N
+Item: „Ich kann ChatGPT Enterprise nutzen, um Lieferantenrechnungen zu prüfen, und vertraue den Ergebnissen.“
+Behauptung: E2-Adaption von MAILS Appendix A Pos. 1. Kontext ist ein hypothetisches Unternehmen.
+evidence_class: E3 (Neuentwicklung/Synthese, fälschlicherweise als E2 deklariert)
+19
+Quellenfundstelle und verifizierter Originalanker: Carolus et al. (2023), MAILS, Appendix A, Pos. 1: „I can operate AI applications in everyday life.“
+8
+ (dt. E2-Kandidat APPLY_01: „Ich kann generative KI-Anwendungen bedienen.“
+10
+).
+source_verification_status: SOURCE_MISCLASSIFIED_AS_E2
+19
+Begründung:
+Falsche Evidenzklasse: MAILS Pos. 1 misst die reine allgemeine Bedienfähigkeit („operate AI applications“)
+8
+. Das vorgelegte Item fügt ein spezifisches Tool (ChatGPT Enterprise), einen konkreten Geschäftsprozess (Lieferantenrechnungen prüfen) sowie eine eigene Vertrauenskomponente („und vertraue den Ergebnissen“) hinzu
+19
+. Das Hinzufügen neuer Kompetenzen, Prozessschritte und Konstrukte macht die Aussage zu einer Neuentwicklung/Synthese (E3) und erzeugt eine unzulässige Doppelfrage (Double-Barreled Item)
+19
+.
+Architektur- und Konstruktverstoß: Vertrauen (Trust) gehört laut Design Audit (§ 3, A6) zu RELATED_CONSTRUCT und ist nicht Teil des READINESS_CORE
+17
+18
+. Zudem verstößt das Erfinden konkreter interner Arbeitsabläufe ohne belegten TASK_CONTEXT gegen die Designregeln (A1, A6)
+1
+more_horiz
+.
+translation_equivalence_status: NOT_APPLICABLE (da E3)
+9
+Entscheidung und Grund: STOPP
+19
+. Falsche E2-Klassifikation, unzulässiges Double-Barreled-Wording (Bedienung + Vertrauen) und Verstoß gegen die Konstrukttrennung des Readiness-Kerns
+17
+more_horiz
+.
+Möchtest du weitere Einzelitems aus den Quellen auf ihre Evidenzklasse prüfen oder die Zuordnungen für eine spätere Fragebogenaufnahme anpassen?

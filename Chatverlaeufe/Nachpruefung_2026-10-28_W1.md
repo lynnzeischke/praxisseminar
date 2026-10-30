@@ -1,0 +1,2302 @@
+# W1 – R6.2 Volllauf – Wiederholung
+
+Originalchat: https://notebook.google.com/notebook/c3fe5848-eaa2-437b-98df-08c57919fa5a
+
+Zeitpunkt: 2026-10-28T16:03:57Z (Senden, UTC)
+
+## Archivierte Antwort
+
+Thoughts
+expand_more
+B1 – Designreferenz und Quellen
+Design-Audit-Referenz: DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL
+1
+2
+.
+Status: FINAL_APPROVED – Der im Masterprompt (Anhang A) unverändert eingebettete Original-Design-Audit stellt die maßgebliche Governance-Basis dar
+1
+more_horiz
+.
+Zielpopulation: Kaufmännische Mitarbeitende eines mittelständischen Unternehmens
+1
+2
+.
+KI-Kontext: Generative KI-Anwendungen, insbesondere ChatGPT Enterprise und Microsoft Copilot, im kaufmännischen Arbeitsalltag
+1
+2
+.
+Messziel: Diagnostische Erfassung der individuellen Employee AI Readiness sowie Identifikation von Entwicklungs- und Schulungsbedarfen
+1
+2
+.
+Instrumentzweck: DIAGNOSTIC
+1
+2
+.
+Sprache: Deutsch (DE)
+1
+.
+Itambudget & Skalenarchitektur: Genau 6 getrennte reflektive Skalen mit jeweils 3 Items (insgesamt 18 reflektive Items)
+4
+5
+. Die ersten 5 Skalen bilden den READINESS_CORE, während CONTEXT_FC die wahrgenommenen erleichternden Rahmenbedingungen als CONTEXT erfasst und nicht Teil eines unvalidierten Gesamtscores ist
+4
+more_horiz
+.
+Designziel Bearbeitungsdauer: MAX_COMPLETION_TIME_MIN = 8 ist ein ungetestetes Entwurfsziel und wird im Teilnehmerfragebogen nicht als behauptete reale Bearbeitungszeit ausgewiesen
+3
+8
+.
+Dokumentierte Operationalisierungsentscheidung (AISES vs. AIRS): Für den affektiven Komfort im GenAI-Bürokontext wurden drei Items der AISES-Comfort-Skala (CF1/Q25, CF3/Q24, CF5/Q22) ausgewählt
+3
+more_horiz
+. Diese Entscheidung liegt innerhalb des bestehenden Audits, da dieser bei READINESS_CORE_COMFORT sowohl AIRS als auch AISES als Kernquellen ausweist
+3
+13
+.
+Quellenstatus nach Verifikation:
+MAILS (Carolus et al., 2023)
+14
+15
+: Belegt für READINESS_CORE_LIT (Pos. 7, 8, 12)
+16
+17
+, READINESS_CORE_APPLY (Pos. 1, 3, 24)
+16
+17
+ und READINESS_CORE_DETECT (Pos. 13, 15)
+17
+. Die englischen Appendix-Items dienen als Verifikationsanker; die deutschen Fassungen sind kontextspezialisierte Adaptionen (GERMAN_CONTEXT_ADAPTED_FROM_SOURCE, E2)
+18
+.
+AILRSE-5 (Oksanen et al., 2026)
+19
+20
+: Belegt für READINESS_CORE_LEARN (Pos. 1, 2, 5)
+21
+ als transparentes 3-Item-Subset (GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED, E2)
+4
+more_horiz
+.
+AISES (Wang & Chuang, 2024)
+11
+23
+: Belegt für READINESS_CORE_COMFORT (CF1/Q25, CF3/Q24, CF5/Q22)
+10
+11
+ als übersetztes 3-Item-Subset (GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED, E2)
+4
+18
+.
+Lambiase et al. (2025 / arXiv:2504.02553v2)
+24
+more_horiz
+: Belegt für CONTEXT_FC (FC_1, FC_2, FC_3) über den Datenextrakt 1_originalDataset.csv
+27
+more_horiz
+ als transparentes 3-Item-Subset (GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED, E2)
+4
+more_horiz
+. Zudem theoretischer Begründungsanker für DETECT_03 (§ 6.2.4, Halluzinationen/Fehlinformationen)
+30
+31
+.
+AIRS (Wang et al., 2026)
+32
+33
+: Ergänzende Definitions- und Vergleichsquelle für individuelle AI-Readiness
+13
+33
+.
+B2 – Vollständige Item-Traceability
+item_id
+	
+construct_code
+	
+final_question_text_de
+	
+original_source
+	
+original_source_locator
+	
+original_item_id
+	
+source_item_content_anchor
+	
+adaptation_type
+	
+evidence_class
+	
+scale
+	
+reviewer_status
+
+
+LIT_01
+	
+READINESS_CORE_LIT
+	
+Ich kenne die wichtigsten Grundbegriffe generativer KI.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 7
+17
+	
+Pos./ID 7
+	
+Know most important concepts of AI
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+LIT_02
+	
+READINESS_CORE_LIT
+	
+Ich kenne die Bedeutung des Begriffs generative KI.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 8
+17
+	
+Pos./ID 8
+	
+Know definitions of AI
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+LIT_03
+	
+READINESS_CORE_LIT
+	
+Ich kann mir mögliche zukünftige Anwendungen generativer KI vorstellen.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 12
+17
+	
+Pos./ID 12
+	
+Imagine possible future uses of AI
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+LEARN_01
+	
+READINESS_CORE_LEARN
+	
+Ich bin zuversichtlich, dass ich verstehen kann, wie neue generative KI-Anwendungen funktionieren.
+	
+Oksanen et al. (2026), AILRSE-5
+	
+Pos./ID 1
+21
+	
+Pos./ID 1
+	
+Confident in ability to understand how new AI works
+21
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+LEARN_02
+	
+READINESS_CORE_LEARN
+	
+Ich bin zuversichtlich, dass ich bei Bedarf die Nutzung neuer generativer KI-Anwendungen erlernen kann.
+	
+Oksanen et al. (2026), AILRSE-5
+	
+Pos./ID 2
+21
+	
+Pos./ID 2
+	
+Confident in ability to learn to use new AI
+21
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+LEARN_03
+	
+READINESS_CORE_LEARN
+	
+Ich bin zuversichtlich, dass ich mir die Nutzung neuer generativer KI-Anwendungen selbstständig aneignen kann.
+	
+Oksanen et al. (2026), AILRSE-5
+	
+Pos./ID 5
+21
+	
+Pos./ID 5
+	
+Confident in ability to adapt/learn new AI independently
+21
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+APPLY_01
+	
+READINESS_CORE_APPLY
+	
+Ich kann generative KI-Anwendungen bedienen.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 1
+17
+	
+Pos./ID 1
+	
+Operate AI applications
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+APPLY_02
+	
+READINESS_CORE_APPLY
+	
+Ich kann generative KI sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 3
+17
+	
+Pos./ID 3
+	
+Use AI meaningfully to achieve goals
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+APPLY_03
+	
+READINESS_CORE_APPLY
+	
+Die meisten Probleme im Umgang mit generativer KI kann ich aus eigener Kraft meistern.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 24
+17
+	
+Pos./ID 24
+	
+Handle problems in dealing with AI on own
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+DETECT_01
+	
+READINESS_CORE_DETECT
+	
+Ich kann erkennen, ob eine Anwendung auf generativer KI basiert.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 13
+17
+	
+Pos./ID 13
+	
+Tell if dealing with AI application
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+DETECT_02
+	
+READINESS_CORE_DETECT
+	
+Ich kann unterscheiden, ob ich mit einer generativen KI oder einer Person interagiere.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 15
+17
+	
+Pos./ID 15
+	
+Distinguish AI vs. real human interaction
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+DETECT_03
+	
+READINESS_CORE_DETECT
+	
+Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen.
+	
+Theoriegeleitete Eigenentwicklung
+	
+Lambiase et al. (2025), § 6.2.4
+30
+	
+null
+	
+Risiko irreführender/halluzinierter LLM-Ergebnisse und fachlicher Überprüfung; theoretische Ableitung, keine validierte Kompetenzfrage
+30
+34
+	
+GERMAN_DEVELOPED_E3
+	
+E3
+	
+0-10
+	
+PASS
+
+
+COMFORT_01
+	
+READINESS_CORE_COMFORT
+	
+Wenn ich mit generativer KI interagiere, fühle ich mich ruhig.
+	
+Wang & Chuang (2024), AISES
+	
+Pos./ID CF1/Q25
+10
+	
+CF1/Q25
+	
+Feel calm when interacting with AI
+10
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+COMFORT_02
+	
+READINESS_CORE_COMFORT
+	
+Wenn ich mit generativer KI interagiere, fühle ich mich wohl.
+	
+Wang & Chuang (2024), AISES
+	
+Pos./ID CF3/Q24
+10
+	
+CF3/Q24
+	
+Feel comfortable in heart when interacting
+10
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+COMFORT_03
+	
+READINESS_CORE_COMFORT
+	
+Wenn ich mit generativer KI interagiere, fühle ich mich entspannt.
+	
+Wang & Chuang (2024), AISES
+	
+Pos./ID CF5/Q22
+35
+	
+CF5/Q22
+	
+Feel relaxed when interacting with AI
+35
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+FC_01
+	
+CONTEXT_FC
+	
+Mir stehen die notwendigen Ressourcen zur Verfügung, um generative KI-Anwendungen bei meiner Arbeit zu nutzen.
+	
+Lambiase et al. (2025)
+	
+Pos./ID FC_1
+29
+	
+FC_1
+	
+Have resources necessary to use LLMs to support job
+29
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+FC_02
+	
+CONTEXT_FC
+	
+Ich verfüge über das notwendige Wissen, um generative KI-Anwendungen bei meiner Arbeit zu nutzen.
+	
+Lambiase et al. (2025)
+	
+Pos./ID FC_2
+29
+	
+FC_2
+	
+Have knowledge necessary to use LLMs to support job
+29
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+FC_03
+	
+CONTEXT_FC
+	
+Generative KI-Anwendungen sind mit anderen Technologien kompatibel, die ich bei meiner Arbeit verwende.
+	
+Lambiase et al. (2025)
+	
+Pos./ID FC_3
+29
+	
+FC_3
+	
+LLMs compatible with other technologies in job
+29
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+Nicht-reflektive Zusatzmodule (separat dokumentiert):
+DIAG_01: Diagnostisches Bedarfsmodul (Mehrfachauswahl mit 7 Schulungskategorien, Sonstiges sowie der exklusiven Option "Kein Schulungs-/Entwicklungsbedarf")
+8
+36
+.
+DIAG_02: Offene Erfassung zusätzlicher organisatorischer Unterstützungsbedarfe
+8
+36
+.
+DEM_01: Minimale demografische Angabe (Kaufmännischer Funktionsbereich)
+7
+8
+.
+B3 – Kritische wissenschaftliche Prüfung
+AIRS vs. AISES Messobjekt beim affektiven Komfort: AIRS misst im Komfortfaktor unter anderem Ängste vor humanoiden Robotern (Q18/COM3)
+12
+more_horiz
+. Demgegenüber erfassen die AISES-Comfort-Items (CF1 Ruhe, CF3 Wohlbefinden, CF5 Entspanntheit)
+10
+35
+ direkt die affektive Erfahrung bei der Interaktion mit digitalen KI-Systemen
+9
+11
+. Für einen Fragebogen zu Generativer KI im kaufmännischen Büroalltag sind die AISES-Items dem Messobjekt deutlich näher
+39
+.
+Potenzielle semantische Redundanz im Comfort-Konstrukt: Die drei ausgewählten AISES-Comfort-Formulierungen („ruhig“, „wohl“, „entspannt“)
+10
+35
+ weisen eine hohe begriffliche Nähe auf. In der empirischen Pretest-Phase und der anschließenden Faktorenanalyse ist gezielt zu prüfen, ob Diskriminanzvalidität gegenüber Nachbarkonstrukten gegeben ist oder eine übermäßige Item-Redundanz vorliegt
+12
+.
+Facettenmix bei READINESS_CORE_APPLY: Die Skala kombiniert zwei allgemeine Anwendungs-Items aus MAILS Use & apply AI (Pos. 1 und 3) mit einem Item aus MAILS AI Problem solving (Pos. 24)
+16
+more_horiz
+. Dieser pragmatische Zuschnitt erfasst sowohl die routinemäßige Bedienung als auch die eigenständige Hürdenbewältigung, stellt jedoch eine projektspezifische Neukombination dar, deren Eindimensionalität empirisch geprüft werden muss
+40
+.
+Gemischte E2/E3-Struktur im READINESS_CORE_DETECT: DETECT_01 und DETECT_02 stammen als adaptierte E2-Items direkt aus MAILS Detect AI (Pos. 13 und 15)
+17
+18
+. Demgegenüber ist DETECT_03 („Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen“) eine eigenständige E3-Entwicklung
+34
+. Als theoretischer Begründungsanker dient Lambiase et al. (2025), § 6.2.4 („Using LLMs to Retrieve Information“), wo das Problem von LLM-Halluzinationen und fehlerhaften Modulausgaben für die Arbeits- und Überprüfungspraxis erörtert wird
+30
+31
+. Hieraus folgt ausdrücklich keine validierte Originalfrage zur kritischen Inhaltsprüfung; das Item bleibt eine projektseitige E3-Eigenentwicklung ohne publizierte Item-ID oder Originalskala
+34
+41
+.
+Kurzskalen-Transfer-Einschränkung: Für die 3-Item-Subsets aus AILRSE-5
+21
+22
+, AISES-Comfort
+10
+35
+ und Lambiase-FC
+29
+42
+ dürfen die publizierten psychometrischen Kennwerte (z. B. Reliabilitäten, Invarianznachweise) der jeweiligen Original-Vollskalen nicht unkritisch auf die verkürzten Subskalen übertragen werden
+7
+more_horiz
+.
+B4 – Heuristische Simulation (SIMULATED_HEURISTIC_PRETEST)
+Hinweis: Bei dieser Analyse handelt es sich um einen modellinternen SIMULATED_HEURISTIC_PRETEST
+45
+46
+. Reale Probandentests, empirische Beobachtungen oder Messdaten liegen nicht vor
+45
+47
+.
+Pfad 1: NO_EXPERIENCE (Keine KI-Erfahrung)
+Soll-Routingfolge: Teil 1 (EXP_01) → Teil 2 (LIT) → Teil 3 (LEARN) → Übersprungen: Teil 4 (APPLY), Teil 5 (DETECT), Teil 6 (COMFORT) → Teil 7 (FC) → Teil 8 (DIAG) → Teil 9 (DEM)
+48
+49
+.
+Potenzielles Verständnisrisiko: Teilnehmende ohne KI-Erfahrung könnten bei Teil 7 (FC_01–FC_03) verunsichert sein, da sich die Fragen auf KI-Nutzung bei der Arbeit beziehen. Dieses Risiko wird durch die zwingend angebotene Ausweichoption „Kann ich nicht beurteilen“ entschärft
+8
+.
+Pfad 2: LIMITED_EXPERIENCE (Gelegentliche KI-Nutzung)
+Soll-Routingfolge: Vollständige Bearbeitung aller Teile 2 bis 9
+48
+49
+.
+Potenzielles Verständnisrisiko: Bei DETECT_03 (kritische Ergebnisprüfung) könnte eine Abgrenzung zwischen allgemeiner Textbearbeitung und gezielter Validierung von GenAI-Halluzinationen heuristisch unklar sein; im kognitiven Pretest zu überprüfen.
+Pfad 3: REGULAR_USER (Regelmäßige KI-Nutzung)
+Soll-Routingfolge: Vollständige Bearbeitung aller Teile 2 bis 9
+48
+49
+.
+Potenzielles Verständnisrisiko: Sehr erfahrene Teilnehmende könnten die drei affektiven Comfort-Items (COMFORT_01–COMFORT_03) als geringfügig redundant empfinden; Reaktionszeiten und Trennschärfe sind im realen Feldtest zu analysieren.
+Disclaimer: Diese Prüfung ist rein heuristisch; reale Verständlichkeits-, Abbruch- und Zeitdaten liegen nicht vor
+45
+47
+.
+B5 – Druck-/umfragetauglicher Teilnehmerfragebogen
+Fragebogen zur Nutzung von generativer KI am Arbeitsplatz
+Mit diesem Fragebogen möchten wir Ihre Einschätzungen zum Umgang mit generativer KI am Arbeitsplatz sowie Ihren Schulungs- und Unterstützungsbedarf erfassen
+50
+.
+Teil 1: Berufliche KI-Erfahrung
+EXP_01: Wie häufig nutzen Sie generative KI-Anwendungen (z. B. ChatGPT oder Microsoft Copilot) bei Ihrer Arbeit?
+48
+[ ] NO_EXPERIENCE: Ich habe bisher keine generative KI bei meiner Arbeit genutzt.
+(Note: Bearbeiten Sie Teil 2 und Teil 3; überspringen Sie anschließend Teil 4, Teil 5 und Teil 6; fahren Sie mit Teil 7, Teil 8 und Teil 9 fort.)
+48
+[ ] LIMITED_EXPERIENCE: Ich nutze generative KI gelegentlich bei meiner Arbeit.
+(Note: Bearbeiten Sie Teil 2 bis Teil 9 vollständig.)
+48
+[ ] REGULAR_USER: Ich nutze generative KI regelmäßig bei meiner Arbeit.
+(Note: Bearbeiten Sie Teil 2 bis Teil 9 vollständig.)
+48
+Teil 2: KI-Grundverständnis (READINESS_CORE_LIT)
+Antwortskala: 0 = kann ich überhaupt nicht bis 10 = kann ich sehr gut
+8
+LIT_01: Ich kenne die wichtigsten Grundbegriffe generativer KI.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+LIT_02: Ich kenne die Bedeutung des Begriffs generative KI.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+LIT_03: Ich kann mir mögliche zukünftige Anwendungen generativer KI vorstellen.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+Teil 3: KI-Lern-Selbstwirksamkeit (READINESS_CORE_LEARN)
+Antwortskala: 1 = stimme überhaupt nicht zu bis 7 = stimme voll und ganz zu
+8
+LEARN_01: Ich bin zuversichtlich, dass ich verstehen kann, wie neue generative KI-Anwendungen funktionieren.
+[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ]
+8
+50
+LEARN_02: Ich bin zuversichtlich, dass ich bei Bedarf die Nutzung neuer generativer KI-Anwendungen erlernen kann.
+[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ]
+8
+50
+LEARN_03: Ich bin zuversichtlich, dass ich mir die Nutzung neuer generativer KI-Anwendungen selbstständig aneignen kann.
+[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ]
+8
+50
+Teil 4: Praktische KI-Anwendungskompetenz (READINESS_CORE_APPLY)
+(Wird von Personen mit der Antwort NO_EXPERIENCE übersprungen)
+48
+49
+Antwortskala: 0 = kann ich überhaupt nicht bis 10 = kann ich sehr gut
+8
+APPLY_01: Ich kann generative KI-Anwendungen bedienen.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+APPLY_02: Ich kann generative KI sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+APPLY_03: Die meisten Probleme im Umgang mit generativer KI kann ich aus eigener Kraft meistern.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+Teil 5: KI-Erkennung & Kritische Prüfung (READINESS_CORE_DETECT)
+(Wird von Personen mit der Antwort NO_EXPERIENCE übersprungen)
+48
+49
+Antwortskala: 0 = kann ich überhaupt nicht bis 10 = kann ich sehr gut
+8
+DETECT_01: Ich kann erkennen, ob eine Anwendung auf generativer KI basiert.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+DETECT_02: Ich kann unterscheiden, ob ich mit einer generativen KI oder einer Person interagiere.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+DETECT_03: Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen.
+[ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ]
+8
+50
+Teil 6: Affektiver Komfort (READINESS_CORE_COMFORT)
+(Wird von Personen mit der Antwort NO_EXPERIENCE übersprungen)
+48
+49
+Antwortskala: 1 = stimme überhaupt nicht zu bis 7 = stimme voll und ganz zu
+8
+COMFORT_01: Wenn ich mit generativer KI interagiere, fühle ich mich ruhig.
+[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [241, 2### B1 – Designreferenz und Quellen
+Design-Audit-Referenz: DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL
+1
+2
+.
+Status: FINAL_APPROVED – Der im Masterprompt (Anhang A) unverändert eingebettete Original-Design-Audit stellt die maßgebliche Governance-Basis dar
+1
+more_horiz
+.
+Zielpopulation: Kaufmännische Mitarbeitende eines mittelständischen Unternehmens
+1
+2
+.
+KI-Kontext: Generative KI-Anwendungen, insbesondere ChatGPT Enterprise und Microsoft Copilot, im kaufmännischen Arbeitsalltag
+1
+2
+.
+Messziel: Diagnostische Erfassung der individuellen Employee AI Readiness sowie Identifikation von Entwicklungs- und Schulungsbedarfen
+1
+2
+.
+Instrumentzweck: DIAGNOSTIC
+1
+2
+.
+Sprache: Deutsch (DE)
+1
+.
+Itambudget & Skalenarchitektur: Genau 6 getrennte reflektive Skalen mit jeweils 3 Items (insgesamt 18 reflektive Items)
+4
+5
+. Die ersten 5 Skalen bilden den READINESS_CORE, während CONTEXT_FC die wahrgenommenen erleichternden Rahmenbedingungen als CONTEXT erfasst und nicht Teil eines unvalidierten Gesamtscores ist
+4
+more_horiz
+.
+Designziel Bearbeitungsdauer: MAX_COMPLETION_TIME_MIN = 8 ist ein ungetestetes Entwurfsziel und wird im Teilnehmerfragebogen nicht als behauptete reale Bearbeitungszeit ausgewiesen
+3
+8
+.
+Dokumentierte Operationalisierungsentscheidung (AISES vs. AIRS): Für den affektiven Komfort im GenAI-Bürokontext wurden drei Items der AISES-Comfort-Skala (CF1/Q25, CF3/Q24, CF5/Q22) ausgewählt
+3
+more_horiz
+. Diese Entscheidung liegt innerhalb des bestehenden Audits, da dieser bei READINESS_CORE_COMFORT sowohl AIRS als auch AISES als Kernquellen ausweist
+3
+13
+.
+Quellenstatus nach Verifikation:
+MAILS (Carolus et al., 2023)
+14
+15
+: Belegt für READINESS_CORE_LIT (Pos. 7, 8, 12)
+16
+17
+, READINESS_CORE_APPLY (Pos. 1, 3, 24)
+16
+17
+ und READINESS_CORE_DETECT (Pos. 13, 15)
+17
+. Die englischen Appendix-Items dienen als Verifikationsanker; die deutschen Fassungen sind kontextspezialisierte Adaptionen (GERMAN_CONTEXT_ADAPTED_FROM_SOURCE, E2)
+18
+.
+AILRSE-5 (Oksanen et al., 2026)
+19
+20
+: Belegt für READINESS_CORE_LEARN (Pos. 1, 2, 5)
+21
+ als transparentes 3-Item-Subset (GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED, E2)
+4
+more_horiz
+.
+AISES (Wang & Chuang, 2024)
+11
+23
+: Belegt für READINESS_CORE_COMFORT (CF1/Q25, CF3/Q24, CF5/Q22)
+10
+11
+ als übersetztes 3-Item-Subset (GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED, E2)
+4
+18
+.
+Lambiase et al. (2025 / arXiv:2504.02553v2)
+24
+more_horiz
+: Belegt für CONTEXT_FC (FC_1, FC_2, FC_3) über den Datenextrakt 1_originalDataset.csv
+27
+more_horiz
+ als transparentes 3-Item-Subset (GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED, E2)
+4
+more_horiz
+. Zudem theoretischer Begründungsanker für DETECT_03 (§ 6.2.4, Halluzinationen/Fehlinformationen)
+30
+31
+.
+AIRS (Wang et al., 2026)
+32
+33
+: Ergänzende Definitions- und Vergleichsquelle für individuelle AI-Readiness
+13
+33
+.
+B2 – Vollständige Item-Traceability
+item_id
+	
+construct_code
+	
+final_question_text_de
+	
+original_source
+	
+original_source_locator
+	
+original_item_id
+	
+source_item_content_anchor
+	
+adaptation_type
+	
+evidence_class
+	
+scale
+	
+reviewer_status
+
+
+LIT_01
+	
+READINESS_CORE_LIT
+	
+Ich kenne die wichtigsten Grundbegriffe generativer KI.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 7
+17
+	
+Pos./ID 7
+	
+Know most important concepts of AI
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+LIT_02
+	
+READINESS_CORE_LIT
+	
+Ich kenne die Bedeutung des Begriffs generative KI.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 8
+17
+	
+Pos./ID 8
+	
+Know definitions of AI
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+LIT_03
+	
+READINESS_CORE_LIT
+	
+Ich kann mir mögliche zukünftige Anwendungen generativer KI vorstellen.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 12
+17
+	
+Pos./ID 12
+	
+Imagine possible future uses of AI
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+LEARN_01
+	
+READINESS_CORE_LEARN
+	
+Ich bin zuversichtlich, dass ich verstehen kann, wie neue generative KI-Anwendungen funktionieren.
+	
+Oksanen et al. (2026), AILRSE-5
+	
+Pos./ID 1
+21
+	
+Pos./ID 1
+	
+Confident in ability to understand how new AI works
+21
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+LEARN_02
+	
+READINESS_CORE_LEARN
+	
+Ich bin zuversichtlich, dass ich bei Bedarf die Nutzung neuer generativer KI-Anwendungen erlernen kann.
+	
+Oksanen et al. (2026), AILRSE-5
+	
+Pos./ID 2
+21
+	
+Pos./ID 2
+	
+Confident in ability to learn to use new AI
+21
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+LEARN_03
+	
+READINESS_CORE_LEARN
+	
+Ich bin zuversichtlich, dass ich mir die Nutzung neuer generativer KI-Anwendungen selbstständig aneignen kann.
+	
+Oksanen et al. (2026), AILRSE-5
+	
+Pos./ID 5
+21
+	
+Pos./ID 5
+	
+Confident in ability to adapt/learn new AI independently
+21
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+APPLY_01
+	
+READINESS_CORE_APPLY
+	
+Ich kann generative KI-Anwendungen bedienen.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 1
+17
+	
+Pos./ID 1
+	
+Operate AI applications
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+APPLY_02
+	
+READINESS_CORE_APPLY
+	
+Ich kann generative KI sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 3
+17
+	
+Pos./ID 3
+	
+Use AI meaningfully to achieve goals
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+APPLY_03
+	
+READINESS_CORE_APPLY
+	
+Die meisten Probleme im Umgang mit generativer KI kann ich aus eigener Kraft meistern.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 24
+17
+	
+Pos./ID 24
+	
+Handle problems in dealing with AI on own
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+DETECT_01
+	
+READINESS_CORE_DETECT
+	
+Ich kann erkennen, ob eine Anwendung auf generativer KI basiert.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 13
+17
+	
+Pos./ID 13
+	
+Tell if dealing with AI application
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+DETECT_02
+	
+READINESS_CORE_DETECT
+	
+Ich kann unterscheiden, ob ich mit einer generativen KI oder einer Person interagiere.
+	
+Carolus et al. (2023), MAILS
+	
+Pos./ID 15
+17
+	
+Pos./ID 15
+	
+Distinguish AI vs. real human interaction
+17
+	
+GERMAN_CONTEXT_ADAPTED_FROM_SOURCE
+	
+E2
+	
+0-10
+	
+PASS
+
+
+DETECT_03
+	
+READINESS_CORE_DETECT
+	
+Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen.
+	
+Theoriegeleitete Eigenentwicklung
+	
+Lambiase et al. (2025), § 6.2.4
+30
+	
+null
+	
+Risiko irreführender/halluzinierter LLM-Ergebnisse und fachlicher Überprüfung; theoretische Ableitung, keine validierte Kompetenzfrage
+30
+34
+	
+GERMAN_DEVELOPED_E3
+	
+E3
+	
+0-10
+	
+PASS
+
+
+COMFORT_01
+	
+READINESS_CORE_COMFORT
+	
+Wenn ich mit generativer KI interagiere, fühle ich mich ruhig.
+	
+Wang & Chuang (2024), AISES
+	
+Pos./ID CF1/Q25
+10
+	
+CF1/Q25
+	
+Feel calm when interacting with AI
+10
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+COMFORT_02
+	
+READINESS_CORE_COMFORT
+	
+Wenn ich mit generativer KI interagiere, fühle ich mich wohl.
+	
+Wang & Chuang (2024), AISES
+	
+Pos./ID CF3/Q24
+10
+	
+CF3/Q24
+	
+Feel comfortable in heart when interacting
+10
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+COMFORT_03
+	
+READINESS_CORE_COMFORT
+	
+Wenn ich mit generativer KI interagiere, fühle ich mich entspannt.
+	
+Wang & Chuang (2024), AISES
+	
+Pos./ID CF5/Q22
+35
+	
+CF5/Q22
+	
+Feel relaxed when interacting with AI
+35
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+FC_01
+	
+CONTEXT_FC
+	
+Mir stehen die notwendigen Ressourcen zur Verfügung, um generative KI-Anwendungen bei meiner Arbeit zu nutzen.
+	
+Lambiase et al. (2025)
+	
+Pos./ID FC_1
+29
+	
+FC_1
+	
+Have resources necessary to use LLMs to support job
+29
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+FC_02
+	
+CONTEXT_FC
+	
+Ich verfüge über das notwendige Wissen, um generative KI-Anwendungen bei meiner Arbeit zu nutzen.
+	
+Lambiase et al. (2025)
+	
+Pos./ID FC_2
+29
+	
+FC_2
+	
+Have knowledge necessary to use LLMs to support job
+29
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+
+
+FC_03
+	
+CONTEXT_FC
+	
+Generative KI-Anwendungen sind mit anderen Technologien kompatibel, die ich bei meiner Arbeit verwende.
+	
+Lambiase et al. (2025)
+	
+Pos./ID FC_3
+29
+	
+FC_3
+	
+LLMs compatible with other technologies in job
+29
+	
+GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED
+	
+E2
+	
+1-7
+	
+PASS
+Nicht-reflektive Zusatzmodule (separat dokumentiert):
+DIAG_01: Diagnostisches Bedarfsmodul (Mehrfachauswahl mit 7 Schulungskategorien, Sonstiges sowie der exklusiven Option "Kein Schulungs-/Entwicklungsbedarf")
+8
+36
+.
+DIAG_02: Offene Erfassung zusätzlicher organisatorischer Unterstützungsbedarfe
+8
+36
+.
+DEM_01: Minimale demografische Angabe (Kaufmännischer Funktionsbereich)
+7
+8
+.
+B3 – Kritische wissenschaftliche Prüfung
+AIRS vs. AISES Messobjekt beim affektiven Komfort: AIRS misst im Komfortfaktor unter anderem Ängste vor humanoiden Robotern (Q18/COM3)
+12
+more_horiz
+. Demgegenüber erfassen die AISES-Comfort-Items (CF1 Ruhe, CF3 Wohlbefinden, CF5 Entspanntheit)
+10
+35
+ direkt die affektive Erfahrung bei der Interaktion mit digitalen KI-Systemen
+9
+11
+. Für einen Fragebogen zu Generativer KI im kaufmännischen Büroalltag sind die AISES-Items dem Messobjekt deutlich näher
+39
+.
+Potenzielle semantische Redundanz im Comfort-Konstrukt: Die drei ausgewählten AISES-Comfort-Formulierungen („ruhig“, „wohl“, „entspannt“)
+10
+35
+ weisen eine hohe begriffliche Nähe auf. In der empirischen Pretest-Phase und der anschließenden Faktorenanalyse ist gezielt zu prüfen, ob Diskriminanzvalidität gegenüber Nachbarkonstrukten gegeben ist oder eine übermäßige Item-Redundanz vorliegt
+12
+.
+Facettenmix bei READINESS_CORE_APPLY: Die Skala kombiniert zwei allgemeine Anwendungs-Items aus MAILS Use & apply AI (Pos. 1 und 3) mit einem Item aus MAILS AI Problem solving (Pos. 24)
+16
+more_horiz
+. Dieser pragmatische Zuschnitt erfasst sowohl die routinemäßige Bedienung als auch die eigenständige Hürdenbewältigung, stellt jedoch eine projektspezifische Neukombination dar, deren Eindimensionalität empirisch geprüft werden muss
+40
+.
+Gemischte E2/E3-Struktur im READINESS_CORE_DETECT: DETECT_01 und DETECT_02 stammen als adaptierte E2-Items direkt aus MAILS Detect AI (Pos. 13 und 15)
+17
+18
+. Demgegenüber ist DETECT_03 („Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen“) eine eigenständige E3-Entwicklung
+34
+. Als theoretischer Begründungsanker dient Lambiase et al. (2025), § 6.2.4 („Using LLMs to Retrieve Information“), wo das Problem von LLM-Halluzinationen und fehlerhaften Modulausgaben für die Arbeits- und Überprüfungspraxis erörtert wird
+30
+31
+. Hieraus folgt ausdrücklich keine validierte Originalfrage zur kritischen Inhaltsprüfung; das Item bleibt eine projektseitige E3-Eigenentwicklung ohne publizierte Item-ID oder Originalskala
+34
+41
+.
+Kurzskalen-Transfer-Einschränkung: Für die 3-Item-Subsets aus AILRSE-5
+21
+22
+, AISES-Comfort
+10
+35
+ und Lambiase-FC
+29
+42
+ dürfen die publizierten psychometrischen Kennwerte (z. B. Reliabilitäten, Invarianznachweise) der jeweiligen Original-Vollskalen nicht unkritisch auf die verkürzten Subskalen übertragen werden
+7
+more_horiz
+.
+B4 – Heuristische Simulation (SIMULATED_HEURISTIC_PRETEST)
+Hinweis: Bei dieser Analyse handelt es sich um einen modellinternen SIMULATED_HEURISTIC_PRETEST
+45
+46
+. Reale Probandentests, empirische Beobachtungen oder Messdaten liegen nicht vor
+45
+47
+.
+Pfad 1: NO_EXPERIENCE (Keine KI-Erfahrung)
+Soll-Routingfolge: Teil 1 (EXP_01) → Teil 2 (LIT) → Teil 3 (LEARN) → Übersprungen: Teil 4 (APPLY), Teil 5 (DETECT), Teil 6 (COMFORT) → Teil 7 (FC) → Teil 8 (DIAG) → Teil 9 (DEM)
+48
+49
+.
+Potenzielles Verständnisrisiko: Teilnehmende ohne KI-Erfahrung könnten bei Teil 7 (FC_01–FC_03) verunsichert sein, da sich die Fragen auf KI-Nutzung bei der Arbeit beziehen. Dieses Risiko wird durch die zwingend angebotene Ausweichoption „Kann ich nicht beurteilen“ entschärft
+8
+.
+Pfad 2: LIMITED_EXPERIENCE (Gelegentliche KI-Nutzung)
+Soll-Routingfolge: Vollständige Bearbeitung aller Teile 2 bis 9
+48
+49
+.
+Potenzielles Verständnisrisiko: Bei DETECT_03 (kritische Ergebnisprüfung) könnte eine Abgrenzung zwischen allgemeiner Textbearbeitung und gezielter Validierung von GenAI-Halluzinationen heuristisch unklar sein; im kognitiven Pretest zu überprüfen.
+Pfad 3: REGULAR_USER (Regelmäßige KI-Nutzung)
+Soll-Routingfolge: Vollständige Bearbeitung aller Teile 2 bis 9
+48
+49
+.
+Potenzielles Verständnisrisiko: Sehr erfahrene Teilnehmende könnten die drei affektiven Comfort-Items (COMFORT_01–COMFORT_03) als geringfügig redundant empfinden; Reaktionszeiten und Trennschärfe sind im realen Feldtest zu analysieren.
+Disclaimer: Diese Prüfung ist rein heuristisch; reale Verständlichkeits-, Abbruch- und Zeitdaten liegen nicht vor
+45
+47
+.
+B5 – Druck-/umfragetauglicher Teilnehmerfragebogen
+Fragebogen zur Nutzung von generativer KI am Arbeitsplatz
+Mit diesem Fragebogen möchten wir Ihre Einschätzungen zum Umgang mit generativer KI am Arbeitsplatz sowie Ihren Schulungs- und Unterstützungsbedarf erfassen
+50
+.
+Teil 1: Berufliche KI-Erfahrung
+EXP_01: Wie häufig nutzen Sie generative KI-Anwendungen (z. B. ChatGPT oder Microsoft Copilot) bei Ihrer Arbeit?
+48
+[ ] NO_EXPERIENCE: Ich habe bisher keine generative KI bei meiner Arbeit genutzt.
+(Hinweis: Bearbeiten Sie Teil 2 und Teil 3; überspringen Sie anschließend Teil 4, Teil 5 und Teil 6; fahren Sie mit Teil 7, Teil 8 und Teil 9 fort.)
+48
+[ ] LIMITED_EXPERIENCE: Ich nutze generative KI gelegentlich bei meiner Arbeit.
+(Hinweis: Bearbeiten Sie Teil 2 bis Teil 9 vollständig.)
+48
+[ ] REGULAR_USER: Ich nutze generative KI regelmäßig bei meiner Arbeit.
+(Hinweis: Bearbeiten Sie Teil 2 bis Teil 9 vollständig.)
+48
+Teil 2: KI-Grundverständnis (READINESS_CORE_LIT)
+(Bewertung auf einer Skala von 0 = kann ich überhaupt nicht bis 10 = kann ich sehr gut)
+8
+LIT_01: Ich kenne die wichtigsten Grundbegriffe generativer KI. (0 bis 10)
+50
+LIT_02: Ich kenne die Bedeutung des Begriffs generative KI. (0 bis 10)
+50
+LIT_03: Ich kann mir mögliche zukünftige Anwendungen generativer KI vorstellen. (0 bis 10)
+50
+Teil 3: KI-Lern-Selbstwirksamkeit (READINESS_CORE_LEARN)
+(Bewertung auf einer Skala von 1 = stimme überhaupt nicht zu bis 7 = stimme voll und ganz zu)
+8
+LEARN_01: Ich bin zuversichtlich, dass ich verstehen kann, wie neue generative KI-Anwendungen funktionieren. (1 bis 7)
+50
+LEARN_02: Ich bin zuversichtlich, dass ich bei Bedarf die Nutzung neuer generativer KI-Anwendungen erlernen kann. (1 bis 7)
+50
+LEARN_03: Ich bin zuversichtlich, dass ich mir die Nutzung neuer generativer KI-Anwendungen selbstständig aneignen kann. (1 bis 7)
+50
+Teil 4: Praktische KI-Anwendungskompetenz (READINESS_CORE_APPLY)
+(Wird von Personen mit der Antwort NO_EXPERIENCE übersprungen; Bewertung von 0 = kann ich überhaupt nicht bis 10 = kann ich sehr gut)
+8
+more_horiz
+APPLY_01: Ich kann generative KI-Anwendungen bedienen. (0 bis 10)
+50
+APPLY_02: Ich kann generative KI sinnvoll einsetzen, um meine Arbeitsziele zu erreichen. (0 bis 10)
+50
+APPLY_03: Die meisten Probleme im Umgang mit generativer KI kann ich aus eigener Kraft meistern. (0 bis 10)
+50
+Teil 5: KI-Erkennung & Kritische Prüfung (READINESS_CORE_DETECT)
+(Wird von Personen mit der Antwort NO_EXPERIENCE übersprungen; Bewertung von 0 = kann ich überhaupt nicht bis 10 = kann ich sehr gut)
+8
+more_horiz
+DETECT_01: Ich kann erkennen, ob eine Anwendung auf generativer KI basiert. (0 bis 10)
+50
+DETECT_02: Ich kann unterscheiden, ob ich mit einer generativen KI oder einer Person interagiere. (0 bis 10)
+50
+DETECT_03: Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen. (0 bis 10)
+50
+Teil 6: Affektiver Komfort (READINESS_CORE_COMFORT)
+(Wird von Personen mit der Antwort NO_EXPERIENCE übersprungen; Bewertung von 1 = stimme überhaupt nicht zu bis 7 = stimme voll und ganz zu)
+8
+more_horiz
+COMFORT_01: Wenn ich mit generativer KI interagiere, fühle ich mich ruhig. (1 bis 7)
+50
+COMFORT_02: Wenn ich mit generativer KI interagiere, fühle ich mich wohl. (1 bis 7)
+50
+COMFORT_03: Wenn ich mit generativer KI interagiere, fühle ich mich entspannt. (1 bis 7)
+50
+Teil 7: Erleichternde Rahmenbedingungen (CONTEXT_FC)
+(Bewertung von 1 = stimme überhaupt nicht zu bis 7 = stimme voll und ganz zu; Zusatzoption: "Kann ich nicht beurteilen")
+8
+FC_01: Mir stehen die notwendigen Ressourcen zur Verfügung, um generative KI-Anwendungen bei meiner Arbeit zu nutzen. (1 bis 7 | [ ] Kann ich nicht beurteilen)
+8
+50
+FC_02: Ich verfüge über das notwendige Wissen, um generative KI-Anwendungen bei meiner Arbeit zu nutzen. (1 bis 7 | [ ] Kann ich nicht beurteilen)
+8
+50
+FC_03: Generative KI-Anwendungen sind mit anderen Technologien kompatibel, die ich bei meiner Arbeit verwende. (1 bis 7 | [ ] Kann ich nicht beurteilen)
+8
+50
+Teil 8: Diagnostische Bedarfsermittlung (DIAGNOSTIC_NEEDS)
+DIAG_01: In welchen der folgenden Bereiche sehen Sie für sich persönlichen Schulungs- oder Entwicklungsbedarf im Umgang mit generativer KI? (Mehrfachauswahl möglich)
+8
+[ ] Grundlagen generativer KI
+8
+[ ] Prompting (Effektive Formulierung von Eingabeaufforderungen)
+8
+[ ] Kritische Ergebnisprüfung & Qualitätssicherung
+8
+[ ] Datenschutz & Umgang mit sensiblen Unternehmensdaten
+8
+[ ] Urheberrecht & Ethische Aspekte
+8
+[ ] Integration in bestehende Arbeitsprozesse
+8
+[ ] Konkrete KI-Tools & Funktionsanwendungen
+8
+[ ] Sonstiges: _________________________________
+8
+[ ] Kein Schulungs-/Entwicklungsbedarf (Diese Option schließt andere Auswahlen aus)
+8
+DIAG_02: Welche zusätzliche organisatorische oder technische Unterstützung würde Ihnen den Einsatz von generativer KI bei Ihrer Arbeit erleichtern? (Offenes Textfeld)
+8
+ [__________________________________________________________________________]
+8
+Teil 9: Statistische Angaben (DEMOGRAPHICS_MINIMAL)
+DEM_01: Bitte geben Sie Ihren kaufmännischen Funktionsbereich im Unternehmen an:
+8
+ [__________________________________________________________________________]
+8
+B6 – Pretest und Validierung
+Human-Pretest: Vor dem Feldstart ist ein realer kognitiver Pretest mit Mitgliedern der kaufmännischen Zielgruppe erforderlich. Sein Umfang wird anhand des Untersuchungsziels, der Heterogenität der Zielgruppe und der Sättigung von Verständnisproblemen bestimmt. Zu prüfen sind Verständlichkeit, Antwortskalen, Erfahrungssprünge, Bearbeitbarkeit und die begriffliche Nähe der Comfort-Items
+47
+.
+Quantitative Validierung: Art des Analyseverfahrens, erforderlicher Stichprobenumfang und Akzeptanzkriterien werden erst nach Festlegung von PLANNED_ANALYSIS wissenschaftlich begründet. Die aus Originalskalen ausgewählten oder neu kombinierten Kurzskalen gelten nicht als im Zielkontext empirisch validiert
+47
+.
+Status: THEORETICALLY_GROUNDED_EMPIRICAL_VALIDATION_PENDING
+51
+.
+B7 – Vollständiger JSON-Export
+{
+  "metadata": {
+    "design_audit_reference": "DESIGN_AUDIT_REF_2026_KMU_GENAI_DIAG_004_FINAL",
+    "embedded_design_audit": true,
+    "source_files_consulted": [
+      "MAILS.pdf",
+      "AILRSE-5.pdf",
+      "AISES.pdf",
+      "AIRS.pdf",
+      "Lambiase et al. (2025).pdf",
+      "NOTEBOOKLM_FC_ORIGINALITEMS_OHNE_TEILNEHMERDATEN.txt"
+    ],
+    "overall_score_supported": false,
+    "empirical_validation_status": "PENDING"
+  },
+  "source_selection_decision": {
+    "readiness_core_comfort_choice": "AISES_COMFORT_3_ITEMS",
+    "rationale": "AISES Comfort misst affektive Erfahrung bei KI-Interaktion im digitalen Arbeitskontext; AIRS Roboter-Item Q18/COM3 entfällt wegen Unpassgenauigkeit zum GenAI-Bürokontext."
+  },
+  "routing": {
+    "filter_variable": "EXP_01",
+    "categories": [
+      "NO_EXPERIENCE",
+      "LIMITED_EXPERIENCE",
+      "REGULAR_USER"
+    ],
+    "NO_EXPERIENCE": {
+      "included_modules": [
+        "READINESS_CORE_LIT",
+        "READINESS_CORE_LEARN",
+        "CONTEXT_FC",
+        "DIAGNOSTIC_NEEDS",
+        "DEMOGRAPHICS_MINIMAL"
+      ],
+      "skipped_modules": [
+        "READINESS_CORE_APPLY",
+        "READINESS_CORE_DETECT",
+        "READINESS_CORE_COMFORT"
+      ],
+      "skipped_status_coding": "NOT_SCORED_DUE_TO_NO_EXPERIENCE",
+      "participant_path": [
+        "Teil 2",
+        "Teil 3",
+        "Teil 7",
+        "Teil 8",
+        "Teil 9"
+      ]
+    },
+    "LIMITED_EXPERIENCE": {
+      "included_modules": [
+        "READINESS_CORE_LIT",
+        "READINESS_CORE_LEARN",
+        "READINESS_CORE_APPLY",
+        "READINESS_CORE_DETECT",
+        "READINESS_CORE_COMFORT",
+        "CONTEXT_FC",
+        "DIAGNOSTIC_NEEDS",
+        "DEMOGRAPHICS_MINIMAL"
+      ],
+      "skipped_modules": [],
+      "participant_path": [
+        "Teil 2",
+        "Teil 3",
+        "Teil 4",
+        "Teil 5",
+        "Teil 6",
+        "Teil 7",
+        "Teil 8",
+        "Teil 9"
+      ]
+    },
+    "REGULAR_USER": {
+      "included_modules": [
+        "READINESS_CORE_LIT",
+        "READINESS_CORE_LEARN",
+        "READINESS_CORE_APPLY",
+        "READINESS_CORE_DETECT",
+        "READINESS_CORE_COMFORT",
+        "CONTEXT_FC",
+        "DIAGNOSTIC_NEEDS",
+        "DEMOGRAPHICS_MINIMAL"
+      ],
+      "skipped_modules": [],
+      "participant_path": [
+        "Teil 2",
+        "Teil 3",
+        "Teil 4",
+        "Teil 5",
+        "Teil 6",
+        "Teil 7",
+        "Teil 8",
+        "Teil 9"
+      ]
+    }
+  },
+  "items": [
+    {
+      "item_id": "LIT_01",
+      "construct_code": "READINESS_CORE_LIT",
+      "question_text": "Ich kenne die wichtigsten Grundbegriffe generativer KI.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "MAILS_2023",
+        "locator": "Appendix A, Pos. 7",
+        "source_item_id": "MAILS_7",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "0-10",
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_CONTEXT_ADAPTED_FROM_SOURCE",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "LIT_02",
+      "construct_code": "READINESS_CORE_LIT",
+      "question_text": "Ich kenne die Bedeutung des Begriffs generative KI.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "MAILS_2023",
+        "locator": "Appendix A, Pos. 8",
+        "source_item_id": "MAILS_8",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "0-10",
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_CONTEXT_ADAPTED_FROM_SOURCE",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "LIT_03",
+      "construct_code": "READINESS_CORE_LIT",
+      "question_text": "Ich kann mir mögliche zukünftige Anwendungen generativer KI vorstellen.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "MAILS_2023",
+        "locator": "Appendix A, Pos. 12",
+        "source_item_id": "MAILS_12",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "0-10",
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_CONTEXT_ADAPTED_FROM_SOURCE",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "LEARN_01",
+      "construct_code": "READINESS_CORE_LEARN",
+      "question_text": "Ich bin zuversichtlich, dass ich verstehen kann, wie neue generative KI-Anwendungen funktionieren.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "AILRSE_5_2026",
+        "locator": "Table 2, Item 1",
+        "source_item_id": "AILRSE_1",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "LEARN_02",
+      "construct_code": "READINESS_CORE_LEARN",
+      "question_text": "Ich bin zuversichtlich, dass ich bei Bedarf die Nutzung neuer generativer KI-Anwendungen erlernen kann.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "AILRSE_5_2026",
+        "locator": "Table 2, Item 2",
+        "source_item_id": "AILRSE_2",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "LEARN_03",
+      "construct_code": "READINESS_CORE_LEARN",
+      "question_text": "Ich bin zuversichtlich, dass ich mir die Nutzung neuer generativer KI-Anwendungen selbstständig aneignen kann.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "AILRSE_5_2026",
+        "locator": "Table 2, Item 5",
+        "source_item_id": "AILRSE_5",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "APPLY_01",
+      "construct_code": "READINESS_CORE_APPLY",
+      "question_text": "Ich kann generative KI-Anwendungen bedienen.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "MAILS_2023",
+        "locator": "Appendix A, Pos. 1",
+        "source_item_id": "MAILS_1",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "0-10",
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_CONTEXT_ADAPTED_FROM_SOURCE",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "APPLY_02",
+      "construct_code": "READINESS_CORE_APPLY",
+      "question_text": "Ich kann generative KI sinnvoll einsetzen, um meine Arbeitsziele zu erreichen.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "MAILS_2023",
+        "locator": "Appendix A, Pos. 3",
+        "source_item_id": "MAILS_3",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "0-10",
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_CONTEXT_ADAPTED_FROM_SOURCE",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "APPLY_03",
+      "construct_code": "READINESS_CORE_APPLY",
+      "question_text": "Die meisten Probleme im Umgang mit generativer KI kann ich aus eigener Kraft meistern.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "MAILS_2023",
+        "locator": "Appendix A, Pos. 24",
+        "source_item_id": "MAILS_24",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "0-10",
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_CONTEXT_ADAPTED_FROM_SOURCE",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "DETECT_01",
+      "construct_code": "READINESS_CORE_DETECT",
+      "question_text": "Ich kann erkennen, ob eine Anwendung auf generativer KI basiert.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "MAILS_2023",
+        "locator": "Appendix A, Pos. 13",
+        "source_item_id": "MAILS_13",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "0-10",
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_CONTEXT_ADAPTED_FROM_SOURCE",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "DETECT_02",
+      "construct_code": "READINESS_CORE_DETECT",
+      "question_text": "Ich kann unterscheiden, ob ich mit einer generativen KI oder einer Person interagiere.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "MAILS_2023",
+        "locator": "Appendix A, Pos. 15",
+        "source_item_id": "MAILS_15",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "0-10",
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_CONTEXT_ADAPTED_FROM_SOURCE",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "DETECT_03",
+      "construct_code": "READINESS_CORE_DETECT",
+      "question_text": "Ich kann die inhaltliche Richtigkeit von Ergebnissen, die durch generative KI erzeugt wurden, kritisch überprüfen.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E3",
+      "source_evidence": {
+        "source_id": "THEORETICAL_DEVELOPMENT",
+        "locator": "Lambiase et al. (2025), Section 6.2.4",
+        "source_item_id": null,
+        "source_item_text_verified": false,
+        "source_definition_verified": false,
+        "original_scale": null,
+        "final_scale": "0-10",
+        "translation_status": "GERMAN_DEVELOPED_E3",
+        "translation_equivalence_status": "NOT_APPLICABLE",
+        "critic_status": "PASS",
+        "source_verification_status": "THEORY_ANCHOR_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false,
+        "theoretical_rationale_verified": true,
+        "theoretical_rationale": {
+          "source_id": "LAMBIASE_2025",
+          "source_locator": "Section 6.2.4, paragraph on LLM hallucinations and misleading outputs",
+          "support_type": "THEORY_RATIONALE_ONLY",
+          "evidence_summary": "Fehlerhafte/halluzinierte LLM-Inhalte können Vertrauen und fachliche Überprüfung erschweren",
+          "project_inference": "Die Fähigkeit zur inhaltlichen Prüfung von GenAI-Ergebnissen ist ein relevantes projektseitiges Diagnostikkriterium",
+          "not_an_original_or_validated_item": true
+        },
+        "derivation_sources": [
+          {
+            "source_id": "LAMBIASE_2025",
+            "locator": "Section 6.2.4",
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "COMFORT_01",
+      "construct_code": "READINESS_CORE_COMFORT",
+      "question_text": "Wenn ich mit generativer KI interagiere, fühle ich mich ruhig.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "AISES_2024",
+        "locator": "Section 5.4, CF1 / Q25",
+        "source_item_id": "CF1_Q25",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "COMFORT_02",
+      "construct_code": "READINESS_CORE_COMFORT",
+      "question_text": "Wenn ich mit generativer KI interagiere, fühle ich mich wohl.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "AISES_2024",
+        "locator": "Section 5.4, CF3 / Q24",
+        "source_item_id": "CF3_Q24",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "COMFORT_03",
+      "construct_code": "READINESS_CORE_COMFORT",
+      "question_text": "Wenn ich mit generativer KI interagiere, fühle ich mich entspannt.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "AISES_2024",
+        "locator": "Section 5.4, CF5 / Q22",
+        "source_item_id": "CF5_Q22",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false
+      }
+    },
+    {
+      "item_id": "FC_01",
+      "construct_code": "CONTEXT_FC",
+      "question_text": "Mir stehen die notwendigen Ressourcen zur Verfügung, um generative KI-Anwendungen bei meiner Arbeit zu nutzen.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "LAMBIASE_2025",
+        "locator": "Dataset 1_originalDataset.csv, Row 2, Col FC_1",
+        "source_item_id": "FC_1",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false,
+        "additional_response_option": "Kann ich nicht beurteilen",
+        "additional_response_option_coding": "MISSING_NOT_SCORED"
+      }
+    },
+    {
+      "item_id": "FC_02",
+      "construct_code": "CONTEXT_FC",
+      "question_text": "Ich verfüge über das notwendige Wissen, um generative KI-Anwendungen bei meiner Arbeit zu nutzen.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "LAMBIASE_2025",
+        "locator": "Dataset 1_originalDataset.csv, Row 2, Col FC_2",
+        "source_item_id": "FC_2",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false,
+        "additional_response_option": "Kann ich nicht beurteilen",
+        "additional_response_option_coding": "MISSING_NOT_SCORED"
+      }
+    },
+    {
+      "item_id": "FC_03",
+      "construct_code": "CONTEXT_FC",
+      "question_text": "Generative KI-Anwendungen sind mit anderen Technologien kompatibel, die ich bei meiner Arbeit verwende.",
+      "measurement_model": "REFLECTIVE",
+      "evidence_class": "E2",
+      "source_evidence": {
+        "source_id": "LAMBIASE_2025",
+        "locator": "Dataset 1_originalDataset.csv, Row 2, Col FC_3",
+        "source_item_id": "FC_3",
+        "source_item_text_verified": true,
+        "source_definition_verified": true,
+        "original_scale": "1-7",
+        "final_scale": "1-7",
+        "translation_status": "GERMAN_TRANSLATED_AND_CONTEXT_ADAPTED",
+        "translation_equivalence_status": "NOT_EMPIRICALLY_ESTABLISHED",
+        "critic_status": "PASS",
+        "source_verification_status": "SOURCE_VERIFIED",
+        "target_language_original_verified": false,
+        "exact_original_match": false,
+        "additional_response_option": "Kann ich nicht beurteilen",
+        "additional_response_option_coding": "MISSING_NOT_SCORED"
+      }
+    }
+  ],
+  "diagnostic_needs": {
+    "module_code": "DIAGNOSTIC_NEEDS",
+    "item_id": "DIAG_01",
+    "question_text": "In welchen der folgenden Bereiche sehen Sie für sich persönlichen Schulungs- oder Entwicklungsbedarf im Umgang mit generativer KI?",
+    "categories": [
+      "Grundlagen generativer KI",
+      "Prompting (Effektive Formulierung von Eingabeaufforderungen)",
+      "Kritische Ergebnisprüfung & Qualitätssicherung",
+      "Datenschutz & Umgang mit sensiblen Unternehmensdaten",
+      "Urheberrecht & Ethische Aspekte",
+      "Integration in bestehende Arbeitsprozesse",
+      "Konkrete KI-Tools & Funktionsanwendungen"
+    ],
+    "additional_fields": {
+      "other_text_field": "Sonstiges: _________",
+      "no_needs_exclusive_option": "Kein Schulungs-/Entwicklungsbedarf"
+    },
+    "open_feedback_item": {
+      "item_id": "DIAG_02",
+      "question_text": "Welche zusätzliche organisatorische oder technische Unterstützung würde Ihnen den Einsatz von generativer KI bei Ihrer Arbeit erleichtern?"
+    }
+  },
+  "demographics_minimal": {
+    "module_code": "DEMOGRAPHICS_MINIMAL",
+    "item_id": "DEM_01",
+    "question_text": "Bitte geben Sie Ihren kaufmännischen Funktionsbereich im Unternehmen an:"
+  },
+  "conformance": {
+    "all_hard_checks_pass": true,
+    "status": "CONFORMANT_GENERATION"
+  }
+}
+
+B0 – Unabhängige Hard-Check-Matrix
+Gate-Code
+	
+Prüfaspekt
+	
+Status
+	
+Begründung
+
+
+design_lock_ok
+	
+Einhaltung der Vorgaben aus Audit 004_FINAL
+	
+PASS
+	
+Genau 18 reflektive Items, 6 Skalen × 3 Items, diagnostischer Zweck gewahrt
+1
+more_horiz
+.
+
+
+source_item_evidence_ok
+	
+Eigenständige Verifikation aller Quelltextanker
+	
+PASS
+	
+MAILS, AILRSE-5, AISES und Lambiase (Dataset FC_1–FC_3) wurden anhand der Primärquellen verifiziert
+10
+more_horiz
+.
+
+
+e2_proof_ok
+	
+Gültige E2-Klassifikation für übersetzte/adaptierte Items
+	
+PASS
+	
+Alle 17 E2-Items besitzen belegte Originalanker und semantisch treue Übertragungen
+10
+more_horiz
+.
+
+
+e3_source_compatibility_ok
+	
+Regelkonforme E3-Klassifikation & Theorieanker
+	
+PASS
+	
+DETECT_03 korrekt als E3 klassifiziert; Lambiase § 6.2.4 als Theorieanker ohne erfundene Item-ID ausgewiesen
+30
+more_horiz
+.
+
+
+subscale_membership_ok
+	
+Exakt 3 Items je Konstruktsubskala
+	
+PASS
+	
+Genau je 3 Items für LIT, LEARN, APPLY, DETECT, COMFORT und FC
+4
+5
+.
+
+
+item_count_checksum_ok
+	
+Gesamtzahl reflektiver Items = 18
+	
+PASS
+	
+Exact Checksum: 18 reflektive Items; DIAG_01/02 und DEM_01 sind getrennt klassifiziert
+4
+52
+.
+
+
+traceability_consistency_ok
+	
+Identische Item-IDs und Wortlaute in B2, B5, B7
+	
+PASS
+	
+Hard-Check bestätigt exakte Zeichen-für-Zeichen-Übereinstimmung aller 18 Frageformulierungen
+53
+54
+.
+
+
+adaptation_labeling_ok
+	
+Ehrlicher Adaptions- & Übersetzungsstatus
+	
+PASS
+	
+GenAI-spezialisierte MAILS-Items als GERMAN_CONTEXT_ADAPTED_FROM_SOURCE ausgewiesen, nicht als original publiziert
+18
+52
+.
+
+
+participant_rendering_ok
+	
+Vollständige B5-Teilnehmerdarstellung ohne Zeitclaims
+	
+PASS
+	
+Alle 9 Teile vollständig gerendert; keine unbelegten Zeitangaben im Einleitungstext
+8
+50
+.
+
+
+routing_ok
+	
+Kanonische EXP_01-Routinglogik in B5 & B7
+	
+PASS
+	
+NO_EXPERIENCE sieht Teil 2 & 3 und überspringt Teil 4–6; Pfade in B5 und JSON exakt synchronisiert
+48
+more_horiz
+.
+
+
+fc_not_judgable_option_ok
+	
+Zwingende Ausweichoption für CONTEXT_FC
+	
+PASS
+	
+Für FC_01–FC_03 ist „Kann ich nicht beurteilen“ als MISSING_NOT_SCORED enthalten
+8
+56
+.
+
+
+diagnostic_module_completeness_ok
+	
+Vollständigkeit von DIAG_01, DIAG_02 & DEM_01
+	
+PASS
+	
+Alle 7 Bedarfsfelder, exklusive Nein-Option, Freitext und Demografie vollständig gerendert
+8
+57
+.
+
+
+validation_plan_ok
+	
+B4-Simulationsdisziplin & B6-Standardtext
+	
+PASS
+	
+B4 frei von behaupteten Beobachtungen; B6 verwendet exakt den geforderten Standardtext ohne Stichprobenvorgaben
+45
+47
+.
+
+
+json_consistency_ok
+	
+Valide, vollständige JSON-Struktur in B7
+	
+PASS
+	
+B7 ist syntaktisch vollständig mit 18 Items, allen Routing-Pfaden und korrekten Metadaten
+56
+57
+.
+
+
+audit_selection_documented_ok
+	
+Transparente Dokumentation der AISES-Comfort-Wahl
+	
+PASS
+	
+Auswahl von 3 AISES-Comfort-Items innerhalb des bestehenden Audits explizit begründet
+3
+39
+.
+
+
+all_hard_checks_pass
+	
+Gesamtstatus der Hard-Check-Matrix
+	
+PASS
+	
+Alle Einzel-Gates bestanden. Status: CONFORMANT_GENERATION
+58
+59
+.

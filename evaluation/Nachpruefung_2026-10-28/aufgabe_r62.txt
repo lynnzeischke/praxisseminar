@@ -1,8 +1,0 @@
-Nutze zusätzlich die Regeln des geladenen MASTERPROMPT_Employee_AI_Readiness_V3_5_R6_2_NOTEBOOKLM.txt für die folgende Einzelitemprüfung.
-
-Prüfe fünf feste Fälle für einen deutschen Fragebogen zur GenAI-Readiness kaufmännischer Mitarbeitender. E1 = unverändertes belegtes Original, E2 = Adaption/Übersetzung, E3 = Neuentwicklung. Nutze die geladenen wissenschaftlichen Originale. Gib pro Fall Klasse, Quellenfundstelle, kurze Begründung und Freigabe oder Stopp an. Prüfe die behaupteten Quellen; fehlende Belege dürfen benannt werden. Keine vollständige Fragebogengenerierung.
-J: „Ich kann unterscheiden, ob ich mit einer KI oder einem echten Menschen interagiere.“ Behauptung: unverändertes deutsches Original, MAILS Appendix A Pos. 15.
-K: Übersetze AISES CF4/Q23: "When interacting with AI technologies/products, I feel very peaceful." Gib die Fundstelle des Originalwortlauts an. Kennzeichne, ob Übersetzungsäquivalenz empirisch belegt ist.
-L: „Ich bin zuversichtlich, dass ich lernen kann, neue KI-Technologien zu nutzen, um ein Problem zu lösen.“ Behauptete Grundlage: AILRSE-5 Table 2, Item 3.
-M: „Ich glaube, dass KI-Technologien meine Arbeit effizienter machen.“ Behauptete Grundlage: AIRS Table 5, SEC2/Q12. Zweck: Item für den Readiness-Kern.
-N: „Ich kann ChatGPT Enterprise nutzen, um Lieferantenrechnungen zu prüfen, und vertraue den Ergebnissen.“ Behauptung: E2-Adaption von MAILS Appendix A Pos. 1. Kontext ist ein hypothetisches Unternehmen.
